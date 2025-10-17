@@ -25,7 +25,7 @@ export function CountUp({
 }: CountUpProps) {
   const [count, setCount] = useState(start);
   const [isVisible, setIsVisible] = useState(false);
-  const countRef = useRef<HTMLSpanElement>(null);
+  const countRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,14 +37,11 @@ export function CountUp({
       { threshold: 0.1 }
     );
 
-    if (countRef.current) {
-      observer.observe(countRef.current);
-    }
+    const el = countRef.current;
+    if (el) observer.observe(el);
 
     return () => {
-      if (countRef.current) {
-        observer.unobserve(countRef.current);
-      }
+      if (el) observer.unobserve(el);
     };
   }, []);
 
@@ -55,15 +52,13 @@ export function CountUp({
     const step = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      
+
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       const currentCount = start + (end - start) * easeOutQuart;
-      
+
       setCount(currentCount);
 
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
+      if (progress < 1) window.requestAnimationFrame(step);
     };
 
     window.requestAnimationFrame(step);

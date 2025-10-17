@@ -1,6 +1,4 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+"use client";
 import Image from 'next/image';
 import Aurora from '../components/Aurora';
 import { CountUp } from '../components/count-up';
