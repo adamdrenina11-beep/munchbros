@@ -5,8 +5,7 @@ import Image from 'next/image';
 import Aurora from '../components/Aurora';
 import { CountUp } from '../components/count-up';
 import FadeContent from '../components/FadeContent';
-import Objednavky from '../components/Objednavky';
-import { PHONE_NUMBER, PHONE_TEL } from '../lib/site';
+import { PHONE_NUMBER, PHONE_TEL, ORDER_LINK } from '../lib/site';
 
 export default function Home() {
   return (
@@ -50,26 +49,16 @@ export default function Home() {
               <p className="text-2xl md:text-3xl text-pink-300 font-semibold mb-8">
                 Bratia v burgri - Senec
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-between sm:justify-center max-w-5xl mx-auto">
                 <a 
                   href="#menu"
                   onClick={(e) => {
                     e.preventDefault();
                     document.querySelector('#menu')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer"
+                  className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer sm:order-1"
                 >
                   Pozri Menu
-                </a>
-                <a
-                  href="#objednavky"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector('#objednavky')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="px-8 py-4 bg-amber-500 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer"
-                >
-                  Objednávky
                 </a>
                 <a 
                   href="#lokalita"
@@ -77,9 +66,19 @@ export default function Home() {
                     e.preventDefault();
                     document.querySelector('#lokalita')?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="px-8 py-4 bg-white/10 backdrop-blur-lg text-white text-lg font-bold rounded-full hover:bg-white/20 transition-all duration-300 border-2 border-white/30 cursor-pointer"
+                  className="px-8 py-4 bg-white/10 backdrop-blur-lg text-white text-lg font-bold rounded-full hover:bg-white/20 transition-all duration-300 border-2 border-white/30 cursor-pointer sm:order-2"
                 >
                   Otváracie hodiny a Lokalita
+                </a>
+                <a
+                  href="#objednavky"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector('#objednavky')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="px-8 py-4 bg-gradient-to-r from-amber-400 via-rose-500 to-fuchsia-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer sm:order-3"
+                >
+                  Objednávky
                 </a>
               </div>
             </div>
@@ -138,10 +137,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Objednávky (componentized) */}
-      <Objednavky />
-
-      {/* Menu Section */}
+  {/* Menu Section */}
       <section id="menu" className="py-20 px-4 bg-neutral-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -155,8 +151,7 @@ export default function Home() {
 
           {/* BURGRE */}
           <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
-            
+    <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
             {/* Prvé 3 burgre - len na desktop */}
             <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
               {/* Munch Bro's */}
@@ -545,29 +540,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lokalita a Otváracie hodiny Section */}
-      <section id="lokalita" className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
-        {/* Aurora Background */}
-        <div className="absolute inset-0 z-0">
+      {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
+      <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Aurora Background - pre celú sekciu */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <Aurora
-            colorStops={["#7c3aed", "#ec4899", "#be185d"]}
-            blend={0.5}
-            amplitude={0.8}
-            speed={0.3}
+            colorStops={["#9333ea", "#ec4899", "#db2777"]}
+            blend={0.6}
+            amplitude={1.2}
+            speed={0.4}
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
-              Lokalita a Otváracie hodiny
-            </h2>
-            <p className="text-xl text-pink-300">
-              Kde nás nájdete a kedy máme otvorené
-            </p>
+        <div className="relative z-10 max-w-7xl mx-auto space-y-20">
+          {/* Objednávky subsection */}
+          <div id="objednavky">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-4">Objednávky</h2>
+              <p className="text-xl text-pink-300">No čo, máš už chuť? Tak si objednaj a poriadne vychutnaj.</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center gap-6">
+              {/* Telefónne číslo a tlačidlo vedľa seba */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 w-full">
+                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 text-center">
+                  <p className="text-lg text-pink-200 mb-4">Volajte a objednajte si u nás:</p>
+                  <a href={`tel:${PHONE_TEL}`} className="text-2xl md:text-3xl font-bold text-pink-300 hover:text-white transition-colors">{PHONE_NUMBER}</a>
+                </div>
+
+                <div className="text-center">
+                  <a
+                    href={ORDER_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-4 bg-gradient-to-r from-amber-400 via-rose-500 to-fuchsia-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl"
+                    aria-label="Objednať cez Bistro - otvoriť nové okno"
+                  >
+                    Objednať cez Bistro
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          {/* Dekoratívna čiara - oddeľovač */}
+          <div className="py-8">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="h-px bg-gradient-to-r from-transparent via-pink-400/50 to-transparent"></div>
+            </div>
+          </div>
+
+          {/* Lokalita a Otváracie hodiny subsection */}
+          <div id="lokalita">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
+                Lokalita a Otváracie hodiny
+              </h2>
+              <p className="text-xl text-pink-300">
+                Kde nás nájdete a kedy máme otvorené
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* Mapa */}
             <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
               <div className="p-6">
@@ -629,6 +665,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       {/* Recenzie Section */}
