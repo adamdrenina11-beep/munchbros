@@ -16,13 +16,33 @@ export const metadata: Metadata = {
   title: "Munch Bro's Senec - Burgre a Street Food",
   description: "Munch Bro's Senec - čerstvé burgre, domáce hranolky a skvelá atmosféra. Objednaj si na 0949 593 999 alebo cez Bistro.sk",
   keywords: ["burger senec", "reštaurácia senec", "munch bros", "jedlo senec", "street food senec"],
+  authors: [{ name: "Munch Bro's Senec" }],
+  robots: "index, follow",
   icons: {
     icon: '/images/logo.png',
+    apple: '/images/logo.png',
   },
   openGraph: {
-    title: "Munch Bro's Senec",
+    title: "Munch Bro's Senec - Burgre a Street Food",
     description: "Čerstvé burgre a street food v Seneci",
     type: "website",
+    locale: "sk_SK",
+    url: "https://munchbros-senec.com",
+    siteName: "Munch Bro's Senec",
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 800,
+        height: 800,
+        alt: 'Munch Bro\'s Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Munch Bro's Senec",
+    description: "Čerstvé burgre a street food v Seneci",
+    images: ['/images/logo.png'],
   },
 };
 
