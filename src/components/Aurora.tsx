@@ -141,15 +141,18 @@ export default function Aurora(props: AuroraProps) {
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = 'transparent';
 
+    // keep a reference to the Program so resize can update uniforms without casting to `any`
+    let programRef: Program | null = null;
+
     function resize() {
       if (!ctn) return;
       const width = ctn.offsetWidth;
       const height = ctn.offsetHeight;
       renderer.setSize(width, height);
       // update resolution uniform if program was created
-      if ((renderer as any).program) {
+      if (programRef) {
         try {
-          (renderer as any).program.uniforms.uResolution.value = [width, height];
+          programRef.uniforms.uResolution.value = [width, height];
         } catch {
           // ignore if program not ready
         }
@@ -178,6 +181,9 @@ export default function Aurora(props: AuroraProps) {
         uBlend: { value: blend }
       }
     });
+
+    // expose the program to resize via programRef (typed) to avoid any casts
+    programRef = program;
 
     const mesh = new Mesh(gl, { geometry, program });
     ctn.appendChild(gl.canvas);
