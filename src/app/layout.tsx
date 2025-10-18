@@ -13,13 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Munch Bro's Senec - Burgre a Street Food",
+  title: "Munch bro´s Senec",
   description: "Munch Bro's Senec - čerstvé burgre, domáce hranolky a skvelá atmosféra. Objednaj si na 0949 593 999 alebo cez Bistro.sk",
   keywords: ["burger senec", "reštaurácia senec", "munch bros", "jedlo senec", "street food senec"],
   authors: [{ name: "Munch Bro's Senec" }],
   robots: "index, follow",
   icons: {
     icon: '/images/logo.png',
+    shortcut: '/favicon.ico',
     apple: '/images/logo.png',
   },
   openGraph: {
