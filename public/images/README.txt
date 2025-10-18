@@ -1,1 +1,0 @@
-Place your logo image here as 'logo.png' (recommended size 512x512 or square). Replace this file with the actual PNG file provided in the attachments.
