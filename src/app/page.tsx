@@ -28,13 +28,15 @@ export default function Home() {
         <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0} delay={200}>
           <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
             <div className="relative w-24 h-24 md:w-32 md:h-32">
-              <Image 
-                src="/images/logo.png" 
-                alt="Munch Bros Logo"
-                fill
-                className="object-contain drop-shadow-2xl"
-                priority
-              />
+              <a href="/images/logo.png" target="_blank" rel="noopener noreferrer" aria-label="Open logo image">
+                <Image
+                  src="/images/logo.png"
+                  alt="Munch Bros Logo"
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  priority
+                />
+              </a>
             </div>
           </div>
         </FadeContent>
