@@ -125,6 +125,7 @@ export default function Aurora(props: AuroraProps) {
   propsRef.current = props;
 
   const ctnDom = useRef<HTMLDivElement>(null);
+  const programRef = useRef<Program | null>(null);
 
   useEffect(() => {
     const ctn = ctnDom.current;
@@ -140,25 +141,6 @@ export default function Aurora(props: AuroraProps) {
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = 'transparent';
-
-    // keep a reference to the Program so resize can update uniforms without casting to `any`
-    let programRef: Program | null = null;
-
-    function resize() {
-      if (!ctn) return;
-      const width = ctn.offsetWidth;
-      const height = ctn.offsetHeight;
-      renderer.setSize(width, height);
-      // update resolution uniform if program was created
-      if (programRef) {
-        try {
-          programRef.uniforms.uResolution.value = [width, height];
-        } catch {
-          // ignore if program not ready
-        }
-      }
-    }
-    window.addEventListener('resize', resize);
 
     const geometry = new Triangle(gl);
     if (geometry.attributes.uv) {
@@ -182,26 +164,35 @@ export default function Aurora(props: AuroraProps) {
       }
     });
 
-    // expose the program to resize via programRef (typed) to avoid any casts
-    programRef = program;
+    programRef.current = program;
 
     const mesh = new Mesh(gl, { geometry, program });
     ctn.appendChild(gl.canvas);
+
+    function resize() {
+      if (!ctn || !programRef.current) return;
+      const width = ctn.offsetWidth;
+      const height = ctn.offsetHeight;
+      renderer.setSize(width, height);
+      programRef.current.uniforms.uResolution.value = [width, height];
+    }
+    window.addEventListener('resize', resize);
 
     let animateId = 0;
     const update = (t: number) => {
       animateId = requestAnimationFrame(update);
       const { time = t * 0.01, speed = 1.0 } = propsRef.current;
-      // update uniforms and render
-      program.uniforms.uTime.value = time * speed * 0.1;
-      program.uniforms.uAmplitude.value = propsRef.current.amplitude ?? 1.0;
-      program.uniforms.uBlend.value = propsRef.current.blend ?? blend;
-      const stops = propsRef.current.colorStops ?? colorStops;
-      program.uniforms.uColorStops.value = stops.map((hex: string) => {
-        const c = new Color(hex);
-        return [c.r, c.g, c.b];
-      });
-      renderer.render({ scene: mesh });
+      if (programRef.current) {
+        programRef.current.uniforms.uTime.value = time * speed * 0.1;
+        programRef.current.uniforms.uAmplitude.value = propsRef.current.amplitude ?? 1.0;
+        programRef.current.uniforms.uBlend.value = propsRef.current.blend ?? blend;
+        const stops = propsRef.current.colorStops ?? colorStops;
+        programRef.current.uniforms.uColorStops.value = stops.map((hex: string) => {
+          const c = new Color(hex);
+          return [c.r, c.g, c.b];
+        });
+        renderer.render({ scene: mesh });
+      }
     };
     animateId = requestAnimationFrame(update);
 
@@ -214,6 +205,7 @@ export default function Aurora(props: AuroraProps) {
         ctn.removeChild(gl.canvas);
       }
       gl.getExtension('WEBGL_lose_context')?.loseContext();
+      programRef.current = null;
     };
   }, [amplitude, blend, colorStops]);
 

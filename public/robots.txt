@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.munchbros-senec.com
+
+# Sitemaps
+Sitemap: https://www.munchbros-senec.com/sitemap.xml
