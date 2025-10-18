@@ -727,7 +727,7 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* O nás */}
             <div className="text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Munch Bro&apos;s</h3>
@@ -735,28 +735,6 @@ export default function Home() {
                 Bratia v burgri<br />
                 Čerstvé jedlo priamo z ulice
               </p>
-            </div>
-
-            {/* Developed by */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Developed and Produced by</h3>
-              <p className="text-2xl font-bold text-white mb-3">Adam Drenina</p>
-              <p className="text-pink-200 mb-3 text-sm">
-                Máte záujem o podobnú stránku na vlastné použitie?<br />
-                Neváhajte zavolať alebo napísať!
-              </p>
-              <div className="space-y-1">
-                <p className="text-pink-300">
-                  <a href="tel:0910617969" className="hover:text-white transition-colors">
-                    0910 617 969
-                  </a>
-                </p>
-                <p className="text-pink-300">
-                  <a href="mailto:adamdrenina11@gmail.com" className="hover:text-white transition-colors">
-                    adamdrenina11@gmail.com
-                  </a>
-                </p>
-              </div>
             </div>
 
             {/* Kontakt */}
@@ -786,11 +764,22 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
           </div>
+        </div>
 
           <div className="mt-8 pt-8 border-t border-pink-500/20 text-center text-pink-300">
             <p>&copy; 2025 Munch Bro&apos;s. All rights reserved.</p>
+            <p className="mt-2">
+              Developed and produced by{' '}
+              <a 
+                href="https://webhub-sk.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-pink-400 hover:text-pink-300 transition-colors"
+              >
+                Webhub
+              </a>
+            </p>
           </div>
         </div>
       </footer>
