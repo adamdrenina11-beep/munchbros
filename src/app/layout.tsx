@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://munchbros-senec.com'),
   title: "Munch bro´s Senec",
   description: "Munch Bro's Senec - čerstvé burgre, domáce hranolky a skvelá atmosféra. Objednaj si na 0949 593 999 alebo cez Bistro.sk",
   keywords: ["burger senec", "reštaurácia senec", "munch bros", "jedlo senec", "street food senec"],
@@ -62,6 +63,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sk">
+      <head>
+        {/* Explicit links to help crawlers and older devices */}
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
