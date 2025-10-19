@@ -10,6 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@sentry/react": "^10.20.0",
+    "@sentry/tracing": "^7.120.4",
     "munchbros-website": "file:",
     "next": "15.5.5",
     "ogl": "^1.0.11",
