@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Aurora from '../components/Aurora';
 import { CountUp } from '../components/count-up';
 import FadeContent from '../components/FadeContent';
@@ -28,7 +29,7 @@ export default function Home() {
         <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0} delay={200}>
           <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
             <div className="relative w-24 h-24 md:w-32 md:h-32">
-              <a href="/images/logo.png" target="_blank" rel="noopener noreferrer" aria-label="Open logo image">
+              <Link href="/" className="block w-full h-full">
                 <Image
                   src="/images/logo.png"
                   alt="Munch Bros Logo"
@@ -36,7 +37,7 @@ export default function Home() {
                   className="object-contain drop-shadow-2xl"
                   priority
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </FadeContent>
