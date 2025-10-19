@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "Munch Bro's Senec",
     images: [
       {
-        url: '/images/logo.png',
-        width: 800,
-        height: 800,
-        alt: 'Munch Bro\'s Logo',
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Munch Bro\'s - Social Preview',
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Munch Bro's Senec",
     description: "Čerstvé burgre a street food v Seneci",
-    images: ['/images/logo.png'],
+    images: ['/images/og-image.png'],
   },
 };
 
