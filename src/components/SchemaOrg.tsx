@@ -5,7 +5,7 @@ export default function SchemaOrg() {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Munch Bro's",
-    "image": "https://munchbros-senec.com/images/logo.png",
+  "image": "/images/logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Lichnerova 4376/41A",
