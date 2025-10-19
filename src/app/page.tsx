@@ -541,12 +541,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Októbrová špecialita Section */}
+      <section id="oktobrova-specialita" className="py-20 px-4 bg-neutral-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
+              Októbrová špecialita
+            </h2>
+            <p className="text-xl text-pink-300">
+              Vyskúšajte našu špeciálnu ponuku na tento mesiac!
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative h-56 md:h-80 w-full">
+                <Image
+                  src="/images/swiss-munch.png"
+                  alt="Swiss Munch"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="p-6 md:p-8 text-center">
+                <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-2">Swiss Munch</h3>
+                <p className="text-lg text-pink-200 mb-4">
+                  S poriadnou dávkou mäsa, karamelizovanou cibuľkou, ementálom, chrumkavou slaninou a BBQ majonézovou omáčkou.
+                </p>
+                <div className="text-pink-300 text-2xl font-bold">10,90 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
       <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
-        <div className="absolute inset-0 bg-black/40"></div>
-        
+        <div className="absolute inset-0 bg-black/40" aria-hidden />
+
         {/* Aurora Background - pre celú sekciu */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
           <Aurora
             colorStops={["#9333ea", "#ec4899", "#db2777"]}
             blend={0.6}
@@ -586,25 +621,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Dekoratívna čiara - oddeľovač */}
-          <div className="py-8">
-            <div className="max-w-4xl mx-auto px-4">
-              <div className="h-px bg-gradient-to-r from-transparent via-pink-400/50 to-transparent"></div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-6xl font-black text-white mb-4">Lokalita a Otváracie hodiny</h2>
+            <p className="text-xl text-pink-300">Kde nás nájdete a kedy máme otvorené</p>
           </div>
 
-          {/* Lokalita a Otváracie hodiny subsection */}
-          <div id="lokalita">
-            <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
-                Lokalita a Otváracie hodiny
-              </h2>
-              <p className="text-xl text-pink-300">
-                Kde nás nájdete a kedy máme otvorené
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* Mapa */}
             <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
               <div className="p-6">
@@ -620,7 +642,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Mapa Munch Bros Senec"
-                ></iframe>
+                />
               </div>
               <div className="p-6 text-center">
                 <p className="text-lg text-pink-200 font-semibold">Lichnerova 41A</p>
@@ -666,7 +688,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       {/* Recenzie Section */}
@@ -771,57 +792,15 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative bg-black/50 backdrop-blur-lg py-12 px-4 border-t border-pink-500/20 overflow-hidden">
-        {/* Aurora Background */}
         <div className="absolute inset-0 z-0 opacity-40">
           <Aurora
             colorStops={["#581c87", "#be185d", "#701a75"]}
             blend={0.4}
             amplitude={0.6}
-            speed={0.2}
+            speed={0.3}
           />
         </div>
-        
-        <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* O nás */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Munch Bro&apos;s</h3>
-              <p className="text-pink-200">
-                Bratia v burgri<br />
-                Čerstvé jedlo priamo z ulice
-              </p>
-            </div>
-
-            {/* Kontakt */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Kontakt</h3>
-              <div className="text-pink-200 space-y-2">
-                <div>
-                  <p className="font-semibold text-pink-300">Adresa:</p>
-                  <p>Lichnerova 41A</p>
-                  <p>Senec, Slovakia</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-pink-300">Telefón:</p>
-                  <a href={`tel:${PHONE_TEL}`} className="hover:text-white transition-colors">
-                    {PHONE_NUMBER}
-                  </a>
-                </div>
-                <div>
-                  <p className="font-semibold text-pink-300">Instagram:</p>
-                  <a 
-                    href="https://www.instagram.com/munchbrossenec/" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
-                  >
-                    @munchbrossenec
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div className="relative z-10 text-center text-pink-300">
           <div className="mt-8 pt-8 border-t border-pink-500/20 text-center text-pink-300">
             <p>&copy; 2025 Munch Bro&apos;s. All rights reserved.</p>
             <p className="mt-2 text-sm">
