@@ -635,23 +635,23 @@ export default function Home() {
                 <div className="space-y-4 text-pink-200 text-lg">
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Pondelok:</span>
-                    <span>11:00 - 21:00</span>
+                    <span>Zatvorené</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Utorok:</span>
-                    <span>11:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Streda:</span>
-                    <span>11:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Štvrtok:</span>
-                    <span>11:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Piatok:</span>
-                    <span>11:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Sobota:</span>
@@ -659,7 +659,7 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>15:00 - 20:30</span>
                   </div>
                 </div>
               </div>

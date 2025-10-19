@@ -26,8 +26,26 @@ export default function SchemaOrg() {
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "11:00",
+        "dayOfWeek": "Monday",
+        "opens": "Closed",
+        "closes": "Closed"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "12:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "12:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday", "Friday"],
+        "opens": "12:00",
         "closes": "21:00"
       },
       {
@@ -39,8 +57,8 @@ export default function SchemaOrg() {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "12:00",
-        "closes": "20:00"
+        "opens": "15:00",
+        "closes": "20:30"
       }
     ],
     "menu": "https://munchbros-senec.com/#menu",
