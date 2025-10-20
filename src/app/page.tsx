@@ -743,7 +743,7 @@ export default function Home() {
                 name: "Simona Krajčíková",
                 rating: 5,
                 date: "Pred mesiacom",
-                text: "Halloumi burger prekvapil! Konečne niečo aj pre vegetariánov. Čerstvý šalát a skvelá atmosféra.",
+                text: "Halloumi prekvapil! Konečne niečo aj pre vegetariánov. Čerstvý šalát a skvelá atmosféra.",
                 source: "Google Maps"
               },
             ].map((review, index) => (
