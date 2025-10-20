@@ -577,6 +577,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sauces / Omáčky Section - placed above Októbrová špecialita */}
+      <section id="omnacky" className="py-8 px-4 bg-neutral-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-black text-white">Omáčky / Sauces</h3>
+            <p className="text-pink-300">Vyber si omáčku k tvojmu burgeru</p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6 px-2 md:px-6">
+            {[
+              { key: 'bbq', title: 'BBQ', desc: 'Klasická BBQ omáčka' },
+              { key: 'sriracha', title: 'Sriracha', desc: 'Pikantná sriracha' },
+              { key: 'cheese', title: 'Cheese', desc: 'Syrná omáčka' },
+              { key: 'garlic', title: 'Garlic', desc: 'Cesnaková' },
+              { key: 'mayo', title: 'Mayo', desc: 'Majonéza' },
+              { key: 'sweet-chili', title: 'Sweet Chili', desc: 'Sladko-pikantná' },
+            ].map((sauce) => (
+              <div
+                key={sauce.key}
+                className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-lg border border-pink-500/10 rounded-2xl p-3 md:p-4 text-center shadow-md hover:scale-105 transition-transform duration-200"
+              >
+                <div className="h-16 md:h-20 flex items-center justify-center mb-2">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 flex items-center justify-center text-pink-300 font-bold text-sm md:text-base">
+                    {sauce.title.slice(0,2).toUpperCase()}
+                  </div>
+                </div>
+                <h4 className="text-sm md:text-base font-bold text-white mb-1">{sauce.title}</h4>
+                <p className="text-xs md:text-sm text-pink-200">{sauce.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
       <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
         <div className="absolute inset-0 bg-black/40" aria-hidden />
