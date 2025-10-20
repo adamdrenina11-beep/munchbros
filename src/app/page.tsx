@@ -555,13 +555,12 @@ export default function Home() {
 
           <div className="flex justify-center">
             <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden shadow-2xl">
-              <div className="relative h-56 md:h-80 w-full">
-                <Image
-                  src="/images/swiss-munch.png"
+              <div className="relative h-56 md:h-80 w-full overflow-hidden bg-black/20">
+                <img
+                  src="/images/swiss-munch.jpg"
                   alt="Swiss Munch"
-                  fill
-                  className="object-cover"
-                  priority
+                  className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6 md:p-8 text-center">
