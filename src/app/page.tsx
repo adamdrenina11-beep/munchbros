@@ -555,14 +555,12 @@ export default function Home() {
 
           <div className="flex justify-center">
             <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden shadow-2xl">
-              <div className="relative h-56 md:h-80 w-full overflow-hidden bg-black/20">
-                <img
-                  src="/images/swiss-munch.jpg"
-                  alt="Swiss Munch"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+                <div
+                  className="relative h-56 md:h-80 w-full"
+                  style={{ backgroundImage: "url('/images/swiss-munch.jpg')", backgroundPosition: 'center', backgroundSize: 'cover' }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40" aria-hidden />
+                </div>
               <div className="p-6 md:p-8 text-center">
                 <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-2">Swiss Munch</h3>
                 <p className="text-lg text-pink-200 mb-4">
