@@ -538,6 +538,122 @@ export default function Home() {
             </div>
           </div>
 
+          {/* OMÁČKY / SAUCES - vložené pod PRÍLOHY */}
+          <div className="mb-12">
+            <h3 className="text-4xl font-black text-pink-400 mb-6 text-center">OMÁČKY</h3>
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 px-2 md:px-6">
+                {/* Curry Dream (Kari) */}
+                <div key="curry" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">Curry Dream</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/Kari-omacka.png"
+                      alt="Curry Dream (Kari)"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-base md:text-lg">Závan exotiky, čo ťa vystrelí rovno do ulíc Bombaja. Hustá, voňavá a rytmická ako dobrý beat - táto kari omáčka ti zanechá chuťový zážitok, na ktorý len tak nezabudneš.</p>
+                  </div>
+                </div>
+
+                {/* Blue Cheese */}
+                <div key="blue-cheese" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">Blue Cheese</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/Blue-Cheese.png"
+                      alt="Blue Cheese"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-sm">Toto nie je omáčka pre bežné jazyky. Nabombená chuť modrého syra sa spojí s jemnou krémovosťou a odpáli ti chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš notifikáciu: Započal si novú chuťovú éru.</p>
+                  </div>
+                </div>
+
+                {/* BBQ */}
+                <div key="bbq" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">BBQ</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/BBQ.png"
+                      alt="BBQ"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-sm">Táto omáčka neprišla na piknik. Prišla zapáliť stôl, ukradnúť mäso a sadnúť si na trón. Dymová, sladká a jemne pikantná - presne taká, čo dá tvojmu burgeru výsluch ohňom. Susedia ju ucítia skôr, než zahryzneš.</p>
+                  </div>
+                </div>
+
+                {/* Munch Bros (uses existing Munch bro´s image if you want) */}
+                <div key="munch-bros" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">Munch Bros</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/Munch bros2.png"
+                      alt="Munch Bros sauce"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-sm">Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice. Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov čistý flavour punch.</p>
+                  </div>
+                </div>
+
+                {/* Ranch */}
+                <div key="ranch" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">Ranch</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/Ranch.png"
+                      alt="Ranch"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-sm">Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili úsmev. Hodí sa ku všetkým burgrom, hranolkám... alebo len tak na prst.</p>
+                  </div>
+                </div>
+
+                {/* Sriracha */}
+                <div key="sriracha" className="rounded-2xl overflow-hidden text-center">
+                  <div className="px-2 mt-3">
+                    <div className="text-white font-extrabold text-lg md:text-xl">Sriracha</div>
+                    <div className="text-pink-300 font-bold text-lg mt-1">1,30 €</div>
+                  </div>
+                  <div className="w-full" style={{ paddingTop: '150%', position: 'relative' }}>
+                    <img
+                      src="/images/Sriracha.png"
+                      alt="Sriracha"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="mt-3 px-2">
+                    <p className="text-pink-300 text-sm">Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o sekundu neskôr ti jazyk napíše: Horííím.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -573,40 +689,6 @@ export default function Home() {
                 <div className="text-pink-300 text-2xl font-bold">10,90 €</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sauces / Omáčky Section - placed above Októbrová špecialita */}
-      <section id="omnacky" className="py-8 px-4 bg-neutral-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-black text-white">Omáčky / Sauces</h3>
-            <p className="text-pink-300">Vyber si omáčku k tvojmu burgeru</p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6 px-2 md:px-6">
-            {[
-              { key: 'bbq', title: 'BBQ', desc: 'Klasická BBQ omáčka' },
-              { key: 'sriracha', title: 'Sriracha', desc: 'Pikantná sriracha' },
-              { key: 'cheese', title: 'Cheese', desc: 'Syrná omáčka' },
-              { key: 'garlic', title: 'Garlic', desc: 'Cesnaková' },
-              { key: 'mayo', title: 'Mayo', desc: 'Majonéza' },
-              { key: 'sweet-chili', title: 'Sweet Chili', desc: 'Sladko-pikantná' },
-            ].map((sauce) => (
-              <div
-                key={sauce.key}
-                className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-lg border border-pink-500/10 rounded-2xl p-3 md:p-4 text-center shadow-md hover:scale-105 transition-transform duration-200"
-              >
-                <div className="h-16 md:h-20 flex items-center justify-center mb-2">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 flex items-center justify-center text-pink-300 font-bold text-sm md:text-base">
-                    {sauce.title.slice(0,2).toUpperCase()}
-                  </div>
-                </div>
-                <h4 className="text-sm md:text-base font-bold text-white mb-1">{sauce.title}</h4>
-                <p className="text-xs md:text-sm text-pink-200">{sauce.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
