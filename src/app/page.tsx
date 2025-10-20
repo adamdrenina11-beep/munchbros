@@ -558,6 +558,7 @@ export default function Home() {
                 <div
                   className="relative h-56 md:h-80 w-full"
                   style={{ backgroundImage: "url('/images/swiss-munch.jpg')", backgroundPosition: 'center', backgroundSize: 'cover' }}
+                  data-deploy-note="background-image-for-special"
                 >
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40" aria-hidden />
                 </div>
