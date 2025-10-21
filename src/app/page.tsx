@@ -139,7 +139,7 @@ export default function Home() {
       </section>
 
   {/* Menu Section */}
-      <section id="menu" className="py-20 px-4 bg-neutral-900">
+  <section id="menu" className="py-20 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
@@ -152,12 +152,12 @@ export default function Home() {
 
           {/* BURGRE */}
           <div className="mb-20">
-    <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
+          <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
             {/* Prvé 3 burgre - len na desktop */}
             <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
               {/* Munch Bro's */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-                <div className="relative h-40 md:h-96 w-full">
+                <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/Munch bro´s.png" 
                     alt="Munch Bros Burger"
@@ -174,7 +174,7 @@ export default function Home() {
 
               {/* Munch of Fire */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-                <div className="relative h-40 md:h-96 w-full">
+                <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/Munch of fire.png" 
                     alt="Munch of Fire"
@@ -191,7 +191,7 @@ export default function Home() {
 
               {/* Smash Bro's */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-                <div className="relative h-40 md:h-96 w-full">
+                <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/Smash Bro´s.png" 
                     alt="Smash Bros"
@@ -211,7 +211,7 @@ export default function Home() {
             <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
               {/* OG Munch */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
+                <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/OG munch.png" 
                     alt="OG Munch"
@@ -228,7 +228,7 @@ export default function Home() {
 
               {/* Munch Chicken */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
+                <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/Munch chicken.png" 
                     alt="Munch Chicken"
@@ -657,6 +657,113 @@ export default function Home() {
         </div>
       </section>
 
+  {/* OMÁČKY — styled like BURGRE cards */}
+  <section className="py-20 px-4 bg-black">
+        <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">OMÁČKY</h3>
+
+        {/* Desktop: first 3 */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
+          {/* BBQ */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/BBQ.png" alt="BBQ" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">BBQ</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Táto omáčka neprišla na piknik. Prišla zapáliť stôl, ukradnúť mäso a sadnúť si na trón. Dymová, sladká a jemne pikantná - presne taká, čo dá tvojmu burgeru výsluch ohňom. Susedia ju ucítia skôr, než zahryzneš. A od závisti im zvlhnú oči.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+
+          {/* Blue Cheese */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/Blue-Cheese.png" alt="Blue Cheese" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Blue Cheese</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Toto nie je omáčka pre bežné jazyky. Nabombená chuť modrého syra sa spojí s jemnou krémovosťou a odpáli ti chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš notifikáciu: Započal si novú chuťovú éru.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+
+          {/* Curry dream */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/Kari-omacka.png" alt="Curry dream" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Curry dream</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Závan exotiky, čo ťa vystrelí rovno do ulíc Bombaja. Hustá, voňavá a rytmická ako dobrý beat - táto kari omáčka ti zanechá chuťový zážitok, na ktorý len tak nezabudneš.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop: next 3 centered */}
+        <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/Munch bros2.png" alt="Munch Bros sauce" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bros</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice. Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov čistý flavour punch. Burger bez nej. Ako brat bez brata.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/Ranch.png" alt="Ranch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Ranch</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili úsmev. Hodí sa ku všetkým burgrom, hranolkám... alebo len tak na prst.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/Sriracha.png" alt="Sriracha" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sriracha</h3>
+              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o sekundu neskôr ti jazyk napíše: Horííím pre tých, čo si pálivé užívajú s úsmevom.</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+            </div>
+          </div>
+        </div>
+
+  {/* Mobile grid (2 cols) */}
+  <div className="grid grid-cols-2 gap-3 lg:hidden">
+          {[{
+            key: 'bbq', title: 'BBQ', src: '/images/BBQ.png'
+          },{
+            key: 'blue', title: 'Blue Cheese', src: '/images/Blue-Cheese.png'
+          },{
+            key: 'curry', title: 'Curry dream', src: '/images/Kari-omacka.png'
+          },{
+            key: 'munch', title: 'Munch Bros', src: '/images/Munch bros2.png'
+          },{
+            key: 'ranch', title: 'Ranch', src: '/images/Ranch.png'
+          },{
+            key: 'sriracha', title: 'Sriracha', src: '/images/Sriracha.png'
+          }].map((s) => (
+            <div key={s.key} className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+              <div className="relative h-40 w-full">
+                <Image src={s.src} alt={s.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              </div>
+              <div className="p-2 text-center">
+                <h3 className="text-sm font-bold text-white mb-1">{s.title}</h3>
+                <p className="text-pink-300 text-sm font-bold">1,30 €</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Októbrová špecialita Section */}
       <section id="oktobrova-specialita" className="py-20 px-4 bg-neutral-900">
         <div className="max-w-7xl mx-auto">
@@ -693,39 +800,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sauces / Omáčky Section - placed above Októbrová špecialita */}
-      <section id="omnacky" className="py-8 px-4 bg-neutral-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-black text-white">Omáčky / Sauces</h3>
-            <p className="text-pink-300">Vyber si omáčku k tvojmu burgeru</p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6 px-2 md:px-6">
-            {[
-              { key: 'bbq', title: 'BBQ', desc: 'Klasická BBQ omáčka' },
-              { key: 'sriracha', title: 'Sriracha', desc: 'Pikantná sriracha' },
-              { key: 'cheese', title: 'Cheese', desc: 'Syrná omáčka' },
-              { key: 'garlic', title: 'Garlic', desc: 'Cesnaková' },
-              { key: 'mayo', title: 'Mayo', desc: 'Majonéza' },
-              { key: 'sweet-chili', title: 'Sweet Chili', desc: 'Sladko-pikantná' },
-            ].map((sauce) => (
-              <div
-                key={sauce.key}
-                className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-lg border border-pink-500/10 rounded-2xl p-3 md:p-4 text-center shadow-md hover:scale-105 transition-transform duration-200"
-              >
-                <div className="h-16 md:h-20 flex items-center justify-center mb-2">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 flex items-center justify-center text-pink-300 font-bold text-sm md:text-base">
-                    {sauce.title.slice(0,2).toUpperCase()}
-                  </div>
-                </div>
-                <h4 className="text-sm md:text-base font-bold text-white mb-1">{sauce.title}</h4>
-                <p className="text-xs md:text-sm text-pink-200">{sauce.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Sauces section removed per user request */}
 
       {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
       <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
@@ -777,7 +852,7 @@ export default function Home() {
             <p className="text-xl text-pink-300">Kde nás nájdete a kedy máme otvorené</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div id="lokalita" className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* Mapa */}
             <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
               <div className="p-6">
@@ -828,7 +903,7 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Sobota:</span>
-                    <span>12:00 - 22:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
