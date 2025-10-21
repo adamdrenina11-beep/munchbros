@@ -736,7 +736,7 @@ export default function Home() {
             <p className="text-xl text-pink-300">Kde nás nájdete a kedy máme otvorené</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div id="lokalita" className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* Mapa */}
             <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
               <div className="p-6">
