@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://www.munchbros-senec.com',
+  siteUrl: 'https://munchbros.com',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,
