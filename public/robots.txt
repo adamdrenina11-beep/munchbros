@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://munchbros.com
+Host: https://munchbros-senec.com
 
 # Sitemaps
-Sitemap: https://munchbros.com/sitemap.xml
+Sitemap: https://munchbros-senec.com/sitemap.xml

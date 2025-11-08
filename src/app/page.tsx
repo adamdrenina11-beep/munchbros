@@ -207,10 +207,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Posledné 2 burgre vycentrované - len na desktop */}
-            <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
+            {/* Second row - 3 burgre - len na desktop */}
+            <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
               {/* OG Munch */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/OG munch.png" 
@@ -227,7 +227,7 @@ export default function Home() {
               </div>
 
               {/* Munch Chicken */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/Munch chicken.png" 
@@ -242,9 +242,46 @@ export default function Home() {
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                 </div>
               </div>
+
+              {/* Munch Cheeseburger */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+                <div className="relative h-28 md:h-96 w-full">
+                  <Image 
+                    src="/images/munchess.png" 
+                    alt="Munch Cheeseburger"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,50 €</p>
+                </div>
+              </div>
             </div>
 
-            {/* Mobile verzia - grid 2+2+1 */}
+            {/* 7th burger centered - len na desktop */}
+            <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
+              {/* Munch Swiss */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+                <div className="relative h-28 md:h-96 w-full">
+                  <Image 
+                    src="/images/swiss-munch.png" 
+                    alt="Munch Swiss"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Swiss</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile verzia - grid 2 columns */}
             <div className="grid grid-cols-2 gap-3 lg:hidden">
               {/* Munch Bro's */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
@@ -276,6 +313,23 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch of Fire</h3>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                </div>
+              </div>
+
+              {/* Smash Bro's */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+                <div className="relative h-40 w-full">
+                  <Image 
+                    src="/images/Smash Bro´s.png" 
+                    alt="Smash Bros"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 text-center">
+                  <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                 </div>
               </div>
@@ -313,22 +367,39 @@ export default function Home() {
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                 </div>
               </div>
-            </div>
 
-            {/* Smash Bro's vycentrovaný - len na mobile */}
-            <div className="flex justify-center px-2 mt-3 lg:hidden">
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
+              {/* Munch Cheeseburger */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 w-full">
                   <Image 
-                    src="/images/Smash Bro´s.png" 
-                    alt="Smash Bros"
+                    src="/images/munchess.png" 
+                    alt="Munch Cheeseburger"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-2 text-center">
-                  <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
+                  <h3 className="text-sm font-bold text-white mb-1">Munch Cheeseburger</h3>
+                  <p className="text-pink-300 text-sm font-bold">8,50 €</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Munch Swiss vycentrovaný - len na mobile */}
+            <div className="flex justify-center px-2 mt-3 lg:hidden">
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
+                <div className="relative h-40 w-full">
+                  <Image 
+                    src="/images/swiss-munch.png" 
+                    alt="Munch Swiss"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 text-center">
+                  <h3 className="text-sm font-bold text-white mb-1">Munch Swiss</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                 </div>
               </div>
@@ -458,6 +529,23 @@ export default function Home() {
                   <p className="text-pink-300 text-sm md:text-lg font-bold">5,50 €</p>
                 </div>
               </div>
+
+              {/* Vyprazane Bounty */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+                <div className="relative h-40 md:h-96 w-full">
+                  <Image 
+                    src="/images/bounty.png" 
+                    alt="Vyprazane Bounty"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprážané Bounty</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -556,8 +644,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">BBQ</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Táto omáčka neprišla na piknik. Prišla zapáliť stôl, ukradnúť mäso a sadnúť si na trón. Dymová, sladká a jemne pikantná - presne taká, čo dá tvojmu burgeru výsluch ohňom. Susedia ju ucítia skôr, než zahryzneš. A od závisti im zvlhnú oči.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
 
@@ -568,8 +655,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Blue Cheese</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Toto nie je omáčka pre bežné jazyky. Nabombená chuť modrého syra sa spojí s jemnou krémovosťou a odpáli ti chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš notifikáciu: Započal si novú chuťovú éru.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
 
@@ -580,8 +666,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Curry dream</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Závan exotiky, čo ťa vystrelí rovno do ulíc Bombaja. Hustá, voňavá a rytmická ako dobrý beat - táto kari omáčka ti zanechá chuťový zážitok, na ktorý len tak nezabudneš.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
         </div>
@@ -594,8 +679,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bros</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice. Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov čistý flavour punch. Burger bez nej. Ako brat bez brata.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
 
@@ -605,8 +689,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Ranch</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili úsmev. Hodí sa ku všetkým burgrom, hranolkám... alebo len tak na prst.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
 
@@ -616,8 +699,7 @@ export default function Home() {
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sriracha</h3>
-              <p className="hidden md:block text-pink-300 text-sm md:text-lg mb-2">Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o sekundu neskôr ti jazyk napíše: Horííím pre tých, čo si pálivé užívajú s úsmevom.</p>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,30 €</p>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
             </div>
           </div>
         </div>
@@ -643,19 +725,19 @@ export default function Home() {
               </div>
               <div className="p-2 text-center">
                 <h3 className="text-sm font-bold text-white mb-1">{s.title}</h3>
-                <p className="text-pink-300 text-sm font-bold">1,30 €</p>
+                <p className="text-pink-300 text-sm font-bold">1,50 €</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Októbrová špecialita Section */}
-      <section id="oktobrova-specialita" className="py-20 px-4 bg-neutral-900">
+      {/* Novembrová špecialita Section */}
+      <section id="novembrova-specialita" className="py-20 px-4 bg-neutral-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
-              Októbrová špecialita
+              Novembrová špecialita
             </h2>
             <p className="text-xl text-pink-300">
               Vyskúšajte našu špeciálnu ponuku na tento mesiac!
@@ -665,21 +747,23 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden shadow-2xl">
                 <div className="relative h-56 md:h-80 w-full overflow-hidden">
-                  <img
-                    src="/images/swiss-munch.png"
-                    alt="Swiss Munch"
-                    className="absolute inset-0 w-full h-full object-cover"
-                    style={{ left: 0, top: 0 }}
+                  <Image
+                    src="/images/bigmunch.png"
+                    alt="Big Munch - Novembrová špecialita"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    priority
                   />
                   {/* subtle overlay so text remains readable */}
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40" aria-hidden />
                 </div>
               <div className="p-6 md:p-8 text-center">
-                <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-2">Swiss Munch</h3>
+                <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-2">Big Munch</h3>
                 <p className="text-lg text-pink-200 mb-4">
-                  S poriadnou dávkou mäsa, karamelizovanou cibuľkou, ementálom, chrumkavou slaninou a BBQ majonézovou omáčkou.
+                  je o poriadnej porcii a poctivej chuti. Dve hovädzie bio placky po 75 g, čedar, naša domáca Big Mac omáčka, kyslá uhorka, biela cibuľa a ľadový šalát - žiadne kompromisy, len čistý burgerový zážitok
                 </p>
-                <div className="text-pink-300 text-2xl font-bold">10,90 €</div>
+                <div className="text-pink-300 text-2xl font-bold">10,50 €</div>
               </div>
             </div>
           </div>
