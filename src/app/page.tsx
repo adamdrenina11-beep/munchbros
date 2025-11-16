@@ -150,6 +150,48 @@ export default function Home() {
             </p>
           </div>
 
+          {/* BURGER KOMBA */}
+          <div className="mb-20">
+            <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGER KOMBA</h3>
+            <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
+              {/* Burger Dynasty */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+                <div className="relative h-48 md:h-[28rem] w-full">
+                  <Image 
+                    src="/images/kombo13,90.png" 
+                    alt="Burger Dynasty"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty</h3>
+                  <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">13,90 €</p>
+                </div>
+              </div>
+
+              {/* Burger Dynasty Munch */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+                <div className="relative h-48 md:h-[28rem] w-full">
+                  <Image 
+                    src="/images/kombo14,90.png" 
+                    alt="Burger Dynasty Munch"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
+                  <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* BURGRE */}
           <div className="mb-20">
           <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
@@ -1002,7 +1044,7 @@ export default function Home() {
             <p className="mt-2 text-sm">
               Developed and produced by{' '}
               <a
-                href="https://webhub-sk.vercel.app"
+                href="https://webhubslovakia.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-400 hover:text-pink-300 font-semibold"
