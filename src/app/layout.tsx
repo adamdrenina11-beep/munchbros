@@ -24,14 +24,36 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://munchbros-senec.com'),
   title: {
-    default: "Munch Bro's Senec - Najlepšie Burgre v Senci",
-    template: "%s | Munch Bro's Senec"
+    default: "MunchBros Senec — Burgre & Rozvoz | Objednaj online",
+    template: "%s | MunchBros Senec"
   },
-  description: "Munch Bro's Senec ponúka čerstvé burgre z bio mäsa, domáce hranolky a vyprážané dezerty. Street food v Seneci s doručením. Objednaj si na 0949 593 999 alebo cez Bistro.sk",
-  keywords: ["burger senec", "reštaurácia senec", "munch bros", "jedlo senec", "street food senec", "bio burger", "domáce hranolky", "doručenie jedla senec", "halloumi burger", "vyprážané oreo", "burger bar senec"],
-  authors: [{ name: "Munch Bro's Senec" }],
-  creator: "Munch Bro's Senec",
-  publisher: "Munch Bro's Senec",
+  description: "MunchBros v Senci — šťavnaté burgre, čerstvé suroviny a rýchly rozvoz. Pozri menu, akcie a objednaj online ešte dnes.",
+  keywords: [
+    "burger senec", 
+    "burgre senec", 
+    "munchbros", 
+    "munch bros", 
+    "reštaurácia senec", 
+    "street food senec", 
+    "rozvoz jedla senec",
+    "bio burger", 
+    "cheeseburgery senec",
+    "bbq burger senec",
+    "veggie burger senec",
+    "halloumi burger",
+    "domáce hranolky", 
+    "vyprážané oreo", 
+    "burger bar senec",
+    "online objednávka jedlo senec",
+    "rýchle jedlo senec",
+    "burger kombo senec",
+    "najlepšie burgre senec"
+  ],
+  authors: [{ name: "MunchBros Senec" }],
+  creator: "MunchBros Senec",
+  publisher: "MunchBros Senec",
+  applicationName: "MunchBros",
+  category: "Restaurant",
   robots: {
     index: true,
     follow: true,
@@ -60,27 +82,28 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: "Munch Bro's Senec - Najlepšie Burgre a Street Food",
-    description: "Čerstvé bio burgre, domáce hranolky a vyprážané dezerty v Seneci. Objednaj si teraz!",
+    title: "MunchBros Senec — Burgre & Rozvoz | Objednaj online",
+    description: "MunchBros v Senci — šťavnaté burgre, čerstvé suroviny a rýchly rozvoz. Pozri menu a objednaj ešte dnes.",
     type: "website",
     locale: "sk_SK",
     url: "https://munchbros-senec.com",
-    siteName: "Munch Bro's Senec",
+    siteName: "MunchBros",
     images: [
       {
-        url: '/images/logo.png',
+        url: 'https://munchbros-senec.com/images/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Munch Bro\'s Senec - Čerstvé Burgre a Street Food',
+        alt: 'MunchBros Senec - Čerstvé Burgre a Street Food',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Munch Bro's Senec - Najlepšie Burgre",
-    description: "Čerstvé bio burgre, domáce hranolky a vyprážané dezerty v Seneci",
-    images: ['/images/logo.png'],
+    title: "MunchBros Senec — Burgre & Rozvoz",
+    description: "Šťavnaté burgre s rýchlym rozvozom v Senci. Pozri menu a objednaj online.",
+    images: ['https://munchbros-senec.com/images/logo.png'],
     creator: "@munchbros",
+    site: "@munchbros",
   },
   verification: {
     google: 'your-google-verification-code',
@@ -98,9 +121,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Munch Bro's Senec",
+    "name": "MunchBros Senec",
+    "alternateName": "Munch Bros",
     "image": "https://munchbros-senec.com/images/logo.png",
-    "description": "Čerstvé bio burgre, domáce hranolky a vyprážané dezerty v Seneci",
+    "description": "MunchBros v Senci ponúka čerstvé burgre z bio mäsa, domáce hranolky, vyprážané dezerty a rýchly rozvoz. Street food na najvyššej úrovni.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Lichnerova 41A",
@@ -115,45 +139,111 @@ export default function RootLayout({
     },
     "url": "https://munchbros-senec.com",
     "telephone": "+421949593999",
-    "servesCuisine": "American, Street Food",
-    "priceRange": "€€",
+    "servesCuisine": ["Burgers", "American", "Street Food", "Fast Food"],
+    "priceRange": "$$",
+    "acceptsReservations": false,
+    "hasMenu": "https://munchbros-senec.com/#menu",
+    "areaServed": {
+      "@type": "City",
+      "name": "Senec"
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-        "opens": "11:00",
-        "closes": "20:00"
+        "dayOfWeek": "Monday",
+        "opens": "00:00",
+        "closes": "00:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Friday", "Saturday"],
-        "opens": "11:00",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "12:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "12:00",
-        "closes": "20:00"
+        "opens": "15:00",
+        "closes": "20:30"
       }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "100"
-    }
+      "ratingValue": "4.8",
+      "reviewCount": "100",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://www.facebook.com/munchbros",
+      "https://www.instagram.com/munchbros"
+    ]
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kde si môžem pozrieť menu MunchBros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Menu nájdete priamo na našej stránke https://munchbros-senec.com/#menu so všetkými burgermi, kombami, prílohami a cenami."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako funguje rozvoz v Senci?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rozvoz zabezpečujeme po celom Senci. Objednajte online cez Bistro.sk alebo zavolajte na 0949 593 999. Doba doručenia závisí od momentálnej obsadenosti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Aké sú otváracie hodiny MunchBros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Otvorené máme Utorok-Sobota 12:00-21:00, Nedeľa 15:00-20:30. Pondelok máme zatvorené."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Máte aj vegetariánske možnosti?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Áno, ponúkame Halloumi burger a vegetariánske šaláty. Viac informácií nájdete v našom menu."
+        }
+      }
+    ]
   };
 
   return (
     <html lang="sk">
       <head>
+        {/* Performance resource hints */}
+        <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://maps.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+        <link rel="dns-prefetch" href="https://maps.gstatic.com" />
+        {/* Preload hero logo for faster LCP */}
+        <link rel="preload" as="image" href="/images/logo.png" fetchPriority="high" />
         {/* Explicit links to help crawlers and older devices */}
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+        {/* Restaurant Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {/* FAQ Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
         />
       </head>
       <body
