@@ -1044,7 +1044,7 @@ export default function Home() {
             <p className="mt-2 text-sm">
               Developed and produced by{' '}
               <a
-                href="https://webhubslovakia.com"
+                href="https://webhub-sk.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-pink-400 hover:text-pink-300 font-semibold"

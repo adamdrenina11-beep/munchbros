@@ -11,6 +11,17 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  
+  /* Redirects to prevent 404s */
+  async redirects() {
+    return [
+      {
+        source: '/favicon.ico',
+        destination: '/images/logo.png',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
