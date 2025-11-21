@@ -22,7 +22,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://munchbros-senec.com'),
+  metadataBase: new URL('https://munchbros.com'),
   title: {
     default: "MunchBros Senec — Burgre & Rozvoz | Objednaj online",
     template: "%s | MunchBros Senec"
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://munchbros-senec.com',
+    canonical: 'https://munchbros.com',
   },
   icons: {
     icon: [
@@ -86,11 +86,11 @@ export const metadata: Metadata = {
     description: "MunchBros v Senci — šťavnaté burgre, čerstvé suroviny a rýchly rozvoz. Pozri menu a objednaj ešte dnes.",
     type: "website",
     locale: "sk_SK",
-    url: "https://munchbros-senec.com",
+    url: "https://munchbros.com",
     siteName: "MunchBros",
     images: [
       {
-        url: 'https://munchbros-senec.com/images/logo.png',
+        url: 'https://munchbros.com/images/logo.png',
         width: 1200,
         height: 630,
         alt: 'MunchBros Senec - Čerstvé Burgre a Street Food',
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MunchBros Senec — Burgre & Rozvoz",
     description: "Šťavnaté burgre s rýchlym rozvozom v Senci. Pozri menu a objednaj online.",
-    images: ['https://munchbros-senec.com/images/logo.png'],
+    images: ['https://munchbros.com/images/logo.png'],
     creator: "@munchbros",
     site: "@munchbros",
   },
@@ -123,7 +123,7 @@ export default function RootLayout({
     "@type": "Restaurant",
     "name": "MunchBros Senec",
     "alternateName": "Munch Bros",
-    "image": "https://munchbros-senec.com/images/logo.png",
+    "image": "https://munchbros.com/images/logo.png",
     "description": "MunchBros v Senci ponúka čerstvé burgre z bio mäsa, domáce hranolky, vyprážané dezerty a rýchly rozvoz. Street food na najvyššej úrovni.",
     "address": {
       "@type": "PostalAddress",
@@ -137,12 +137,12 @@ export default function RootLayout({
       "latitude": 48.2203,
       "longitude": 17.4001
     },
-    "url": "https://munchbros-senec.com",
+    "url": "https://munchbros.com",
     "telephone": "+421949593999",
     "servesCuisine": ["Burgers", "American", "Street Food", "Fast Food"],
     "priceRange": "$$",
     "acceptsReservations": false,
-    "hasMenu": "https://munchbros-senec.com/#menu",
+    "hasMenu": "https://munchbros.com/#menu",
     "areaServed": {
       "@type": "City",
       "name": "Senec"
@@ -189,7 +189,7 @@ export default function RootLayout({
         "name": "Kde si môžem pozrieť menu MunchBros?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Menu nájdete priamo na našej stránke https://munchbros-senec.com/#menu so všetkými burgermi, kombami, prílohami a cenami."
+          "text": "Menu nájdete priamo na našej stránke https://munchbros.com/#menu so všetkými burgermi, kombami, prílohami a cenami."
         }
       },
       {

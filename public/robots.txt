@@ -9,7 +9,7 @@ Disallow: /static/
 Disallow: /*.json$
 
 # Host
-Host: https://munchbros-senec.com
+Host: https://munchbros.com
 
 # Sitemaps
-Sitemap: https://munchbros-senec.com/sitemap.xml
+Sitemap: https://munchbros.com/sitemap.xml

@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://munchbros-senec.com',
+  siteUrl: 'https://munchbros.com',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.8,
@@ -13,7 +13,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://munchbros-senec.com/sitemap.xml',
+      'https://munchbros.com/sitemap.xml',
     ],
   },
   transform: async (config, path) => {
