@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  experimental: {
+    optimizePackageImports: ['react-icons', 'next/image'],
+  },
   
   /* Redirects to prevent 404s */
   async redirects() {

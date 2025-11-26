@@ -3,27 +3,19 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Aurora from '../components/Aurora';
 import { CountUp } from '../components/count-up';
 import FadeContent from '../components/FadeContent';
+import ProductInfo from '../components/ProductInfo';
 import { PHONE_NUMBER, PHONE_TEL, ORDER_LINK } from '../lib/site';
+import { productData } from '../lib/productData';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-purple-900 overflow-x-hidden">
       {/* Hero + O nás Combined Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/40"></div>
-        
-        {/* Aurora Background - pre celú sekciu */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <Aurora
-            colorStops={["#9333ea", "#ec4899", "#db2777"]}
-            blend={0.6}
-            amplitude={1.2}
-            speed={0.4}
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-purple-900"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
         
         {/* Logo v strede hore */}
         <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0} delay={200}>
@@ -169,6 +161,10 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">13,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Burger Dynasty"].ingredients}
+                    allergens={productData["Burger Dynasty"].allergens}
+                  />
                 </div>
               </div>
 
@@ -187,6 +183,10 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Burger Dynasty Munch"].ingredients}
+                    allergens={productData["Burger Dynasty Munch"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -211,6 +211,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Bro's"].ingredients}
+                    allergens={productData["Munch Bro's"].allergens}
+                  />
                 </div>
               </div>
 
@@ -228,6 +232,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch of Fire</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch of Fire"].ingredients}
+                    allergens={productData["Munch of Fire"].allergens}
+                  />
                 </div>
               </div>
 
@@ -245,6 +253,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Smash Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Smash Bro's"].ingredients}
+                    allergens={productData["Smash Bro's"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -265,6 +277,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">OG Munch</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["OG Munch"].ingredients}
+                    allergens={productData["OG Munch"].allergens}
+                  />
                 </div>
               </div>
 
@@ -282,6 +298,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chicken</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Chicken"].ingredients}
+                    allergens={productData["Munch Chicken"].allergens}
+                  />
                 </div>
               </div>
 
@@ -299,6 +319,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">8,50 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Cheeseburger"].ingredients}
+                    allergens={productData["Munch Cheeseburger"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -319,6 +343,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Swiss</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Swiss"].ingredients}
+                    allergens={productData["Munch Swiss"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -339,6 +367,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm font-bold">10,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Bro's"].ingredients}
+                    allergens={productData["Munch Bro's"].allergens}
+                  />
                 </div>
               </div>
 
@@ -356,6 +388,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch of Fire</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch of Fire"].ingredients}
+                    allergens={productData["Munch of Fire"].allergens}
+                  />
                 </div>
               </div>
 
@@ -373,6 +409,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Smash Bro's"].ingredients}
+                    allergens={productData["Smash Bro's"].allergens}
+                  />
                 </div>
               </div>
 
@@ -390,6 +430,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">OG Munch</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["OG Munch"].ingredients}
+                    allergens={productData["OG Munch"].allergens}
+                  />
                 </div>
               </div>
 
@@ -407,6 +451,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Chicken</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Chicken"].ingredients}
+                    allergens={productData["Munch Chicken"].allergens}
+                  />
                 </div>
               </div>
 
@@ -424,6 +472,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Cheeseburger</h3>
                   <p className="text-pink-300 text-sm font-bold">8,50 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Cheeseburger"].ingredients}
+                    allergens={productData["Munch Cheeseburger"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -443,6 +495,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Swiss</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Swiss"].ingredients}
+                    allergens={productData["Munch Swiss"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -466,6 +522,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Dog NYC</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">7,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Dog NYC"].ingredients}
+                    allergens={productData["Munch Dog NYC"].allergens}
+                  />
                 </div>
               </div>
 
@@ -483,6 +543,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Italy Hotdog</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">7,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Italy Hotdog"].ingredients}
+                    allergens={productData["Italy Hotdog"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -506,6 +570,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Kuraci Salat</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">8,99 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Kuraci Salat"].ingredients}
+                    allergens={productData["Kuraci Salat"].allergens}
+                  />
                 </div>
               </div>
 
@@ -523,6 +591,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Halloumi</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">8,99 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Halloumi"].ingredients}
+                    allergens={productData["Halloumi"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -546,6 +618,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bro&apos;s Meal</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">6,50 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Happy Bro's Meal"].ingredients}
+                    allergens={productData["Happy Bro's Meal"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -569,6 +645,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprazane Oreo</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Vyprazane Oreo"].ingredients}
+                    allergens={productData["Vyprazane Oreo"].allergens}
+                  />
                 </div>
               </div>
 
@@ -586,6 +666,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprážané Bounty</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Vyprážané Bounty"].ingredients}
+                    allergens={productData["Vyprážané Bounty"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -610,6 +694,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Fries</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">3,00 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Fries"].ingredients}
+                    allergens={productData["Munch Fries"].allergens}
+                  />
                 </div>
               </div>
 
@@ -627,6 +715,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sweet Munch Fries</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">3,80 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Sweet Munch Fries"].ingredients}
+                    allergens={productData["Sweet Munch Fries"].allergens}
+                  />
                 </div>
               </div>
 
@@ -644,6 +736,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Coleslaw</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">2,80 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Coleslaw"].ingredients}
+                    allergens={productData["Coleslaw"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -663,6 +759,10 @@ export default function Home() {
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Coleslaw</h3>
                   <p className="text-pink-300 text-sm font-bold">2,80 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Coleslaw"].ingredients}
+                    allergens={productData["Coleslaw"].allergens}
+                  />
                 </div>
               </div>
             </div>
@@ -687,6 +787,10 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">BBQ</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["BBQ"].ingredients}
+                allergens={productData["BBQ"].allergens}
+              />
             </div>
           </div>
 
@@ -698,6 +802,10 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Blue Cheese</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Blue Cheese"].ingredients}
+                allergens={productData["Blue Cheese"].allergens}
+              />
             </div>
           </div>
 
@@ -709,103 +817,305 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Curry dream</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Curry dream"].ingredients}
+                allergens={productData["Curry dream"].allergens}
+              />
             </div>
           </div>
         </div>
 
-        {/* Desktop: next 3 centered */}
-        <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
-          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+        {/* Desktop: next 3 - grid layout */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10">
+          {/* Munch Bros */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
             <div className="relative h-40 md:h-96 w-full">
               <Image src="/images/Munch bros2.png" alt="Munch Bros sauce" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bros</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Munch Bros"].ingredients}
+                allergens={productData["Munch Bros"].allergens}
+              />
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+          {/* Ranch */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
             <div className="relative h-40 md:h-96 w-full">
               <Image src="/images/Ranch.png" alt="Ranch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Ranch</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Ranch"].ingredients}
+                allergens={productData["Ranch"].allergens}
+              />
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+          {/* Sriracha */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
             <div className="relative h-40 md:h-96 w-full">
               <Image src="/images/Sriracha.png" alt="Sriracha" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sriracha</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Sriracha"].ingredients}
+                allergens={productData["Sriracha"].allergens}
+              />
             </div>
           </div>
         </div>
 
   {/* Mobile grid (2 cols) */}
   <div className="grid grid-cols-2 gap-3 lg:hidden">
-          {[{
-            key: 'bbq', title: 'BBQ', src: '/images/BBQ.png'
-          },{
-            key: 'blue', title: 'Blue Cheese', src: '/images/Blue-Cheese.png'
-          },{
-            key: 'curry', title: 'Curry dream', src: '/images/Kari-omacka.png'
-          },{
-            key: 'munch', title: 'Munch Bros', src: '/images/Munch bros2.png'
-          },{
-            key: 'ranch', title: 'Ranch', src: '/images/Ranch.png'
-          },{
-            key: 'sriracha', title: 'Sriracha', src: '/images/Sriracha.png'
-          }].map((s) => (
-            <div key={s.key} className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-              <div className="relative h-40 w-full">
-                <Image src={s.src} alt={s.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="p-2 text-center">
-                <h3 className="text-sm font-bold text-white mb-1">{s.title}</h3>
-                <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-              </div>
-            </div>
-          ))}
-        </div>
+    {/* BBQ */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/BBQ.png" alt="BBQ" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">BBQ</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["BBQ"].ingredients}
+          allergens={productData["BBQ"].allergens}
+        />
+      </div>
+    </div>
+
+    {/* Blue Cheese */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/Blue-Cheese.png" alt="Blue Cheese" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Blue Cheese</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Blue Cheese"].ingredients}
+          allergens={productData["Blue Cheese"].allergens}
+        />
+      </div>
+    </div>
+
+    {/* Curry dream */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/Kari-omacka.png" alt="Curry dream" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Curry dream</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Curry dream"].ingredients}
+          allergens={productData["Curry dream"].allergens}
+        />
+      </div>
+    </div>
+
+    {/* Munch Bros */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/Munch bros2.png" alt="Munch Bros" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Munch Bros</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Munch Bros"].ingredients}
+          allergens={productData["Munch Bros"].allergens}
+        />
+      </div>
+    </div>
+
+    {/* Ranch */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/Ranch.png" alt="Ranch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Ranch</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Ranch"].ingredients}
+          allergens={productData["Ranch"].allergens}
+        />
+      </div>
+    </div>
+
+    {/* Sriracha */}
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+      <div className="relative h-40 w-full">
+        <Image src="/images/Sriracha.png" alt="Sriracha" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Sriracha</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Sriracha"].ingredients}
+          allergens={productData["Sriracha"].allergens}
+        />
+      </div>
+    </div>
+  </div>
       </section>
 
-      {/* Novembrová špecialita Section */}
-      <section id="novembrova-specialita" className="py-20 px-4 bg-neutral-900">
-        <div className="max-w-7xl mx-auto">
+      {/* NOVEMBROVÁ ŠPECIALITA Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-white mb-4">
-              Novembrová špecialita
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-4">
+              <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🍔 Novembrová špecialita 🍔</span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-500 to-fuchsia-500 mb-4 drop-shadow-2xl">
+              BIG MUNCH
             </h2>
-            <p className="text-xl text-pink-300">
-              Vyskúšajte našu špeciálnu ponuku na tento mesiac!
+            <p className="text-xl md:text-2xl text-pink-200 font-bold max-w-3xl mx-auto">
+              Naš najväčší burger - pre tituánsku chuť!
             </p>
           </div>
 
           <div className="flex justify-center">
-            <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden shadow-2xl">
-                <div className="relative h-56 md:h-80 w-full overflow-hidden">
+            <div className="w-full max-w-4xl bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(236,72,153,0.3)] hover:shadow-[0_0_80px_rgba(236,72,153,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden">
+                  {/* Rounded corner borders - top left */}
+                  <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - top right */}
+                  <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-fuchsia-500 rounded-tr-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - bottom left */}
+                  <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-fuchsia-500 rounded-bl-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - bottom right */}
+                  <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-fuchsia-500 rounded-br-3xl pointer-events-none z-10" />
+                  
                   <Image
                     src="/images/bigmunch.png"
                     alt="Big Munch - Novembrová špecialita"
                     fill
-                    className="object-cover"
+                    className="object-contain p-6 md:p-8"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                    priority
+                    loading="lazy"
                   />
-                  {/* subtle overlay so text remains readable */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40" aria-hidden />
                 </div>
-              <div className="p-6 md:p-8 text-center">
-                <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-2">Big Munch</h3>
-                <p className="text-lg text-pink-200 mb-4">
-                  je o poriadnej porcii a poctivej chuti. Dve hovädzie bio placky po 75 g, čedar, naša domáca Big Mac omáčka, kyslá uhorka, biela cibuľa a ľadový šalát - žiadne kompromisy, len čistý burgerový zážitok
-                </p>
-                <div className="text-pink-300 text-2xl font-bold">10,50 €</div>
+              <div className="p-6 md:p-10">
+                <div className="text-center mb-6">
+                  <h3 className="text-4xl md:text-5xl font-black text-pink-400 mb-3 drop-shadow-lg">BIG MUNCH</h3>
+                  <p className="text-lg md:text-xl text-pink-100 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    <strong className="text-pink-300">Maslová brioška</strong> s dvomi <strong className="text-purple-400">150g hovädzími plackami</strong>, 
+                    trojítka <strong className="text-pink-300">čedaru</strong>, chrumkavá <strong className="text-purple-300">slanina</strong>, 
+                    čerstvý <strong className="text-pink-300">šalát, paradajka</strong> a naša špeciálna <strong className="text-purple-400">Big Munch omáčka</strong> - 
+                    toto je burger pre titánov! 💪
+                  </p>
+                  <div className="inline-block">
+                    <div className="text-pink-400 text-4xl md:text-5xl font-black mb-2">
+                      13,90 €
+                    </div>
+                  </div>
+                </div>
+
+                <div className="max-w-xl mx-auto">
+                  <ProductInfo 
+                    ingredients="Maslová brioška, 2x 150g hovädzie mäso, 3x čedar, slanina, ľadový šalát, paradajka, kyslá uhorka, cibuľa, Big Munch omáčka 🍔💪"
+                    allergens="Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér"
+                  />
+                </div>
+
+                <div className="text-center mt-8">
+                  <a
+                    href={ORDER_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-lg font-black rounded-full hover:scale-105 transition-all duration-300 shadow-2xl uppercase tracking-wider"
+                  >
+                    Objednať Big Munch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIMITOVANÁ EDÍCIA Section */}
+      <section id="limitovana-edicia" className="py-20 px-4 bg-gradient-to-br from-red-950 via-orange-900 to-amber-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial from-amber-500/10 via-transparent to-transparent animate-pulse"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-full mb-4 animate-bounce-slow">
+              <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Limitovaná edícia 🔥</span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-4 drop-shadow-2xl">
+              SMASH JUNIOR
+            </h2>
+            <p className="text-xl md:text-2xl text-amber-200 font-bold max-w-3xl mx-auto">
+              Klasický smash burger v perfektnej veľkosti - chutný, cenovo dostupný a vždy chutí!
+            </p>
+            <p className="text-amber-300/70 text-sm mt-2">⏰ Dostupné len počas špeciálnej akcie</p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl bg-gradient-to-br from-amber-900/60 to-red-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.3)] hover:shadow-[0_0_80px_rgba(251,191,36,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-amber-900/40 to-red-900/40">
+                  {/* Rounded corner borders - top left */}
+                  <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-amber-500 rounded-tl-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - top right */}
+                  <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-amber-500 rounded-tr-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - bottom left */}
+                  <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-amber-500 rounded-bl-3xl pointer-events-none z-10" />
+                  {/* Rounded corner borders - bottom right */}
+                  <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-amber-500 rounded-br-3xl pointer-events-none z-10" />
+                  
+                <Image
+                  src="/images/junior.jpg"
+                  alt="Smash Junior - Limitovaná edícia"
+                  fill
+                  className="object-contain p-6 md:p-8"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-6 md:p-10">
+                <div className="text-center mb-6">
+                  <h3 className="text-4xl md:text-5xl font-black text-amber-400 mb-3 drop-shadow-lg">SMASH JUNIOR</h3>
+                  <p className="text-lg md:text-xl text-amber-100 leading-relaxed mb-6 max-w-2xl mx-auto">
+                    <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">80g hovädím smash mäsom</strong>, 
+                    roztopený <strong className="text-amber-300">čedar</strong>, chrumkavá <strong className="text-amber-300">kyslá uhorka</strong>, 
+                    čerstvá <strong className="text-amber-300">cibuľa</strong>, <strong className="text-red-400">kečup a horčica</strong> - 
+                    jednoduchý, chutný a cenovo perfektný! 🍔
+                  </p>
+                  <div className="inline-block">
+                    <div className="text-amber-400 text-4xl md:text-5xl font-black mb-2">
+                      6,50 €
+                    </div>
+                  </div>
+                </div>
+
+                <div className="max-w-xl mx-auto">
+                  <ProductInfo 
+                    ingredients={productData["Smash Junior"].ingredients}
+                    allergens={productData["Smash Junior"].allergens}
+                  />
+                </div>
+                <div className="text-center mt-8">
+                  <a
+                    href={ORDER_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-10 py-4 bg-gradient-to-r from-amber-500 via-orange-600 to-red-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
+                  >
+                    🔥 Objednaj TERAZ! 🔥
+                  </a>
+                  <p className="text-amber-300/60 text-xs mt-3">Kým je ešte dostupný...</p>
+                </div>
               </div>
             </div>
           </div>
@@ -816,17 +1126,8 @@ export default function Home() {
 
       {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
       <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-purple-900"></div>
         <div className="absolute inset-0 bg-black/40" aria-hidden />
-
-        {/* Aurora Background - pre celú sekciu */}
-        <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
-          <Aurora
-            colorStops={["#9333ea", "#ec4899", "#db2777"]}
-            blend={0.6}
-            amplitude={1.2}
-            speed={0.4}
-          />
-        </div>
 
         <div className="relative z-10 max-w-7xl mx-auto space-y-20">
           {/* Objednávky subsection */}
@@ -1030,14 +1331,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative bg-black/50 backdrop-blur-lg py-12 px-4 border-t border-pink-500/20 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-40">
-          <Aurora
-            colorStops={["#581c87", "#be185d", "#701a75"]}
-            blend={0.4}
-            amplitude={0.6}
-            speed={0.3}
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-pink-800/40 to-purple-900/40"></div>
         <div className="relative z-10 text-center text-pink-300">
           <div className="mt-8 pt-8 border-t border-pink-500/20 text-center text-pink-300">
             <p>&copy; 2025 Munch Bro&apos;s. All rights reserved.</p>
