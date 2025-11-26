@@ -1016,16 +1016,26 @@ export default function Home() {
                   </p>
                   <div className="inline-block">
                     <div className="text-pink-400 text-4xl md:text-5xl font-black mb-2">
-                      13,90 €
+                      10,20 €
                     </div>
                   </div>
                 </div>
 
-                <div className="max-w-xl mx-auto">
-                  <ProductInfo 
-                    ingredients="Maslová brioška, 2x 150g hovädzie mäso, 3x čedar, slanina, ľadový šalát, paradajka, kyslá uhorka, cibuľa, Big Munch omáčka 🍔💪"
-                    allergens="Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér"
-                  />
+                <div className="max-w-2xl mx-auto mb-6">
+                  <div className="bg-pink-950/40 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/30">
+                    <h4 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
+                      🍔 Zloženie
+                    </h4>
+                    <p className="text-pink-100 text-sm md:text-base leading-relaxed mb-4">
+                      Maslová brioška, 2x 150g hovädzie mäso, 3x čedar, slanina, ľadový šalát, paradajka, kyslá uhorka, cibuľa, Big Munch omáčka 🍔💪
+                    </p>
+                    <h4 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
+                      ⚠️ Alergény
+                    </h4>
+                    <p className="text-pink-100 text-sm md:text-base">
+                      Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér
+                    </p>
+                  </div>
                 </div>
 
                 <div className="text-center mt-8">
@@ -1087,7 +1097,7 @@ export default function Home() {
                 <div className="text-center mb-6">
                   <h3 className="text-4xl md:text-5xl font-black text-amber-400 mb-3 drop-shadow-lg">SMASH JUNIOR</h3>
                   <p className="text-lg md:text-xl text-amber-100 leading-relaxed mb-6 max-w-2xl mx-auto">
-                    <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">80g hovädím smash mäsom</strong>, 
+                    <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">100g hovädím smash mäsom</strong>, 
                     roztopený <strong className="text-amber-300">čedar</strong>, chrumkavá <strong className="text-amber-300">kyslá uhorka</strong>, 
                     čerstvá <strong className="text-amber-300">cibuľa</strong>, <strong className="text-red-400">kečup a horčica</strong> - 
                     jednoduchý, chutný a cenovo perfektný! 🍔
@@ -1099,11 +1109,21 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="max-w-xl mx-auto">
-                  <ProductInfo 
-                    ingredients={productData["Smash Junior"].ingredients}
-                    allergens={productData["Smash Junior"].allergens}
-                  />
+                <div className="max-w-2xl mx-auto mb-6">
+                  <div className="bg-amber-950/40 backdrop-blur-sm rounded-2xl p-6 border border-amber-500/30">
+                    <h4 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
+                      🍔 Zloženie
+                    </h4>
+                    <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
+                      Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔
+                    </p>
+                    <h4 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
+                      ⚠️ Alergény
+                    </h4>
+                    <p className="text-amber-100 text-sm md:text-base">
+                      Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér
+                    </p>
+                  </div>
                 </div>
                 <div className="text-center mt-8">
                   <a

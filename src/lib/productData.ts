@@ -39,7 +39,7 @@ export const productData = {
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   "Smash Junior": {
-    ingredients: "Maslová brioška, 80g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔",
+    ingredients: "Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica",
     allergens: "Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér"
   },
 
