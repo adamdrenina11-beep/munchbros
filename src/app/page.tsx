@@ -297,7 +297,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chicken</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Chicken"].ingredients}
                     allergens={productData["Munch Chicken"].allergens}
@@ -617,7 +617,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bro&apos;s Meal</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">6,50 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Happy Bro's Meal"].ingredients}
                     allergens={productData["Happy Bro's Meal"].allergens}
