@@ -1,71 +1,71 @@
 export const productData = {
   // BURGER KOMBA
   "Burger Dynasty": {
-    ingredients: "Burger Dynasty s 120g bio hovädím mäsom je klasická forma slastného Smash burgru. Pre možnosť väčšej 150g bio hovädej placky zadajte Burger Dynasty Munch. Celý burger dopĺňa čedar, kyslá uhorka, biela cibuľa, Munch Bros omáčka, americká horčica a kečup. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Pre zvolenie burgru s 120g BIO plackou zadajte Burger Kombo Klasik. Celý burger dopĺňa čedar, kyslá uhorka, americká horčica, kečup, maslová brioška, hranolky. Pre možnosť iného burgru napíšte do poznámky názov burgru ale s cenou 13,90 EUR.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   "Burger Dynasty Munch": {
-    ingredients: "Burger Dynasty Munch je rovnaký ako Dynasty ale placka má 150g. Celý burger s 150g bio hovädím mäsom dopĺňa čedar, kyslá uhorka, biela cibuľa, Munch Bros omáčka, americká horčica a kečup. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Hracie Mäso v kombo má 150g BIO hovädziu placku. Pre zvolenie burgru s 120g BIO plackou zadajte Burger Kombo Klasik. Celý burger dopĺňa čedar, kyslá uhorka, americká horčica, kečup, maslová brioška, hranolky.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   
   // BURGRE
   "Munch Bro's": {
-    ingredients: "Munch Bro's s 120g bio hovädím mäsom je klasická forma slastného Smash burgru. Pre možnosť väčšej 150g bio hovädej placky zadajte Munch Bros Munch. Celý burger dopĺňa čedar, slanina, kyslá uhorka, biela cibuľa, paradajka, ľadový šalát a Munch Bros omáčka. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Kde sa stretáva tradícia s inovatívnosťou. Na maslovej brioške (120g) nájdeš šťavnatú bio hovädziu placku (150g), doplnenú o roztopený čedar, chrumkavú slaninu, červenú cibuľu, čerstvú paradajku, ľadový šalát a kyslú uhorku. Všetko korunuje naša jedinečná Munch Bro's omáčka. Je to komplexné. Je to vyvážené. Je to jednoducho dobré. A áno - môžeš si vybrať 150g placku za príplatok 1,50 EUR.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   "Munch of Fire": {
-    ingredients: "Šťavnatý Munch of Fire burger s 120g bio hovädím mäsom. Celý burger dopĺňa čedar, pikantné jalapeño, pálivá sriracha omáčka, kyslá uhorka a biela cibuľa. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Pálivá výzva pre odvážnych. Na maslovej brioške (120g) leží šťavnatá bio hovädzia placka (150g), doplnená o roztopený čedar, pikantné jalapeňo, pálivú sriracha omáčku, červenú cibuľu a kyslú uhorku. Nie je to len o pálivosti - je to o dokonalej rovnováhe chutí, kde každá zložka má svoje miesto. Ak máš rád výzvy, toto je tvoj burger.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér, sója"
   },
   "Smash Bro's": {
-    ingredients: "Mäso v burgre Smash Bro's obsahuje 2 placky po 75g každá. Celý burger dopĺňa čedar, vyprážaná cibuľka, kyslá uhorka, biela cibuľa, kečup a americká horčica. Všetko na maslovej žemli.",
-    allergens: "Lepok (pšenica), mlieko, horčica, vajcia"
-  },
-  "OG Munch": {
-    ingredients: "Klasický OG Munch burger s 120g bio hovädím mäsom. Celý burger dopĺňa čedar, kyslá uhorka, paradajka, ľadový šalát a klasická omáčka. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Klasika s charakterom. Toto nie je burger pre nerozhodných. Maslová brioška (120g), dve šťavnaté bio hovädzie placky (2x75g), čedar, biela cibuľa, chrumkavá slanina a kyslá uhorka. A tá zaúdená omáčka? Senzácia! Objednaj, zamiluj sa a na ten z fastfoodov už zabudneš. Toto nie je len burger. Toto je tvoj nový životný štýl.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
+  "OG Munch": {
+    ingredients: "Tento burger nie je obyčajná klasika - je to zakladateľ skutočnej chuťovej dynastie. Na maslovej brioške (120g) leží šťavnatá bio hovädzia placka (150g), doplnená o roztopený čedar, čerstvú paradajku, ľadový šalát, aromatickú červenú cibuľu a kyslú uhorku. Celok zjemňuje naša jedinečná omáčka Munch Bro's. Je to jednoduché? Áno. Je to nudné? Nikdy. Tento burger si nepotrebuje nič dokazovať - jeho chuť hovorí sama za seba.",
+    allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér, sezam, horčičné semená"
+  },
   "Munch Chicken": {
-    ingredients: "Chutný Munch Chicken s kuracej placky z kurinca stehna v omáčke. Celý burger dopĺňa čedar, ľadový šalát, paradajka a Ranch omáčka. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Pre tých, ktorí preferujú kuracie mäso, ale nechcú nič obetovať na chuti. Chrumkavé kuracie stehno marinované v špeciálnej omáčke, doplnené o čedar, ľadový šalát, paradajku a Ranch omáčku. Všetko na maslovej brioške (120g). Výsledok? Šťavnatý, chrumkavý, úžasne chutný burger, ktorý ťa presvedčí, že kuracie môže byť rovnako dobré ako hovädzie.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   "Munch Cheeseburger": {
-    ingredients: "Klasický Munch Cheeseburger s 120g bio hovädím mäsom. Celý burger dopĺňa roztopený čedar, kyslá uhorka, biela cibuľa, americká horčica a kečup. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Jednoduchosť v dokonalosti. Maslová brioška (120g), šťavnatá bio hovädzia placka (150g), roztopený čedar, kyslá uhorka, červená cibuľa, americká horčica a kečup. Žiadne prehrávky, len rýdza chuť kvalitných surovín. Niekedy menej znamená viac - a toto je presne ten prípad.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia"
   },
   "Munch Swiss": {
-    ingredients: "Munch Swiss burger s 120g bio hovädím mäsom. Celý burger dopĺňa švajčiarsky syr, karamelizovaná cibuľa, hríby a Swiss omáčka. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Švajčiarsko stretáva Senec. Na maslovej brioške (120g) nájdeš šťavnatú bio hovädziu placku (150g), doplnenú o švajčiarsky syr, karamelizovanú cibuľu, hríby a špeciálnu Swiss omáčku. Tento burger je ako prechádzka Alpami - elegantný, sofistikovaný a nezabudnuteľný.",
     allergens: "Lepok (pšenica), mlieko, horčica, vajcia, selér"
   },
   "Smash Junior": {
-    ingredients: "Klasický Smash Junior burger s 100g hovädím smash mäsom. Celý burger dopĺňa čedar, kyslá uhorka, cibuľa, kečup a horčica. Všetko na maslovej brioškovej žemli.",
+    ingredients: "Dokonalý burger pre tých, čo hľadajú kvalitu bez kompromisov, ale v menšom formáte. Maslová brioška (100g), šťavnatá hovädzia placka (100g), roztopený čedar, kyslá uhorka, červená cibuľa, kečup a americká horčica. Malý veľkosťou, obrovský chuťou.",
     allergens: "Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér"
   },
 
   // HOTDOGY
   "Munch Dog NYC": {
-    ingredients: "Klasický Americký Hotdog s 100% hovädím párkom podávaný v brioche rožku. Na všetko posledná štandardná americká úprava s kyslou uhorkou a vyprážanou cibuľkou.",
+    ingredients: "Americký HOT-DOG: Prémiová 100% hovädzia klobása v jemnej Brioche žemli, doplnená o kyslú uhorku, horčicu, kečup a vyprážanú cibuľku. Jednoduchý, ale nesmierne chutný - presne tak, ako má byť.",
     allergens: "Lepok (pšenica), horčica, selér"
   },
   "Italy Hotdog": {
-    ingredients: "Talianska verzia Hotdogu s 100% hovädím párkom podávaný v brioche rožku. Celý hotdog dopĺňa mozzarella, paradajková omáčka, bazalka a oregano.",
+    ingredients: "Italy HOT-DOG: Talianska verzia s 100% hovädím párkom v Brioche žemli. Doplnené o mozzarellu, paradajkovú omáčku, bazalku a oregano. Chuť Talianska v každom súste.",
     allergens: "Lepok (pšenica), mlieko, selér"
   },
 
   // ŠALÁTY
   "Kuraci Salat": {
-    ingredients: "Šalát z mäsa s grilovaným kuracím mäsom podávaný s cherry paradajkami, čedarom, ľadovým šalátom, uhorkou, krutónmi a cézar dresingom.",
+    ingredients: "Šalát z mäsa s grilovaným kuracím mäsom podávaný s cherry paradajkami, čedarom, ľadovým šalátom, uhorkou, krutónmi a cézar dresingom. Sviežosť a chuť v jednom tanieri.",
     allergens: "Lepok (pšenica), mlieko, vajcia, horčica, ryby (anchovičky v dresingu)"
   },
   "Halloumi": {
-    ingredients: "Vegetariánsky šalát s grilovaným halloumi syrom. K tomu všetkému fresh cherry paradajky, ľadový šalát, uhorka, olivy, červená cibuľa a balzamikový dresing.",
+    ingredients: "Vegetariánsky šalát s grilovaným halloumi syrom. K tomu všetkému fresh cherry paradajky, ľadový šalát, uhorka, olivy, červená cibuľa a balzamikový dresing. Proof, že vegetariánske nemusí byť nudné.",
     allergens: "Mlieko, selér"
   },
 
   // PRE DETI
   "Happy Bro's Meal": {
-    ingredients: "Happy Bro's Meal pre deti s mini cheeseburgerom, hranolkami Munch Fries a nápojom podľa vlastného výberu. K tomu zadarmo darček pre vaše dieťa! Zábava a dobrota v jednom!",
+    ingredients: "Happy Bro's Meal pre deti. Mini Cheeseburger, Munch Fries a nápoj podľa vlastného výberu. K tomu zadarmo darček. Zábava a dobrota v jednom!",
     allergens: "Lepok (pšenica), mlieko, vajcia, sezam, selér, horčica"
   },
 
@@ -81,15 +81,15 @@ export const productData = {
 
   // PRÍLOHY
   "Munch Fries": {
-    ingredients: "Domáce čerstvé hranolky z našich zemiakov. Servírované v porcii 150g pre medium a 300g pre veľkú porciu.",
+    ingredients: "Domáce čerstvé hranolky z našich zemiakov. Servírované s prísadou soľ. Chrumkavé zvonka, jemné vnútri - presne ako majú byť.",
     allergens: "Môže obsahovať stopy lepku"
   },
   "Sweet Munch Fries": {
-    ingredients: "Domáce čerstvé hranolky zo sladkých zemiakov. Servírované v porcii 150g pre medium a 300g pre veľkú porciu.",
+    ingredients: "Domáce čerstvé hranolky zo sladkých zemiakov. Servírované s prísadou soľ a špeciálnym korením, ktoré im dodá výnimočnú chuť. Zdravšia alternatíva, ktorá nič neobetuje na chuti.",
     allergens: "Môže obsahovať stopy lepku"
   },
   "Coleslaw": {
-    ingredients: "Klasický Coleslaw šalát z bielej kapusty, mrkvy, majonézy, citrónovej šťavy a cukru.",
+    ingredients: "Klasický Coleslaw šalát z bielej kapusty, mrkvy, majonézy, citrónovej šťavy a cukru. Perfektný doplnok k burgru.",
     allergens: "Vajcia, horčica"
   },
 

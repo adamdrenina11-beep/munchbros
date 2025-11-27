@@ -90,10 +90,10 @@ export const metadata: Metadata = {
     siteName: "MunchBros",
     images: [
       {
-        url: 'https://munchbros.com/images/logo.png',
+        url: 'https://munchbros.com/images/Munch bro´s.png',
         width: 1200,
         height: 630,
-        alt: 'MunchBros Senec - Čerstvé Burgre a Street Food',
+        alt: 'MunchBros Senec - Čersté Burgre a Street Food',
       },
     ],
   },
