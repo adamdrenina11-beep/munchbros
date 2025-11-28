@@ -161,10 +161,6 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">13,90 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Burger Dynasty"].ingredients}
-                    allergens={productData["Burger Dynasty"].allergens}
-                  />
                 </div>
               </div>
 
@@ -183,10 +179,6 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Burger Dynasty Munch"].ingredients}
-                    allergens={productData["Burger Dynasty Munch"].allergens}
-                  />
                 </div>
               </div>
             </div>
@@ -967,92 +959,7 @@ export default function Home() {
   </div>
       </section>
 
-      {/* NOVEMBROVÁ ŠPECIALITA Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-4">
-              <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🍔 Novembrová špecialita 🍔</span>
-            </div>
-            <h2 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-500 to-fuchsia-500 mb-4 drop-shadow-2xl">
-              BIG MUNCH
-            </h2>
-            <p className="text-xl md:text-2xl text-pink-200 font-bold max-w-3xl mx-auto">
-              Naš najväčší burger - pre tituánsku chuť!
-            </p>
-          </div>
-
-          <div className="flex justify-center">
-            <div className="w-full max-w-4xl bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(236,72,153,0.3)] hover:shadow-[0_0_80px_rgba(236,72,153,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden">
-                  {/* Rounded corner borders - top left */}
-                  <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - top right */}
-                  <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-fuchsia-500 rounded-tr-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - bottom left */}
-                  <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-fuchsia-500 rounded-bl-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - bottom right */}
-                  <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-fuchsia-500 rounded-br-3xl pointer-events-none z-10" />
-                  
-                  <Image
-                    src="/images/bigmunch.png"
-                    alt="Big Munch - Novembrová špecialita"
-                    fill
-                    className="object-contain p-6 md:p-8"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                    loading="lazy"
-                  />
-                </div>
-              <div className="p-6 md:p-10">
-                <div className="text-center mb-6">
-                  <h3 className="text-4xl md:text-5xl font-black text-pink-400 mb-3 drop-shadow-lg">BIG MUNCH</h3>
-                  <p className="text-lg md:text-xl text-pink-100 leading-relaxed mb-6 max-w-2xl mx-auto">
-                    <strong className="text-pink-300">Maslová brioška</strong> s dvomi <strong className="text-purple-400">150g hovädzími plackami</strong>, 
-                    trojítka <strong className="text-pink-300">čedaru</strong>, chrumkavá <strong className="text-purple-300">slanina</strong>, 
-                    čerstvý <strong className="text-pink-300">šalát, paradajka</strong> a naša špeciálna <strong className="text-purple-400">Big Munch omáčka</strong> - 
-                    toto je burger pre titánov! 💪
-                  </p>
-                  <div className="inline-block">
-                    <div className="text-pink-400 text-4xl md:text-5xl font-black mb-2">
-                      10,20 €
-                    </div>
-                  </div>
-                </div>
-
-                <div className="max-w-2xl mx-auto mb-6">
-                  <div className="bg-pink-950/40 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/30">
-                    <h4 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
-                      🍔 Zloženie
-                    </h4>
-                    <p className="text-pink-100 text-sm md:text-base leading-relaxed mb-4">
-                      Maslová brioška, 2x 150g hovädzie mäso, 3x čedar, slanina, ľadový šalát, paradajka, kyslá uhorka, cibuľa, Big Munch omáčka 🍔💪
-                    </p>
-                    <h4 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
-                      ⚠️ Alergény
-                    </h4>
-                    <p className="text-pink-100 text-sm md:text-base">
-                      Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér
-                    </p>
-                  </div>
-                </div>
-
-                <div className="text-center mt-8">
-                  <a
-                    href={ORDER_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-lg font-black rounded-full hover:scale-105 transition-all duration-300 shadow-2xl uppercase tracking-wider"
-                  >
-                    Objednať Big Munch
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* NOVEMBROVÁ ŠPECIALITA Section removed per request */}
 
       {/* LIMITOVANÁ EDÍCIA Section */}
       <section id="limitovana-edicia" className="py-20 px-4 bg-gradient-to-br from-red-950 via-orange-900 to-amber-950 relative overflow-hidden">
