@@ -20,8 +20,8 @@ apple.save(apple_path)
 print('Wrote', apple_path)
 
 manifest = {
-    "name": "Munch Bro's Senec",
-    "short_name": "MunchBro's",
+    "name": "Munch Bros Senec",
+    "short_name": "MunchBros",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

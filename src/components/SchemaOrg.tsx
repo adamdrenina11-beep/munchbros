@@ -4,7 +4,7 @@ export default function SchemaOrg() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Munch Bro's",
+    "name": "Munch Bros",
   "image": "https://munchbros-senec.com/images/logo.png",
     "address": {
       "@type": "PostalAddress",

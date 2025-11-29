@@ -1,12 +1,6 @@
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
-
-# Block unnecessary paths that could cause 404/403
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
-Disallow: /*.json$
 
 # Host
 Host: https://munchbros.com

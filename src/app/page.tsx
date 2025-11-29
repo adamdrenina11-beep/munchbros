@@ -38,8 +38,8 @@ export default function Home() {
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0} delay={200}>
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">
-                MUNCH BRO&apos;S
-              </h1>
+                    MUNCH BROS
+                  </h1>
               <p className="text-2xl md:text-3xl text-pink-300 font-semibold mb-8">
                 Bratia v burgri - Senec
               </p>
@@ -91,8 +91,8 @@ export default function Home() {
         {/* O nás časť - v rámci tej istej sekcie */}
         <div className="relative z-10 py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-black text-white mb-12 text-center">
-              O Munch Bro&apos;s
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-12 text-center">
+              O Munch Bros
             </h2>
             
             {/* Grid boxov */}
@@ -188,7 +188,7 @@ export default function Home() {
           <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
             {/* Prvé 3 burgre - len na desktop */}
             <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
-              {/* Munch Bro's */}
+              {/* Munch Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
                   <Image 
@@ -203,8 +203,8 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,90 €</p>
                   <ProductInfo 
-                    ingredients={productData["Munch Bro's"].ingredients}
-                    allergens={productData["Munch Bro's"].allergens}
+                    ingredients={productData["Munch Cheeseburger"].ingredients}
+                    allergens={productData["Munch Cheeseburger"].allergens}
                   />
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Smash Bro's */}
+              {/* Smash Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
                   <Image 
@@ -245,8 +245,8 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Smash Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
-                    ingredients={productData["Smash Bro's"].ingredients}
-                    allergens={productData["Smash Bro's"].allergens}
+                    ingredients={productData["Smash Bros"].ingredients}
+                    allergens={productData["Smash Bros"].allergens}
                   />
                 </div>
               </div>
@@ -309,10 +309,10 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,50 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
                   <ProductInfo 
-                    ingredients={productData["Munch Cheeseburger"].ingredients}
-                    allergens={productData["Munch Cheeseburger"].allergens}
+                    ingredients={productData["Munch Bros"].ingredients}
+                    allergens={productData["Munch Bros"].allergens}
                   />
                 </div>
               </div>
@@ -344,7 +344,7 @@ export default function Home() {
 
             {/* Mobile verzia - grid 2 columns */}
             <div className="grid grid-cols-2 gap-3 lg:hidden">
-              {/* Munch Bro's */}
+              {/* Munch Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 w-full">
                   <Image 
@@ -359,8 +359,8 @@ export default function Home() {
                   <h3 className="text-sm font-bold text-white mb-1">Munch Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm font-bold">10,90 €</p>
                   <ProductInfo 
-                    ingredients={productData["Munch Bro's"].ingredients}
-                    allergens={productData["Munch Bro's"].allergens}
+                    ingredients={productData["Munch Bros"].ingredients}
+                    allergens={productData["Munch Bros"].allergens}
                   />
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Smash Bro's */}
+              {/* Smash Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 w-full">
                   <Image 
@@ -401,8 +401,8 @@ export default function Home() {
                   <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
                   <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
-                    ingredients={productData["Smash Bro's"].ingredients}
-                    allergens={productData["Smash Bro's"].allergens}
+                    ingredients={productData["Smash Bros"].ingredients}
+                    allergens={productData["Smash Bros"].allergens}
                   />
                 </div>
               </div>
@@ -591,27 +591,27 @@ export default function Home() {
             </div>
           </div>
 
-          {/* PRE DETI - HAPPY BRO'S */}
+          {/* PRE DETI - HAPPY BROS */}
           <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI - HAPPY BRO&apos;S</h3>
+            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI - HAPPY BROS</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Happy Meal */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
                 <div className="relative h-40 md:h-96 w-full">
                   <Image 
                     src="/images/Happy bro´s meal pre deti.png" 
-                    alt="Happy Bro's Meal"
+                    alt="Happy Bros Meal"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bro&apos;s Meal</h3>
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bros Meal</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">7,50 €</p>
                   <ProductInfo 
-                    ingredients={productData["Happy Bro's Meal"].ingredients}
-                    allergens={productData["Happy Bro's Meal"].allergens}
+                    ingredients={productData["Happy Bros Meal"].ingredients}
+                    allergens={productData["Happy Bros Meal"].allergens}
                   />
                 </div>
               </div>
@@ -685,10 +685,10 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Fries</h3>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">3,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Munch Fries"].ingredients}
-                    allergens={productData["Munch Fries"].allergens}
-                  />
+                <ProductInfo 
+                  ingredients={productData["Munch Fries"].ingredients}
+                  allergens={productData["Munch Fries"].allergens}
+                />
                 </div>
               </div>
 
@@ -827,8 +827,8 @@ export default function Home() {
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bros</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
               <ProductInfo 
-                ingredients={productData["Munch Bros"].ingredients}
-                allergens={productData["Munch Bros"].allergens}
+                ingredients={productData["Munch Bros Sauce"].ingredients}
+                allergens={productData["Munch Bros Sauce"].allergens}
               />
             </div>
           </div>
@@ -919,10 +919,10 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Munch Bros</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Munch Bros"].ingredients}
-          allergens={productData["Munch Bros"].allergens}
-        />
+                  <ProductInfo 
+                    ingredients={productData["Munch Bros Sauce"].ingredients}
+                    allergens={productData["Munch Bros Sauce"].allergens}
+                  />
       </div>
     </div>
 
@@ -1189,7 +1189,7 @@ export default function Home() {
                 name: "Lenka Szabová",
                 rating: 5,
                 date: "Pred 2 mesiacmi",
-                text: "S deťmi sme si dali Happy Bro's Meal a oni boli nadšené! Konečne kvalitné detské menu. Vyprážané Oreo top!",
+                text: "S deťmi sme si dali Happy Bros Meal a oni boli nadšené! Konečne kvalitné detské menu. Vyprážané Oreo top!",
                 source: "Google Maps"
               },
               {
