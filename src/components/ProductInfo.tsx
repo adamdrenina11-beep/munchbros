@@ -12,10 +12,12 @@ export default function ProductInfo({ ingredients, allergens }: ProductInfoProps
         <h4 className="text-pink-300 font-bold text-sm mb-2">🍔 Zloženie:</h4>
         <p className="text-pink-100 text-xs leading-relaxed">{ingredients}</p>
       </div>
-      <div>
-        <h4 className="text-pink-300 font-bold text-sm mb-2">⚠️ Alergény:</h4>
-        <p className="text-pink-100 text-xs leading-relaxed">{allergens}</p>
-      </div>
+      {allergens && allergens.trim() !== "" && (
+        <div>
+          <h4 className="text-pink-300 font-bold text-sm mb-2">⚠️ Alergény:</h4>
+          <p className="text-pink-100 text-xs leading-relaxed">{allergens}</p>
+        </div>
+      )}
     </div>
   );
 }

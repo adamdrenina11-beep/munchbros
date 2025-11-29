@@ -34,7 +34,6 @@ export default function Home() {
           </div>
         </FadeContent>
 
-        {/* Hero časť */}
         <div className="relative z-10 min-h-screen flex items-center justify-center px-4 pt-32 md:pt-0">
           <FadeContent blur={true} duration={1500} easing="ease-out" initialOpacity={0} delay={200}>
             <div className="text-center max-w-4xl mx-auto">
@@ -1024,12 +1023,7 @@ export default function Home() {
                     <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
                       Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔
                     </p>
-                    <h4 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
-                      ⚠️ Alergény
-                    </h4>
-                    <p className="text-amber-100 text-sm md:text-base">
-                      Lepok (pšenica), mlieko, vajcia, horčica, sezam, selér
-                    </p>
+                    {/* No allergens for limited edition */}
                   </div>
                 </div>
                 <div className="text-center mt-8">
