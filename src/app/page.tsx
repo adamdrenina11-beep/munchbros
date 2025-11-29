@@ -685,7 +685,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Fries</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">3,60 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">3,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Fries"].ingredients}
                     allergens={productData["Munch Fries"].allergens}
@@ -706,7 +706,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sweet Munch Fries</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">4,80 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">4,00 €</p>
                   <ProductInfo 
                     ingredients={productData["Sweet Munch Fries"].ingredients}
                     allergens={productData["Sweet Munch Fries"].allergens}

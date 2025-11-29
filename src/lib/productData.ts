@@ -85,11 +85,11 @@ export const productData = {
 
   // PRÍLOHY
   "Munch Fries": {
-    ingredients: "Hranolky 150g, dvakrát fritované zemiaky. 3,50 EUR",
+    ingredients: "Hranolky 150g, dvakrát fritované zemiaky",
     allergens: "Môže obsahovať stopy lepku"
   },
   "Sweet Munch Fries": {
-    ingredients: "Batátové hranolky (sladké zemiaky), chrumkavé na okrajoch, mäkké vo vnútri. 4,00 EUR",
+    ingredients: "Batátové hranolky (sladké zemiaky), chrumkavé na okrajoch, mäkké vo vnútri",
     allergens: "Môže obsahovať stopy lepku"
   },
   "Munch Cajun Fries": {
