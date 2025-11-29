@@ -1,4 +1,4 @@
-﻿export const productData = {
+export const productData = {
   // BURGER KOMBA
   "Burger Dynasty": {
     ingredients: "Pre zvolenie burgru s 120g BIO plackou zadajte Burger Kombo Klasik. Celý burger dopĺňa čedar, kyslá uhorka, americká horčica, kečup, maslová brioška, hranolky. Pre možnosť iného burgru napíšte do poznámky názov burgru ale s cenou 13,90 EUR.",
@@ -16,7 +16,7 @@
   },
   "Munch of Fire": {
     price: "10,20 €",
-    ingredients: "brioška 150g, bio hovädzie mäso 150g, čedar, jalapenos, sriracha omáčka, kimchi šalát",
+    ingredients: "brioška 120g, bio hovädzie mäso 150g, čedar, jalapenos, sriracha omáčka, kimchi šalát",
     allergens: "1,3,6,7,10,11,12"
   },
   "Smash Bros": {
@@ -116,44 +116,45 @@
   },
 
   // OMÁČKY
+  // OMÁČKY (zoradené podľa mena)
   "BBQ": {
     price: "1,50 €",
-    ingredients: "BBQ omáčka",
+    ingredients: `Táto omáčka neprišla na piknik. Prišla zapáliť stôl, ukradnúť mäso a sadnúť si na trón. Dymová, sladká a jemne
+pikantná – presne taká, čo dá tvojmu burgeru výsluch ohňom. Susedia ju ucítia skôr, než zahryzneš. A od závisti im
+zvlhnú oči. BBQ, ako má byť – s dušou kovboja a bozkom plameňov.`,
     allergens: ""
   },
   "Blue Cheese": {
     price: "1,50 €",
-    ingredients: "Omáčka z modrého syra",
+    ingredients: `Toto nie je omáčka pre bežné jazyky. Nabombená chuť modrého syra sa spojí s jemnou krémovosťou a odpáli ti
+chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš notikáciu: „Započal si novú chuťovú éru"`,
     allergens: ""
   },
   "Curry dream": {
     price: "1,50 €",
-    ingredients: "Kari omáčka",
+    ingredients: `Závan exotiky, čo ťa vystrelí rovno do ulíc Bombaja, Hustá, voňavá a rytmická ako dobrý beat – táto kari omáčka ti
+zanechá chuťový zážitok, na ktorý len tak nezabudneš.`,
     allergens: ""
   },
   "Munch Bros Sauce": {
     price: "1,50 €",
-    ingredients: "Originál Munch Bros omáčka",
+    ingredients: `Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice.
+Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov – čistý avour punch. Burger bez nej ? Ako
+brat bez brata. A to predsa neurobíš.`,
     allergens: ""
   },
   "Ranch": {
     price: "1,50 €",
-    ingredients: "Bylinková omáčka s cesnakom",
+    ingredients: `Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili
+úsmev. Hodí sa ku všetkým burgrom, hranolkám... alebo len tak na prst (fakt, nebudeme súdiť)`,
     allergens: ""
   },
   "Sriracha": {
     price: "1,50 €",
-    ingredients: "Sriracha omáčka s majonézou",
+    ingredients: `Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o
+sekundu neskôr ti jazyk napíše: „Horííím!“ Pre tých, čo si pálivé užívajú s úsmevom.`,
     allergens: ""
   },
-  "Kečup": {
-    price: "1,50 €",
-    ingredients: "Keď tento kečup pristane na tanieri, ostatné omáčky zbalia kufre. Sladký, hustý a pripravený ukázať ti, ako chutí ozajstná rajčina.",
-    allergens: ""
-  },
-  "Munch Smoky Mayo": {
-    price: "1,50 €",
-    ingredients: "Krémová dymová omáčka s chipotle",
-    allergens: ""
-  }
+  
 };
+
