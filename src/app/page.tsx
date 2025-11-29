@@ -1011,7 +1011,7 @@ export default function Home() {
                   </p>
                   <div className="inline-block">
                     <div className="text-amber-400 text-4xl md:text-5xl font-black mb-2">
-                      6,20 €
+                      6,90 €
                     </div>
                   </div>
                 </div>
