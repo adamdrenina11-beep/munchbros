@@ -141,9 +141,89 @@ export default function Home() {
             </p>
           </div>
 
-          {/* BURGER KOMBA */}
+          {/* 1. ŠPECIÁL MESIACA - LIMITOVANÁ EDÍCIA */}
           <div className="mb-20">
-            <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGER KOMBA</h3>
+            <div className="py-12 px-4 bg-gradient-to-br from-red-950 via-orange-900 to-amber-950 relative overflow-hidden rounded-3xl">
+              <div className="absolute inset-0 bg-gradient-radial from-amber-500/10 via-transparent to-transparent animate-pulse"></div>
+              
+              <div className="max-w-7xl mx-auto relative z-10">
+                <div className="text-center mb-12">
+                  <div className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-full mb-4 animate-bounce-slow">
+                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Limitovaná edícia 🔥</span>
+                  </div>
+                  <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-4 drop-shadow-2xl">
+                    SMASH JUNIOR
+                  </h3>
+                  <p className="text-lg md:text-xl text-amber-200 font-bold max-w-3xl mx-auto">
+                    Klasický smash burger v perfektnej veľkosti - chutný, cenovo dostupný a vždy chutí!
+                  </p>
+                  <p className="text-amber-300/70 text-sm mt-2">⏰ Dostupné len počas špeciálnej akcie</p>
+                </div>
+
+                <div className="flex justify-center">
+                  <div className="w-full max-w-4xl bg-gradient-to-br from-amber-900/60 to-red-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.3)] hover:shadow-[0_0_80px_rgba(251,191,36,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                      <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-amber-900/40 to-red-900/40">
+                        <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-amber-500 rounded-tl-3xl pointer-events-none z-10" />
+                        <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-amber-500 rounded-tr-3xl pointer-events-none z-10" />
+                        <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-amber-500 rounded-bl-3xl pointer-events-none z-10" />
+                        <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-amber-500 rounded-br-3xl pointer-events-none z-10" />
+                        
+                      <Image
+                        src="/images/junior.jpg"
+                        alt="Smash Junior - Limitovaná edícia"
+                        fill
+                        className="object-contain p-6 md:p-8"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-6 md:p-10">
+                      <div className="text-center mb-6">
+                        <h4 className="text-3xl md:text-4xl font-black text-amber-400 mb-3 drop-shadow-lg">SMASH JUNIOR</h4>
+                        <p className="text-base md:text-lg text-amber-100 leading-relaxed mb-6 max-w-2xl mx-auto">
+                          <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">100g hovädím smash mäsom</strong>, 
+                          roztopený <strong className="text-amber-300">čedar</strong>, chrumkavá <strong className="text-amber-300">kyslá uhorka</strong>, 
+                          čerstvá <strong className="text-amber-300">cibuľa</strong>, <strong className="text-red-400">kečup a horčica</strong> - 
+                          jednoduchý, chutný a cenovo perfektný! 🍔
+                        </p>
+                        <div className="inline-block">
+                          <div className="text-amber-400 text-3xl md:text-4xl font-black mb-2">
+                            6,90 €
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="max-w-2xl mx-auto mb-6">
+                        <div className="bg-amber-950/40 backdrop-blur-sm rounded-2xl p-6 border border-amber-500/30">
+                          <h5 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
+                            🍔 Zloženie
+                          </h5>
+                          <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
+                            Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔
+                          </p>
+                        </div>
+                      </div>
+                      <div className="text-center mt-8">
+                        <a
+                          href={ORDER_LINK}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-10 py-4 bg-gradient-to-r from-amber-500 via-orange-600 to-red-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
+                        >
+                          🔥 Objednaj TERAZ! 🔥
+                        </a>
+                        <p className="text-amber-300/60 text-xs mt-3">Kým je ešte dostupný...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 2. KOMBÁ */}
+          <div className="mb-20">
+            <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">KOMBÁ</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Burger Dynasty */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
@@ -183,7 +263,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* BURGRE */}
+          {/* 3. BURGRE */}
           <div className="mb-20">
           <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
             {/* Prvé 3 burgre - len na desktop */}
@@ -441,7 +521,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Chicken</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Chicken"].ingredients}
                     allergens={productData["Munch Chicken"].allergens}
@@ -495,9 +575,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* HOTDOGY */}
+          {/* 4. HOT-DOGY */}
           <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">HOTDOGY</h3>
+            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">HOT-DOGY</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Munch Dog NYC */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
@@ -543,7 +623,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ŠALÁTY */}
+          {/* 5. ŠALÁTY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">ŠALÁTY</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
@@ -591,82 +671,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* PRE DETI - HAPPY BROS */}
-          <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI - HAPPY BROS</h3>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
-              {/* Happy Meal */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/Happy bro´s meal pre deti.png" 
-                    alt="Happy Bros Meal"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bros Meal</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Happy Bros Meal"].ingredients}
-                    allergens={productData["Happy Bros Meal"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* DEZERTY */}
-          <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">DEZERTY</h3>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
-              {/* Vyprazane Oreo */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/oreo.png" 
-                    alt="Vyprazane Oreo"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprazane Oreo</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Vyprazane Oreo"].ingredients}
-                    allergens={productData["Vyprazane Oreo"].allergens}
-                  />
-                </div>
-              </div>
-
-              {/* Vyprazane Bounty */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/bounty.png" 
-                    alt="Vyprazane Bounty"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprážané Bounty</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Vyprážané Bounty"].ingredients}
-                    allergens={productData["Vyprážané Bounty"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* PRÍLOHY */}
+          {/* 6. PRÍLOHY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRÍLOHY</h3>
             
@@ -764,7 +769,7 @@ export default function Home() {
         </div>
       </section>
 
-  {/* OMÁČKY — styled like BURGRE cards */}
+  {/* 7. OMÁČKY — styled like BURGRE cards */}
   <section className="py-20 px-4 bg-black">
         <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">OMÁČKY</h3>
 
@@ -958,92 +963,58 @@ export default function Home() {
   </div>
       </section>
 
-      {/* NOVEMBROVÁ ŠPECIALITA Section removed per request */}
-
-      {/* LIMITOVANÁ EDÍCIA Section */}
-      <section id="limitovana-edicia" className="py-20 px-4 bg-gradient-to-br from-red-950 via-orange-900 to-amber-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial from-amber-500/10 via-transparent to-transparent animate-pulse"></div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-full mb-4 animate-bounce-slow">
-              <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Limitovaná edícia 🔥</span>
-            </div>
-            <h2 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-4 drop-shadow-2xl">
-              SMASH JUNIOR
-            </h2>
-            <p className="text-xl md:text-2xl text-amber-200 font-bold max-w-3xl mx-auto">
-              Klasický smash burger v perfektnej veľkosti - chutný, cenovo dostupný a vždy chutí!
-            </p>
-            <p className="text-amber-300/70 text-sm mt-2">⏰ Dostupné len počas špeciálnej akcie</p>
-          </div>
-
-          <div className="flex justify-center">
-            <div className="w-full max-w-4xl bg-gradient-to-br from-amber-900/60 to-red-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.3)] hover:shadow-[0_0_80px_rgba(251,191,36,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-amber-900/40 to-red-900/40">
-                  {/* Rounded corner borders - top left */}
-                  <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-amber-500 rounded-tl-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - top right */}
-                  <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-amber-500 rounded-tr-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - bottom left */}
-                  <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-amber-500 rounded-bl-3xl pointer-events-none z-10" />
-                  {/* Rounded corner borders - bottom right */}
-                  <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-amber-500 rounded-br-3xl pointer-events-none z-10" />
-                  
-                <Image
-                  src="/images/junior.jpg"
-                  alt="Smash Junior - Limitovaná edícia"
+      {/* 8. DEZERTY */}
+      <section className="py-20 px-4 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">DEZERTY</h3>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
+            {/* Vyprazane Oreo */}
+            <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+              <div className="relative h-40 md:h-96 w-full">
+                <Image 
+                  src="/images/oreo.png" 
+                  alt="Vyprazane Oreo"
                   fill
-                  className="object-contain p-6 md:p-8"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                  loading="lazy"
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="p-6 md:p-10">
-                <div className="text-center mb-6">
-                  <h3 className="text-4xl md:text-5xl font-black text-amber-400 mb-3 drop-shadow-lg">SMASH JUNIOR</h3>
-                  <p className="text-lg md:text-xl text-amber-100 leading-relaxed mb-6 max-w-2xl mx-auto">
-                    <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">100g hovädím smash mäsom</strong>, 
-                    roztopený <strong className="text-amber-300">čedar</strong>, chrumkavá <strong className="text-amber-300">kyslá uhorka</strong>, 
-                    čerstvá <strong className="text-amber-300">cibuľa</strong>, <strong className="text-red-400">kečup a horčica</strong> - 
-                    jednoduchý, chutný a cenovo perfektný! 🍔
-                  </p>
-                  <div className="inline-block">
-                    <div className="text-amber-400 text-4xl md:text-5xl font-black mb-2">
-                      6,90 €
-                    </div>
-                  </div>
-                </div>
+              <div className="p-2 md:p-4 text-center">
+                <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprazane Oreo</h3>
+                <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
+                <ProductInfo 
+                  ingredients={productData["Vyprazane Oreo"].ingredients}
+                  allergens={productData["Vyprazane Oreo"].allergens}
+                />
+              </div>
+            </div>
 
-                <div className="max-w-2xl mx-auto mb-6">
-                  <div className="bg-amber-950/40 backdrop-blur-sm rounded-2xl p-6 border border-amber-500/30">
-                    <h4 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
-                      🍔 Zloženie
-                    </h4>
-                    <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
-                      Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔
-                    </p>
-                    {/* No allergens for limited edition */}
-                  </div>
-                </div>
-                <div className="text-center mt-8">
-                  <a
-                    href={ORDER_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-10 py-4 bg-gradient-to-r from-amber-500 via-orange-600 to-red-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
-                  >
-                    🔥 Objednaj TERAZ! 🔥
-                  </a>
-                  <p className="text-amber-300/60 text-xs mt-3">Kým je ešte dostupný...</p>
-                </div>
+            {/* Vyprazane Bounty */}
+            <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+              <div className="relative h-40 md:h-96 w-full">
+                <Image 
+                  src="/images/bounty.png" 
+                  alt="Vyprazane Bounty"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-2 md:p-4 text-center">
+                <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprážané Bounty</h3>
+                <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
+                <ProductInfo 
+                  ingredients={productData["Vyprážané Bounty"].ingredients}
+                  allergens={productData["Vyprážané Bounty"].allergens}
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sauces section removed per user request */}
+      {/* NOVEMBROVÁ ŠPECIALITA Section removed per request */}
+      {/* LIMITOVANÁ EDÍCIA Section moved to menu as first item */}
 
       {/* Objednávky + Lokalita a Otváracie hodiny - Combined Section with Aurora */}
       <section className="relative py-20 px-4 bg-neutral-900 overflow-hidden">
