@@ -877,11 +877,11 @@ export default function Home() {
               <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
-              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch</h3>
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Smoky Mayo</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
               <ProductInfo 
-                ingredients={productData["Munch"].ingredients}
-                allergens={productData["Munch"].allergens}
+                ingredients={productData["Munch Smoky Mayo"].ingredients}
+                allergens={productData["Munch Smoky Mayo"].allergens}
               />
             </div>
           </div>
@@ -987,11 +987,11 @@ export default function Home() {
         <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
       </div>
       <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Munch</h3>
+        <h3 className="text-sm font-bold text-white mb-1">Munch Smoky Mayo</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
         <ProductInfo 
-          ingredients={productData["Munch"].ingredients}
-          allergens={productData["Munch"].allergens}
+          ingredients={productData["Munch Smoky Mayo"].ingredients}
+          allergens={productData["Munch Smoky Mayo"].allergens}
         />
       </div>
     </div>
