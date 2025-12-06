@@ -869,6 +869,24 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Desktop: next row - centered single item */}
+        <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
+          {/* Munch */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+            <div className="relative h-40 md:h-96 w-full">
+              <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 md:p-4 text-center">
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch</h3>
+              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Munch"].ingredients}
+                allergens={productData["Munch"].allergens}
+              />
+            </div>
+          </div>
+        </div>
+
   {/* Mobile grid (2 cols) */}
   <div className="grid grid-cols-2 gap-3 lg:hidden">
     {/* BBQ */}
@@ -957,6 +975,23 @@ export default function Home() {
         <ProductInfo 
           ingredients={productData["Sriracha"].ingredients}
           allergens={productData["Sriracha"].allergens}
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* Mobile: Munch centered */}
+  <div className="flex justify-center px-2 mt-3 lg:hidden">
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
+      <div className="relative h-40 w-full">
+        <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+      </div>
+      <div className="p-2 text-center">
+        <h3 className="text-sm font-bold text-white mb-1">Munch</h3>
+        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+        <ProductInfo 
+          ingredients={productData["Munch"].ingredients}
+          allergens={productData["Munch"].allergens}
         />
       </div>
     </div>

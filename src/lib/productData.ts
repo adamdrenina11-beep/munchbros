@@ -11,7 +11,7 @@ export const productData = {
   // BURGRE
   "Munch Bros": {
     price: "10,90 €",
-    ingredients: "brioška 120g, bio hovädzie mäso 150g, pepper omáčka, čedar, modrý syr, slanina, cibuľové krúžky",
+    ingredients: "brioška 120g, bio hovädzie mäso 150g, americká horčica, čedar, slanina, cibuľové krúžky",
     allergens: "1,3,7,10,11,12"
   },
   "Munch of Fire": {
@@ -36,7 +36,7 @@ export const productData = {
   },
   "Munch Cheeseburger": {
     price: "8,50 €",
-    ingredients: "brioška 120g, bio hovädzia placka 100g, čedar, horčica, kečup",
+    ingredients: "brioška 120g, bio hovädzia placka 100g, čedar, cibuľa, americká horčica, kečup",
     allergens: "1,3,7,10"
   },
   "Munch Swiss": {
@@ -143,6 +143,11 @@ Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov �
 brat bez brata. A to predsa neurobíš.`,
     allergens: ""
   },
+  "Munch": {
+    price: "1,50 €",
+    ingredients: "Krémová dymová omáčka s chipotle, ktorá dá hranolkám aj burgerom chuť Ameriky.",
+    allergens: ""
+  },
   "Ranch": {
     price: "1,50 €",
     ingredients: `Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili
@@ -152,7 +157,7 @@ brat bez brata. A to predsa neurobíš.`,
   "Sriracha": {
     price: "1,50 €",
     ingredients: `Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o
-sekundu neskôr ti jazyk napíše: „Horííím!“ Pre tých, čo si pálivé užívajú s úsmevom.`,
+sekundu neskôr ti jazyk napíše: „Horííím!" Pre tých, čo si pálivé užívajú s úsmevom.`,
     allergens: ""
   },
   
