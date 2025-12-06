@@ -143,7 +143,7 @@ Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov �
 brat bez brata. A to predsa neurobíš.`,
     allergens: ""
   },
-  "Munch": {
+  "Munch Smoky Mayo": {
     price: "1,50 €",
     ingredients: "Krémová dymová omáčka s chipotle, ktorá dá hranolkám aj burgerom chuť Ameriky.",
     allergens: ""
