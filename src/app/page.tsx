@@ -149,15 +149,15 @@ export default function Home() {
               <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-12">
                   <div className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-full mb-4 animate-bounce-slow">
-                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Limitovaná edícia 🔥</span>
+                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Výhodná ponuka 🔥</span>
                   </div>
                   <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-4 drop-shadow-2xl">
-                    SMASH JUNIOR
+                    MUNCH CHEESEBURGER MENU
                   </h3>
                   <p className="text-lg md:text-xl text-amber-200 font-bold max-w-3xl mx-auto">
-                    Klasický smash burger v perfektnej veľkosti - chutný, cenovo dostupný a vždy chutí!
+                    Klasický cheeseburger v perfektnej cene - menu s hranolkami a omáčkou!
                   </p>
-                  <p className="text-amber-300/70 text-sm mt-2">⏰ Dostupné len počas špeciálnej akcie</p>
+                  <p className="text-amber-300/70 text-sm mt-2">⏰ Výhodná ponuka</p>
                 </div>
 
                 <div className="flex justify-center">
@@ -169,8 +169,8 @@ export default function Home() {
                         <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-amber-500 rounded-br-3xl pointer-events-none z-10" />
                         
                       <Image
-                        src="/images/junior.jpg"
-                        alt="Smash Junior - Limitovaná edícia"
+                        src="/images/munchess.png"
+                        alt="Munch Cheeseburger menu - Výhodná ponuka"
                         fill
                         className="object-contain p-6 md:p-8"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -179,16 +179,10 @@ export default function Home() {
                     </div>
                     <div className="p-6 md:p-10">
                       <div className="text-center mb-6">
-                        <h4 className="text-3xl md:text-4xl font-black text-amber-400 mb-3 drop-shadow-lg">SMASH JUNIOR</h4>
-                        <p className="text-base md:text-lg text-amber-100 leading-relaxed mb-6 max-w-2xl mx-auto">
-                          <strong className="text-amber-300">Maslová brioška</strong> s chutným <strong className="text-red-400">100g hovädím smash mäsom</strong>, 
-                          roztopený <strong className="text-amber-300">čedar</strong>, chrumkavá <strong className="text-amber-300">kyslá uhorka</strong>, 
-                          čerstvá <strong className="text-amber-300">cibuľa</strong>, <strong className="text-red-400">kečup a horčica</strong> - 
-                          jednoduchý, chutný a cenovo perfektný! 🍔
-                        </p>
+                        <h4 className="text-3xl md:text-4xl font-black text-amber-400 mb-3 drop-shadow-lg">MUNCH CHEESEBURGER MENU</h4>
                         <div className="inline-block">
                           <div className="text-amber-400 text-3xl md:text-4xl font-black mb-2">
-                            6,90 €
+                            9,90 €
                           </div>
                         </div>
                       </div>
@@ -199,7 +193,7 @@ export default function Home() {
                             🍔 Zloženie
                           </h5>
                           <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
-                            Maslová brioška, 100g hovädzie smash mäso, čedar, kyslá uhorka, cibuľa, kečup, horčica 🍔
+                            120g hovädzia bio placka v maslovej brioške, kyslá uhorka, biela cibuľa, čedar a americká horčica s kečupom - klasika, ktorá to všetko začala. 🍔
                           </p>
                         </div>
                       </div>
@@ -212,7 +206,7 @@ export default function Home() {
                         >
                           🔥 Objednaj TERAZ! 🔥
                         </a>
-                        <p className="text-amber-300/60 text-xs mt-3">Kým je ešte dostupný...</p>
+                        <p className="text-amber-300/60 text-xs mt-3">Výhodná ponuka!</p>
                       </div>
                     </div>
                   </div>
