@@ -193,7 +193,7 @@ export default function Home() {
                             🍔 Zloženie
                           </h5>
                           <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
-                            120g hovädzia bio placka v maslovej brioške, kyslá uhorka, biela cibuľa, čedar a americká horčica s kečupom - klasika, ktorá to všetko začala. 🍔
+                            120g hovädzia bio placka v maslovej brioške, kyslá uhorka, biela cibuľa, čedar a americká horčica s kečupom - klasika, ktorá to všetko začala.  🍔
                           </p>
                         </div>
                       </div>
@@ -383,10 +383,10 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,50 €</p>
                   <ProductInfo 
-                    ingredients={productData["Munch Bros"].ingredients}
-                    allergens={productData["Munch Bros"].allergens}
+                    ingredients={productData["Munch Cheeseburger"].ingredients}
+                    allergens={productData["Munch Cheeseburger"].allergens}
                   />
                 </div>
               </div>
