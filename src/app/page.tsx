@@ -143,34 +143,34 @@ export default function Home() {
 
           {/* 1. ŠPECIÁL MESIACA - LIMITOVANÁ EDÍCIA */}
           <div className="mb-20">
-            <div className="py-12 px-4 bg-gradient-to-br from-red-950 via-orange-900 to-amber-950 relative overflow-hidden rounded-3xl">
-              <div className="absolute inset-0 bg-gradient-radial from-amber-500/10 via-transparent to-transparent animate-pulse"></div>
+            <div className="py-12 px-4 bg-gradient-to-br from-emerald-950 via-teal-900 to-cyan-950 relative overflow-hidden rounded-3xl">
+              <div className="absolute inset-0 bg-gradient-radial from-teal-500/10 via-transparent to-transparent animate-pulse"></div>
               
               <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-12">
-                  <div className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-red-600 rounded-full mb-4 animate-bounce-slow">
-                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Výhodná ponuka 🔥</span>
+                  <div className="inline-block px-6 py-2 bg-gradient-to-r from-teal-500 to-emerald-600 rounded-full mb-4 animate-bounce-slow">
+                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🍔 Špeciál Mesiaca 🍔</span>
                   </div>
-                  <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-4 drop-shadow-2xl">
-                    MUNCH CHEESEBURGER MENU
+                  <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-emerald-500 to-green-500 mb-4 drop-shadow-2xl">
+                    BAČA
                   </h3>
-                  <p className="text-lg md:text-xl text-amber-200 font-bold max-w-3xl mx-auto">
-                    Klasický cheeseburger v perfektnej cene - menu s hranolkami a omáčkou!
+                  <p className="text-lg md:text-xl text-teal-200 font-bold max-w-3xl mx-auto">
+                    Tradičná slovenská chuť v modernom burger háve - špeciálna edícia!
                   </p>
-                  <p className="text-amber-300/70 text-sm mt-2">⏰ Výhodná ponuka</p>
+                  <p className="text-teal-300/70 text-sm mt-2">⏰ Limitovaná ponuka</p>
                 </div>
 
                 <div className="flex justify-center">
-                  <div className="w-full max-w-4xl bg-gradient-to-br from-amber-900/60 to-red-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.3)] hover:shadow-[0_0_80px_rgba(251,191,36,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                      <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-amber-900/40 to-red-900/40">
-                        <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-amber-500 rounded-tl-3xl pointer-events-none z-10" />
-                        <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-amber-500 rounded-tr-3xl pointer-events-none z-10" />
-                        <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-amber-500 rounded-bl-3xl pointer-events-none z-10" />
-                        <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-amber-500 rounded-br-3xl pointer-events-none z-10" />
+                  <div className="w-full max-w-4xl bg-gradient-to-br from-teal-900/60 to-emerald-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(20,184,166,0.3)] hover:shadow-[0_0_80px_rgba(20,184,166,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                      <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-teal-900/40 to-emerald-900/40">
+                        <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-teal-500 rounded-tl-3xl pointer-events-none z-10" />
+                        <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-teal-500 rounded-tr-3xl pointer-events-none z-10" />
+                        <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-teal-500 rounded-bl-3xl pointer-events-none z-10" />
+                        <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-teal-500 rounded-br-3xl pointer-events-none z-10" />
                         
                       <Image
-                        src="/images/munchess.png"
-                        alt="Munch Cheeseburger menu - Výhodná ponuka"
+                        src="/images/baca.png"
+                        alt="BAČA - Špeciál Mesiaca"
                         fill
                         className="object-contain p-6 md:p-8"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -179,21 +179,21 @@ export default function Home() {
                     </div>
                     <div className="p-6 md:p-10">
                       <div className="text-center mb-6">
-                        <h4 className="text-3xl md:text-4xl font-black text-amber-400 mb-3 drop-shadow-lg">MUNCH CHEESEBURGER MENU</h4>
+                        <h4 className="text-3xl md:text-4xl font-black text-teal-400 mb-3 drop-shadow-lg">BAČA 🍔</h4>
                         <div className="inline-block">
-                          <div className="text-amber-400 text-3xl md:text-4xl font-black mb-2">
+                          <div className="text-teal-400 text-3xl md:text-4xl font-black mb-2">
                             9,90 €
                           </div>
                         </div>
                       </div>
 
                       <div className="max-w-2xl mx-auto mb-6">
-                        <div className="bg-amber-950/40 backdrop-blur-sm rounded-2xl p-6 border border-amber-500/30">
-                          <h5 className="text-amber-300 text-lg font-bold mb-3 flex items-center gap-2">
+                        <div className="bg-teal-950/40 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/30">
+                          <h5 className="text-teal-300 text-lg font-bold mb-3 flex items-center gap-2">
                             🍔 Zloženie
                           </h5>
-                          <p className="text-amber-100 text-sm md:text-base leading-relaxed mb-4">
-                            120g hovädzia bio placka v maslovej brioške, kyslá uhorka, biela cibuľa, čedar a americká horčica s kečupom - klasika, ktorá to všetko začala.  🍔
+                          <p className="text-teal-100 text-sm md:text-base leading-relaxed mb-4">
+                            Jemná brýndzová majonéza so zaúdenou sladkou červenou paprikou, šťavnatá 150g hovädzia placka, roztečený slovenský oštiepok, poctivé slaninové ragú s jarnou cibuľkou a navrch jemná čučoriedková mayo. 🍔
                           </p>
                         </div>
                       </div>
@@ -202,11 +202,11 @@ export default function Home() {
                           href={ORDER_LINK}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block px-10 py-4 bg-gradient-to-r from-amber-500 via-orange-600 to-red-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
+                          className="inline-block px-10 py-4 bg-gradient-to-r from-teal-500 via-emerald-600 to-green-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
                         >
-                          🔥 Objednaj TERAZ! 🔥
+                          🍔 Objednaj TERAZ! 🍔
                         </a>
-                        <p className="text-amber-300/60 text-xs mt-3">Výhodná ponuka!</p>
+                        <p className="text-teal-300/60 text-xs mt-3">Limitovaná edícia!</p>
                       </div>
                     </div>
                   </div>
@@ -252,6 +252,24 @@ export default function Home() {
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
+                </div>
+              </div>
+
+              {/* Munch Cheeseburger Menu */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+                <div className="relative h-48 md:h-[28rem] w-full">
+                  <Image 
+                    src="/images/munchess.png" 
+                    alt="Munch Cheeseburger Menu"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger Menu</h3>
+                  <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                 </div>
               </div>
             </div>
@@ -370,32 +388,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Munch Cheeseburger */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-                <div className="relative h-28 md:h-96 w-full">
-                  <Image 
-                    src="/images/munchess.png" 
-                    alt="Munch Cheeseburger"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cheeseburger</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Munch Cheeseburger"].ingredients}
-                    allergens={productData["Munch Cheeseburger"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* 7th burger centered - len na desktop */}
-            <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20">
               {/* Munch Swiss */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
                   <Image 
                     src="/images/swiss-munch.png" 
@@ -415,6 +409,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+
 
             {/* Mobile verzia - grid 2 columns */}
             <div className="grid grid-cols-2 gap-3 lg:hidden">
@@ -523,31 +519,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Munch Cheeseburger */}
+              {/* Munch Swiss */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-                <div className="relative h-40 w-full">
-                  <Image 
-                    src="/images/munchess.png" 
-                    alt="Munch Cheeseburger"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 text-center">
-                  <h3 className="text-sm font-bold text-white mb-1">Munch Cheeseburger</h3>
-                  <p className="text-pink-300 text-sm font-bold">8,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Munch Cheeseburger"].ingredients}
-                    allergens={productData["Munch Cheeseburger"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Munch Swiss vycentrovaný - len na mobile */}
-            <div className="flex justify-center px-2 mt-3 lg:hidden">
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
                 <div className="relative h-40 w-full">
                   <Image 
                     src="/images/swiss-munch.png" 

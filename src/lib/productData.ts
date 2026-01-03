@@ -8,7 +8,16 @@ export const productData = {
     ingredients: "Hracie Mäso v kombo má 150g BIO hovädziu placku. Pre zvolenie burgru s 120g BIO plackou zadajte Burger Kombo Klasik. Celý burger dopĺňa čedar, kyslá uhorka, americká horčica, kečup, maslová brioška, hranolky.",
     allergens: "1,3,7,10,11,12"
   },
+  "Munch Cheeseburger Menu": {
+    ingredients: "120g hovädzia bio placka v maslovej brioške, kyslá uhorka, biela cibuľa, čedar, americká horčica, kečup, hranolky a omáčka - klasika, ktorá to všetko začala.",
+    allergens: "1,3,7,10,11,12"
+  },
   // BURGRE
+  "BAČA": {
+    price: "9,90 €",
+    ingredients: "Jemná brýndzová majonéza so zaúdenou sladkou červenou paprikou, šťavnatá 150g hovädzia placka, roztečený slovenský oštiepok, poctivé slaninové ragú s jarnou cibuľkou a navrch jemná čučoriedková mayo.",
+    allergens: "1,3,7,10,11,12"
+  },
   "Munch Bros": {
     price: "10,90 €",
     ingredients: "brioška 120g, bio hovädzie mäso 150g, americká horčica, čedar, slanina, cibuľové krúžky",
