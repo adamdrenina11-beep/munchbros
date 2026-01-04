@@ -29,12 +29,12 @@ export const productData = {
     allergens: "1,3,6,7,10,11,12"
   },
   "Smash Bros": {
-    price: "10,20 €",
+    price: "9,90 €",
     ingredients: "brioška 120g, 2x bio hovädzia placka 2x75g, čedar, biela cibuľa, slanina, kyslá uhorka, zaúdená omáčka",
     allergens: "1,3,7,10,11,12"
   },
   "OG Munch": {
-    price: "10,20 €",
+    price: "9,90 €",
     ingredients: "brioška 120g, bio hovädzia placka 150g, čedar, paradajka, ľadový šalát, červená cibuľa, kyslá uhorka, omáčka Munch Bros",
     allergens: "1,3,7,9,10,11,12"
   },
@@ -74,6 +74,12 @@ export const productData = {
     ingredients: "Brioškový rožok 120g, bravčovo-hovädzí párok 70g, kečup alebo americká horčica",
     allergens: "1,10"
   },
+  // PRE DETI
+  "Happy Bros Meal pre deti": {
+    price: "7,50 €",
+    ingredients: "150g chrumkavých kuracích nuggetiek, ktoré sú zvonka zlatisté a zvnútra krásne šťavnaté. K tomu porcia veselých hranoliek, ktoré sa s radosťou máčajú do kečupu. Toto menu je zaručený recept na spokojné bruško a úsmev na tvári každého malého gurmána. Plus kečup.",
+    allergens: "1,7,10"
+  },
   // ŠALÁTY
   "Kuraci Salat": {
     price: "8,99 €",
@@ -84,12 +90,6 @@ export const productData = {
     price: "8,99 €",
     ingredients: "Halloumi 150g, paradajky, uhorka, červená cibuľka, sladká kukurica, čedar, medovo-horčicová omáčka",
     allergens: "7,10"
-  },
-  // PRE DETI
-  "Happy Bros Meal": {
-    price: "7,50 €",
-    ingredients: "Kuracie nuggetky 150g, hranolky, kečup",
-    allergens: "1,7,10"
   },
   // DEZERTY
   "Vyprazane Oreo": {

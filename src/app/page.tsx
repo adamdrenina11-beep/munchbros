@@ -335,7 +335,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Smash Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Smash Bros"].ingredients}
                     allergens={productData["Smash Bros"].allergens}
@@ -359,7 +359,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">OG Munch</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["OG Munch"].ingredients}
                     allergens={productData["OG Munch"].allergens}
@@ -469,7 +469,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Smash Bros"].ingredients}
                     allergens={productData["Smash Bros"].allergens}
@@ -490,7 +490,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">OG Munch</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["OG Munch"].ingredients}
                     allergens={productData["OG Munch"].allergens}
@@ -590,7 +590,34 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 5. ŠALÁTY */}
+          {/* 5. PRE DETI */}
+          <div className="mb-20">
+            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI</h3>
+            <div className="flex justify-center px-2 md:px-20">
+              {/* Happy Bros Meal pre deti */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+                <div className="relative h-40 md:h-96 w-full">
+                  <Image 
+                    src="/images/Happy bro´s meal pre deti.png" 
+                    alt="Happy Bros Meal pre deti"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bro&apos;s Meal pre deti</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,50 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Happy Bros Meal pre deti"].ingredients}
+                    allergens={productData["Happy Bros Meal pre deti"].allergens}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 6. ŠALÁTY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">ŠALÁTY</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
