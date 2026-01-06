@@ -77,7 +77,7 @@ export const productData = {
   // PRE DETI
   "Happy Bros Meal pre deti": {
     price: "7,50 €",
-    ingredients: "150g chrumkavých kuracích nuggetiek, ktoré sú zvonka zlatisté a zvnútra krásne šťavnaté. K tomu porcia veselých hranoliek, ktoré sa s radosťou máčajú do kečupu. Toto menu je zaručený recept na spokojné bruško a úsmev na tvári každého malého gurmána. Plus kečup.",
+    ingredients: "Kuracie nuggetky 150g, hranolky, kečup",
     allergens: "1,7,10"
   },
   // ŠALÁTY
@@ -119,7 +119,7 @@ export const productData = {
     allergens: ""
   },
   "Coleslaw": {
-    price: "2,80 €",
+    price: "3,20 €",
     ingredients: "Kapusta, mrkva, majonéza, koreniny, 180g",
     allergens: "3"
   },
