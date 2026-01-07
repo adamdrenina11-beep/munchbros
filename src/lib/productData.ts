@@ -97,11 +97,6 @@ export const productData = {
     ingredients: "4 ks, obalené oreo vo vanilkovom cestíčku, smažené, poliate bielou čokoládou",
     allergens: "1,3,6,7"
   },
-  "Vyprážané Bounty": {
-    price: "5,80 €",
-    ingredients: "Vyprážané Bounty v jemnom cestíčku posypané práškovým cukrom a pokvapkané čokoládovou omáčkou",
-    allergens: "1,3,6,7"
-  },
   // PRÍLOHY
   "Munch Fries": {
     price: "3,50 €",

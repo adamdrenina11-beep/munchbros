@@ -1022,7 +1022,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">DEZERTY</h3>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
+          <div className="flex justify-center px-2 md:px-20">
             {/* Vyprazane Oreo */}
             <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
               <div className="relative h-40 md:h-96 w-full">
@@ -1040,27 +1040,6 @@ export default function Home() {
                 <ProductInfo 
                   ingredients={productData["Vyprazane Oreo"].ingredients}
                   allergens={productData["Vyprazane Oreo"].allergens}
-                />
-              </div>
-            </div>
-
-            {/* Vyprazane Bounty */}
-            <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-              <div className="relative h-40 md:h-96 w-full">
-                <Image 
-                  src="/images/bounty.png" 
-                  alt="Vyprazane Bounty"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <div className="p-2 md:p-4 text-center">
-                <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprážané Bounty</h3>
-                <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
-                <ProductInfo 
-                  ingredients={productData["Vyprážané Bounty"].ingredients}
-                  allergens={productData["Vyprážané Bounty"].allergens}
                 />
               </div>
             </div>
@@ -1147,27 +1126,27 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Utorok:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Streda:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Štvrtok:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Piatok:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Sobota:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
-                    <span>15:00 - 20:30</span>
+                    <span>15:00 - 19:30</span>
                   </div>
                 </div>
               </div>
