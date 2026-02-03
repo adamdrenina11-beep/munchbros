@@ -82,12 +82,12 @@ export const productData = {
   },
   // ŠALÁTY
   "Kuraci Salat": {
-    price: "8,99 €",
+    price: "9,50 €",
     ingredients: "Kuracie nuggetky 150g, mix šalátov, červená cibuľka, cherry paradajky, uhorka, sladká kukurica, strúhaný čedar, medovohorčicová omáčka",
     allergens: "1,3,7,10"
   },
   "Halloumi": {
-    price: "8,99 €",
+    price: "9,50 €",
     ingredients: "Halloumi 150g, paradajky, uhorka, červená cibuľka, sladká kukurica, čedar, medovo-horčicová omáčka",
     allergens: "7,10"
   },
@@ -114,7 +114,7 @@ export const productData = {
     allergens: ""
   },
   "Coleslaw": {
-    price: "3,20 €",
+    price: "3,00 €",
     ingredients: "Kapusta, mrkva, majonéza, koreniny, 180g",
     allergens: "3"
   },
