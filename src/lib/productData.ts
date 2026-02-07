@@ -140,6 +140,11 @@ chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš not
 zanechá chuťový zážitok, na ktorý len tak nezabudneš.`,
     allergens: ""
   },
+  "Cucoriedka-mayo": {
+    price: "1,50 €",
+    ingredients: "",
+    allergens: ""
+  },
   "Munch Bros Sauce": {
     price: "1,50 €",
     ingredients: `Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice.
