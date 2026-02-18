@@ -1142,11 +1142,11 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Piatok:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Sobota:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
