@@ -152,34 +152,34 @@ export default function Home() {
                     <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🍔 Špeciál Mesiaca 🍔</span>
                   </div>
                   <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-emerald-500 to-green-500 mb-4 drop-shadow-2xl">
-                    BAČA
+                    TASTY MUNCH
                   </h3>
                   <p className="text-lg md:text-xl text-teal-200 font-bold max-w-3xl mx-auto">
-                    Tradičná slovenská chuť v modernom burger háve - špeciálna edícia!
+                    Original poznáš, my sme ho spravili po svojom - špeciálna edícia!
                   </p>
                   <p className="text-teal-300/70 text-sm mt-2">⏰ Limitovaná ponuka</p>
                 </div>
 
                 <div className="flex justify-center">
-                  <div className="w-full max-w-4xl bg-gradient-to-br from-teal-900/60 to-emerald-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(20,184,166,0.3)] hover:shadow-[0_0_80px_rgba(20,184,166,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                      <div className="relative h-80 md:h-[32rem] w-full overflow-hidden bg-gradient-to-b from-teal-900/40 to-emerald-900/40">
+                  <div className="w-full max-w-3xl bg-gradient-to-br from-teal-900/60 to-emerald-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(20,184,166,0.3)] hover:shadow-[0_0_80px_rgba(20,184,166,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                      <div className="relative h-80 md:h-[28rem] w-full overflow-hidden bg-black/20">
                         <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-teal-500 rounded-tl-3xl pointer-events-none z-10" />
                         <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-teal-500 rounded-tr-3xl pointer-events-none z-10" />
                         <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-teal-500 rounded-bl-3xl pointer-events-none z-10" />
                         <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-teal-500 rounded-br-3xl pointer-events-none z-10" />
                         
                       <Image
-                        src="/images/baca.png"
-                        alt="BAČA - Špeciál Mesiaca"
+                        src="/images/tasty-munch.jpg"
+                        alt="TASTY MUNCH - Špeciál Mesiaca"
                         fill
-                        className="object-contain p-6 md:p-8"
+                        className="object-contain"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                        loading="lazy"
+                        priority
                       />
                     </div>
                     <div className="p-6 md:p-10">
                       <div className="text-center mb-6">
-                        <h4 className="text-3xl md:text-4xl font-black text-teal-400 mb-3 drop-shadow-lg">BAČA 🍔</h4>
+                        <h4 className="text-3xl md:text-4xl font-black text-teal-400 mb-3 drop-shadow-lg">TASTY MUNCH 🍔</h4>
                         <div className="inline-block">
                           <div className="text-teal-400 text-3xl md:text-4xl font-black mb-2">
                             9,90 €
@@ -193,7 +193,7 @@ export default function Home() {
                             🍔 Zloženie
                           </h5>
                           <p className="text-teal-100 text-sm md:text-base leading-relaxed mb-4">
-                            Jemná brýndzová majonéza so zaúdenou sladkou červenou paprikou, šťavnatá 150g hovädzia placka, roztečený slovenský oštiepok, poctivé slaninové ragú s jarnou cibuľkou a navrch jemná čučoriedková mayo. 🍔
+                            150 g hovädzia placka v maslovej brioške, domáca Tasty omáčka, ľadový šalát, čerstvá paradajka, chrumkavá slanina, biely cheddar a jemne krájaná biela cibuľa. Original poznáš, my sme ho spravili po svojom. 🍔
                           </p>
                         </div>
                       </div>
@@ -889,14 +889,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Cucoriedka mayo */}
+          {/* Čučoriedková mayo */}
           <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
             <div className="relative h-40 md:h-96 w-full">
-              <Image src="/images/cucoriedka-mayo.jpg" alt="Čučoriedka mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              <Image src="/images/cucoriedka-mayo.jpg" alt="Čučoriedková mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
-              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Cucoriedka mayo</h3>
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Čučoriedková mayo</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
+              <ProductInfo 
+                ingredients={productData["Čučoriedková mayo"].ingredients}
+                allergens={productData["Čučoriedková mayo"].allergens}
+              />
             </div>
           </div>
         </div>
@@ -1012,10 +1016,10 @@ export default function Home() {
 
     <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
       <div className="relative h-40 w-full">
-        <Image src="/images/cucoriedka-mayo.jpg" alt="Cucoriedka mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        <Image src="/images/cucoriedka-mayo.jpg" alt="Čučoriedková mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
       </div>
       <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Cucoriedka mayo</h3>
+        <h3 className="text-sm font-bold text-white mb-1">Čučoriedková mayo</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
       </div>
     </div>

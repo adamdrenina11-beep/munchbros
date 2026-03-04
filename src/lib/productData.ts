@@ -13,9 +13,9 @@ export const productData = {
     allergens: "1,3,7,10,11,12"
   },
   // BURGRE
-  "BAČA": {
+  "TASTY MUNCH": {
     price: "9,90 €",
-    ingredients: "Jemná brýndzová majonéza so zaúdenou sladkou červenou paprikou, šťavnatá 150g hovädzia placka, roztečený slovenský oštiepok, poctivé slaninové ragú s jarnou cibuľkou a navrch jemná čučoriedková mayo.",
+    ingredients: "150 g hovädzia placka v maslovej brioške, domáca Tasty omáčka, ľadový šalát, čerstvá paradajka, chrumkavá slanina, biely cheddar a jemne krájaná biela cibuľa. Original poznáš, my sme ho spravili po svojom.",
     allergens: "1,3,7,10,11,12"
   },
   "Munch Bros": {
@@ -140,7 +140,7 @@ chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš not
 zanechá chuťový zážitok, na ktorý len tak nezabudneš.`,
     allergens: ""
   },
-  "Cucoriedka-mayo": {
+  "Čučoriedková mayo": {
     price: "1,50 €",
     ingredients: "",
     allergens: ""
