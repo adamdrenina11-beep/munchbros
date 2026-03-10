@@ -262,7 +262,7 @@ export default function Home() {
           <div className="mb-20">
           <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">BURGRE</h3>
             {/* Prvé 3 burgre - len na desktop */}
-            <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
+            <div className="hidden lg:grid lg:grid-cols-3 items-start gap-3 md:gap-10 mb-3 md:mb-10">
               {/* Munch Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
@@ -328,7 +328,7 @@ export default function Home() {
             </div>
 
             {/* Second row - 3 burgre - len na desktop */}
-            <div className="hidden lg:grid lg:grid-cols-3 gap-3 md:gap-10 mb-3 md:mb-10">
+            <div className="hidden lg:grid lg:grid-cols-3 items-start gap-3 md:gap-10 mb-3 md:mb-10">
               {/* OG Munch */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-28 md:h-96 w-full">
@@ -396,7 +396,7 @@ export default function Home() {
 
 
             {/* Mobile verzia - grid 2 columns */}
-            <div className="grid grid-cols-2 gap-3 lg:hidden">
+            <div className="grid grid-cols-2 items-start gap-3 lg:hidden">
               {/* Munch Bros */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 w-full">
@@ -528,7 +528,7 @@ export default function Home() {
           {/* 4. HOT-DOGY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">HOT-DOGY</h3>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
+            <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Munch Dog NYC */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
                 <div className="relative h-40 md:h-96 w-full">
@@ -629,7 +629,7 @@ export default function Home() {
           {/* 6. ŠALÁTY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">ŠALÁTY</h3>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
+            <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Kuraci Salat */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
                 <div className="relative h-40 md:h-96 w-full">
@@ -643,7 +643,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Kuraci Salat</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,99 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Kuraci Salat"].ingredients}
                     allergens={productData["Kuraci Salat"].allergens}
@@ -664,7 +664,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Halloumi</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">8,99 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Halloumi"].ingredients}
                     allergens={productData["Halloumi"].allergens}
@@ -678,7 +678,7 @@ export default function Home() {
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRÍLOHY</h3>
             
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-10">
+            <div className="grid grid-cols-2 lg:grid-cols-3 items-start gap-3 md:gap-10">
               {/* Munch Fries */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 md:h-96 w-full">
@@ -721,31 +721,29 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Coleslaw - skryté na mobile, viditeľné na lg */}
-              <div className="hidden lg:block bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+              {/* Munch Cajun Fries */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 md:h-96 w-full">
                   <Image 
-                    src="/images/Coleslaw.png" 
-                    alt="Coleslaw"
+                    src="/images/Cajunfries.jpg" 
+                    alt="Munch Cajun Fries"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Coleslaw</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">2,80 €</p>
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Cajun Fries</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">4,00 €</p>
                   <ProductInfo 
-                    ingredients={productData["Coleslaw"].ingredients}
-                    allergens={productData["Coleslaw"].allergens}
+                    ingredients={productData["Munch Cajun Fries"].ingredients}
+                    allergens={productData["Munch Cajun Fries"].allergens}
                   />
                 </div>
               </div>
-            </div>
 
-            {/* Coleslaw vycentrovaný - len na mobile */}
-            <div className="flex justify-center px-2 mt-3 lg:hidden">
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
+              {/* Coleslaw - visible on mobile in the grid, hidden on desktop (shown separately centered) */}
+              <div className="lg:hidden bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
                 <div className="relative h-40 w-full">
                   <Image 
                     src="/images/Coleslaw.png" 
@@ -757,7 +755,30 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Coleslaw</h3>
-                  <p className="text-pink-300 text-sm font-bold">2,80 €</p>
+                  <p className="text-pink-300 text-sm font-bold">3,00 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Coleslaw"].ingredients}
+                    allergens={productData["Coleslaw"].allergens}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop: second row - Coleslaw centered */}
+            <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 mt-3 md:mt-10">
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
+                <div className="relative h-40 md:h-96 w-full">
+                  <Image 
+                    src="/images/Coleslaw.png" 
+                    alt="Coleslaw"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Coleslaw</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">3,00 €</p>
                   <ProductInfo 
                     ingredients={productData["Coleslaw"].ingredients}
                     allergens={productData["Coleslaw"].allergens}
@@ -786,10 +807,6 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">BBQ</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["BBQ"].ingredients}
-                allergens={productData["BBQ"].allergens}
-              />
             </div>
           </div>
 
@@ -801,10 +818,6 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Blue Cheese</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Blue Cheese"].ingredients}
-                allergens={productData["Blue Cheese"].allergens}
-              />
             </div>
           </div>
 
@@ -816,10 +829,6 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Curry dream</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Curry dream"].ingredients}
-                allergens={productData["Curry dream"].allergens}
-              />
             </div>
           </div>
         </div>
@@ -834,10 +843,6 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bros</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Munch Bros Sauce"].ingredients}
-                allergens={productData["Munch Bros Sauce"].allergens}
-              />
             </div>
           </div>
 
@@ -849,10 +854,6 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Ranch</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Ranch"].ingredients}
-                allergens={productData["Ranch"].allergens}
-              />
             </div>
           </div>
 
@@ -864,43 +865,20 @@ export default function Home() {
             <div className="p-2 md:p-4 text-center">
               <h3 className="text-sm md:text-xl font-bold text-white mb-1">Sriracha</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Sriracha"].ingredients}
-                allergens={productData["Sriracha"].allergens}
-              />
             </div>
           </div>
         </div>
 
-        {/* Desktop: next row - centered items */}
+        {/* Desktop: next row - Munch Chipotle centered */}
         <div className="hidden lg:flex lg:justify-center gap-3 md:gap-10 px-4 md:px-20 mt-3 md:mt-10">
-          {/* Munch */}
+          {/* Munch Chipotle */}
           <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
             <div className="relative h-40 md:h-96 w-full">
-              <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              <Image src="/images/smoky-mayo.jpg" alt="Munch Chipotle" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <div className="p-2 md:p-4 text-center">
-              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Smoky Mayo</h3>
+              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chipotle</h3>
               <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Munch Smoky Mayo"].ingredients}
-                allergens={productData["Munch Smoky Mayo"].allergens}
-              />
-            </div>
-          </div>
-
-          {/* Čučoriedková mayo */}
-          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-80 md:w-96">
-            <div className="relative h-40 md:h-96 w-full">
-              <Image src="/images/cucoriedka-mayo.jpg" alt="Čučoriedková mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-            </div>
-            <div className="p-2 md:p-4 text-center">
-              <h3 className="text-sm md:text-xl font-bold text-white mb-1">Čučoriedková mayo</h3>
-              <p className="text-pink-300 text-sm md:text-lg font-bold">1,50 €</p>
-              <ProductInfo 
-                ingredients={productData["Čučoriedková mayo"].ingredients}
-                allergens={productData["Čučoriedková mayo"].allergens}
-              />
             </div>
           </div>
         </div>
@@ -915,10 +893,6 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">BBQ</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["BBQ"].ingredients}
-          allergens={productData["BBQ"].allergens}
-        />
       </div>
     </div>
 
@@ -930,10 +904,6 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Blue Cheese</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Blue Cheese"].ingredients}
-          allergens={productData["Blue Cheese"].allergens}
-        />
       </div>
     </div>
 
@@ -945,10 +915,6 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Curry dream</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Curry dream"].ingredients}
-          allergens={productData["Curry dream"].allergens}
-        />
       </div>
     </div>
 
@@ -960,10 +926,6 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Munch Bros</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Munch Bros Sauce"].ingredients}
-                    allergens={productData["Munch Bros Sauce"].allergens}
-                  />
       </div>
     </div>
 
@@ -975,10 +937,6 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Ranch</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Ranch"].ingredients}
-          allergens={productData["Ranch"].allergens}
-        />
       </div>
     </div>
 
@@ -990,36 +948,18 @@ export default function Home() {
       <div className="p-2 text-center">
         <h3 className="text-sm font-bold text-white mb-1">Sriracha</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Sriracha"].ingredients}
-          allergens={productData["Sriracha"].allergens}
-        />
       </div>
     </div>
   </div>
 
-  {/* Mobile: Munch and Cucoriedka-mayo */}
-  <div className="grid grid-cols-2 gap-3 mt-3 lg:hidden">
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+  {/* Mobile: Munch Chipotle */}
+  <div className="flex justify-center px-2 mt-3 lg:hidden">
+    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
       <div className="relative h-40 w-full">
-        <Image src="/images/smoky-mayo.jpg" alt="Munch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        <Image src="/images/smoky-mayo.jpg" alt="Munch Chipotle" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
       </div>
       <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Munch Smoky Mayo</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-        <ProductInfo 
-          ingredients={productData["Munch Smoky Mayo"].ingredients}
-          allergens={productData["Munch Smoky Mayo"].allergens}
-        />
-      </div>
-    </div>
-
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/cucoriedka-mayo.jpg" alt="Čučoriedková mayo" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Čučoriedková mayo</h3>
+        <h3 className="text-sm font-bold text-white mb-1">Munch Chipotle</h3>
         <p className="text-pink-300 text-sm font-bold">1,50 €</p>
       </div>
     </div>
@@ -1091,6 +1031,19 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+
+              {/* Instagram */}
+              <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 text-center">
+                <p className="text-lg text-pink-200 mb-4">Sledujte nás na Instagrame:</p>
+                <a
+                  href="https://www.instagram.com/munchbrossenec/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl md:text-3xl font-bold text-pink-300 hover:text-white transition-colors"
+                >
+                  @munchbrossenec
+                </a>
+              </div>
             </div>
           </div>
 
@@ -1154,7 +1107,7 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
-                    <span>15:00 - 19:30</span>
+                    <span className="text-yellow-400">Dočasne zatvorené</span>
                   </div>
                 </div>
               </div>

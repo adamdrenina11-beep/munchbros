@@ -109,7 +109,7 @@ export const productData = {
     allergens: ""
   },
   "Munch Cajun Fries": {
-    price: "3,80 €",
+    price: "4,00 €",
     ingredients: "Dvakrát fritované hranolky v hovädzom loji, cajun posyp (cesnak, cibuľka, jalapeňo, citrus)",
     allergens: ""
   },
@@ -123,50 +123,42 @@ export const productData = {
   // OMÁČKY (zoradené podľa mena)
   "BBQ": {
     price: "1,50 €",
-    ingredients: `Táto omáčka neprišla na piknik. Prišla zapáliť stôl, ukradnúť mäso a sadnúť si na trón. Dymová, sladká a jemne
-pikantná – presne taká, čo dá tvojmu burgeru výsluch ohňom. Susedia ju ucítia skôr, než zahryzneš. A od závisti im
-zvlhnú oči. BBQ, ako má byť – s dušou kovboja a bozkom plameňov.`,
+    ingredients: "",
     allergens: ""
   },
   "Blue Cheese": {
     price: "1,50 €",
-    ingredients: `Toto nie je omáčka pre bežné jazyky. Nabombená chuť modrého syra sa spojí s jemnou krémovosťou a odpáli ti
-chuťové bunky rovno do inej dimenzie. Stačí jedno sústo a zrazu cítiš notikáciu: „Započal si novú chuťovú éru"`,
+    ingredients: "",
     allergens: ""
   },
   "Curry dream": {
     price: "1,50 €",
-    ingredients: `Závan exotiky, čo ťa vystrelí rovno do ulíc Bombaja, Hustá, voňavá a rytmická ako dobrý beat – táto kari omáčka ti
-zanechá chuťový zážitok, na ktorý len tak nezabudneš.`,
+    ingredients: "",
     allergens: ""
   },
-  "Čučoriedková mayo": {
+  "Domáca tatárska omáčka": {
     price: "1,50 €",
     ingredients: "",
     allergens: ""
   },
   "Munch Bros Sauce": {
     price: "1,50 €",
-    ingredients: `Keď sa dvaja bratia z Munchu pustia do miešania chutí, vznikne omáčka, ktorá tvojmu burgru dá pravý vibe ulice.
-Svieža, jemná a s tajomným dotykom, čo trafí rovno do chuťových nervov – čistý avour punch. Burger bez nej ? Ako
-brat bez brata. A to predsa neurobíš.`,
+    ingredients: "",
     allergens: ""
   },
-  "Munch Smoky Mayo": {
+  "Munch Chipotle": {
     price: "1,50 €",
-    ingredients: "Krémová dymová omáčka s chipotle, ktorá dá hranolkám aj burgerom chuť Ameriky.",
+    ingredients: "",
     allergens: ""
   },
   "Ranch": {
     price: "1,50 €",
-    ingredients: `Krémová, svieža a poriadne návyková. Bylinky, cesnak a jemná kyslosť spojili sily, aby ti pri každom súste vyčarili
-úsmev. Hodí sa ku všetkým burgrom, hranolkám... alebo len tak na prst (fakt, nebudeme súdiť)`,
+    ingredients: "",
     allergens: ""
   },
   "Sriracha": {
     price: "1,50 €",
-    ingredients: `Najprv sladký dotyk, potom oheň ako z ulice Bangkoku. Sriracha v objatí s majonézou ťa najskôr ukolíše, ale o
-sekundu neskôr ti jazyk napíše: „Horííím!" Pre tých, čo si pálivé užívajú s úsmevom.`,
+    ingredients: "",
     allergens: ""
   },
   
