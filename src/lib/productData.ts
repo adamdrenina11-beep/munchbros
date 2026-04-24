@@ -53,6 +53,11 @@ export const productData = {
     ingredients: "brioška 120g, 2x bio hovädzie placka 2x75g, BBQ majonéza, karamelizovaná cibuľka, emmental, slanina",
     allergens: "1,3,7,10"
   },
+  "Munch Chorizo fries": {
+    price: "7,90 €",
+    ingredients: "Domáce hranolky, opečené chorizo, cheddar, chipotle omáčka, jarná cibuľka, chrumkavá cibuľka",
+    allergens: ""
+  },
   "Smash Junior": {
     price: "6,90 €",
     ingredients: "Dokonalý burger pre tých, čo hľadajú kvalitu bez kompromisov, ale v menšom formáte. Maslová brioška (100g), šťavnatá hovädzia placka (100g), roztopený čedar, kyslá uhorka, červená cibuľa, kečup a americká horčica.",
@@ -90,12 +95,6 @@ export const productData = {
     price: "9,50 €",
     ingredients: "Halloumi 150g, paradajky, uhorka, červená cibuľka, sladká kukurica, čedar, medovo-horčicová omáčka",
     allergens: "7,10"
-  },
-  // DEZERTY
-  "Vyprazane Oreo": {
-    price: "5,80 €",
-    ingredients: "4 ks, obalené oreo vo vanilkovom cestíčku, smažené, poliate bielou čokoládou",
-    allergens: "1,3,6,7"
   },
   // PRÍLOHY
   "Munch Fries": {

@@ -141,80 +141,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 1. ŠPECIÁL MESIACA - LIMITOVANÁ EDÍCIA */}
-          <div className="mb-20">
-            <div className="py-12 px-4 bg-gradient-to-br from-emerald-950 via-teal-900 to-cyan-950 relative overflow-hidden rounded-3xl">
-              <div className="absolute inset-0 bg-gradient-radial from-teal-500/10 via-transparent to-transparent animate-pulse"></div>
-              
-              <div className="max-w-7xl mx-auto relative z-10">
-                <div className="text-center mb-12">
-                  <div className="inline-block px-6 py-2 bg-gradient-to-r from-teal-500 to-emerald-600 rounded-full mb-4 animate-bounce-slow">
-                    <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🍔 Špeciál Mesiaca 🍔</span>
-                  </div>
-                  <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-emerald-500 to-green-500 mb-4 drop-shadow-2xl">
-                    TASTY MUNCH
-                  </h3>
-                  <p className="text-lg md:text-xl text-teal-200 font-bold max-w-3xl mx-auto">
-                    Original poznáš, my sme ho spravili po svojom - špeciálna edícia!
-                  </p>
-                  <p className="text-teal-300/70 text-sm mt-2">⏰ Limitovaná ponuka</p>
-                </div>
-
-                <div className="flex justify-center">
-                  <div className="w-full max-w-3xl bg-gradient-to-br from-teal-900/60 to-emerald-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(20,184,166,0.3)] hover:shadow-[0_0_80px_rgba(20,184,166,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                      <div className="relative h-80 md:h-[28rem] w-full overflow-hidden bg-black/20">
-                        <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-teal-500 rounded-tl-3xl pointer-events-none z-10" />
-                        <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-teal-500 rounded-tr-3xl pointer-events-none z-10" />
-                        <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-teal-500 rounded-bl-3xl pointer-events-none z-10" />
-                        <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-teal-500 rounded-br-3xl pointer-events-none z-10" />
-                        
-                      <Image
-                        src="/images/tasty-munch.jpg"
-                        alt="TASTY MUNCH - Špeciál Mesiaca"
-                        fill
-                        className="object-contain"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                        priority
-                      />
-                    </div>
-                    <div className="p-6 md:p-10">
-                      <div className="text-center mb-6">
-                        <h4 className="text-3xl md:text-4xl font-black text-teal-400 mb-3 drop-shadow-lg">TASTY MUNCH 🍔</h4>
-                        <div className="inline-block">
-                          <div className="text-teal-400 text-3xl md:text-4xl font-black mb-2">
-                            9,90 €
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="max-w-2xl mx-auto mb-6">
-                        <div className="bg-teal-950/40 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/30">
-                          <h5 className="text-teal-300 text-lg font-bold mb-3 flex items-center gap-2">
-                            🍔 Zloženie
-                          </h5>
-                          <p className="text-teal-100 text-sm md:text-base leading-relaxed mb-4">
-                            150 g hovädzia placka v maslovej brioške, domáca Tasty omáčka, ľadový šalát, čerstvá paradajka, chrumkavá slanina, biely cheddar a jemne krájaná biela cibuľa. Original poznáš, my sme ho spravili po svojom. 🍔
-                          </p>
-                        </div>
-                      </div>
-                      <div className="text-center mt-8">
-                        <a
-                          href={ORDER_LINK}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block px-10 py-4 bg-gradient-to-r from-teal-500 via-emerald-600 to-green-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
-                        >
-                          🍔 Objednaj TERAZ! 🍔
-                        </a>
-                        <p className="text-teal-300/60 text-xs mt-3">Limitovaná edícia!</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* 2. KOMBÁ */}
           <div className="mb-20">
             <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">KOMBÁ</h3>
@@ -391,6 +317,27 @@ export default function Home() {
                   />
                 </div>
               </div>
+
+              {/* Tasty Munch */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+                <div className="relative h-28 md:h-96 w-full">
+                  <Image 
+                    src="/images/tasty-munch.jpg" 
+                    alt="Tasty Munch"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Tasty Munch</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["TASTY MUNCH"].ingredients}
+                    allergens={productData["TASTY MUNCH"].allergens}
+                  />
+                </div>
+              </div>
             </div>
 
 
@@ -522,10 +469,58 @@ export default function Home() {
                   />
                 </div>
               </div>
+
+              {/* Tasty Munch */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+                <div className="relative h-40 w-full">
+                  <Image 
+                    src="/images/tasty-munch.jpg" 
+                    alt="Tasty Munch"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 text-center">
+                  <h3 className="text-sm font-bold text-white mb-1">Tasty Munch</h3>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["TASTY MUNCH"].ingredients}
+                    allergens={productData["TASTY MUNCH"].allergens}
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* 4. HOT-DOGY */}
+          {/* 4. NALOŽENÉ HRANOLKY */}
+          <div className="mb-20">
+            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">Naložené hranolky</h3>
+            <div className="flex justify-center px-2 md:px-20">
+              {/* Munch Chorizo fries */}
+              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
+                <div className="relative h-40 md:h-96 w-full">
+                  <Image 
+                    src="/images/nalozene.1.jpg" 
+                    alt="Munch Chorizo fries"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-2 md:p-4 text-center">
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chorizo fries</h3>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,90 €</p>
+                  <ProductInfo 
+                    ingredients={productData["Munch Chorizo fries"].ingredients}
+                    allergens={productData["Munch Chorizo fries"].allergens}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 5. HOT-DOGY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">HOT-DOGY</h3>
             <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
@@ -573,7 +568,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 5. PRE DETI */}
+          {/* 6. PRE DETI */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI</h3>
             
@@ -626,7 +621,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 6. ŠALÁTY */}
+          {/* 7. ŠALÁTY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">ŠALÁTY</h3>
             <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
@@ -674,7 +669,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 6. PRÍLOHY */}
+          {/* 8. PRÍLOHY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRÍLOHY</h3>
             
@@ -789,12 +784,11 @@ export default function Home() {
           </div>
 
           {/* Duplicate OMÁČKY removed — keep the styled OMÁČKY section further down */}
-
         </div>
-      </section>
+        </section>
 
-  {/* 7. OMÁČKY — styled like BURGRE cards */}
-  <section className="py-20 px-4 bg-black">
+      {/* 7. OMÁČKY — styled like BURGRE cards */}
+      <section className="py-20 px-4 bg-black">
         <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">OMÁČKY</h3>
 
         {/* Desktop: first 3 */}
@@ -883,113 +877,84 @@ export default function Home() {
           </div>
         </div>
 
-  {/* Mobile grid (2 cols) */}
-  <div className="grid grid-cols-2 gap-3 lg:hidden">
-    {/* BBQ */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/BBQ.png" alt="BBQ" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">BBQ</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
+        {/* Mobile grid (2 cols) */}
+        <div className="grid grid-cols-2 gap-3 lg:hidden">
+          {/* BBQ */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/BBQ.png" alt="BBQ" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">BBQ</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
 
-    {/* Blue Cheese */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/Blue-Cheese.png" alt="Blue Cheese" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Blue Cheese</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
+          {/* Blue Cheese */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/Blue-Cheese.png" alt="Blue Cheese" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Blue Cheese</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
 
-    {/* Curry dream */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/Kari-omacka.png" alt="Curry dream" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Curry dream</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
+          {/* Curry dream */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/Kari-omacka.png" alt="Curry dream" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Curry dream</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
 
-    {/* Munch Bros */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/Munch bros2.png" alt="Munch Bros" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Munch Bros</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
+          {/* Munch Bros */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/Munch bros2.png" alt="Munch Bros" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Munch Bros</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
 
-    {/* Ranch */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/Ranch.png" alt="Ranch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Ranch</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
+          {/* Ranch */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/Ranch.png" alt="Ranch" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Ranch</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
 
-    {/* Sriracha */}
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
-      <div className="relative h-40 w-full">
-        <Image src="/images/Sriracha.png" alt="Sriracha" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Sriracha</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
-  </div>
+          {/* Sriracha */}
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl">
+            <div className="relative h-40 w-full">
+              <Image src="/images/Sriracha.png" alt="Sriracha" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Sriracha</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
+            </div>
+          </div>
+        </div>
 
-  {/* Mobile: Munch Chipotle */}
-  <div className="flex justify-center px-2 mt-3 lg:hidden">
-    <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
-      <div className="relative h-40 w-full">
-        <Image src="/images/smoky-mayo.jpg" alt="Munch Chipotle" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-      </div>
-      <div className="p-2 text-center">
-        <h3 className="text-sm font-bold text-white mb-1">Munch Chipotle</h3>
-        <p className="text-pink-300 text-sm font-bold">1,50 €</p>
-      </div>
-    </div>
-  </div>
-      </section>
-
-      {/* 8. DEZERTY */}
-      <section className="py-20 px-4 bg-black">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">DEZERTY</h3>
-          <div className="flex justify-center px-2 md:px-20">
-            {/* Vyprazane Oreo */}
-            <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-              <div className="relative h-40 md:h-96 w-full">
-                <Image 
-                  src="/images/oreo.png" 
-                  alt="Vyprazane Oreo"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <div className="p-2 md:p-4 text-center">
-                <h3 className="text-sm md:text-xl font-bold text-white mb-1">Vyprazane Oreo</h3>
-                <p className="text-pink-300 text-sm md:text-lg font-bold">5,80 €</p>
-                <ProductInfo 
-                  ingredients={productData["Vyprazane Oreo"].ingredients}
-                  allergens={productData["Vyprazane Oreo"].allergens}
-                />
-              </div>
+        {/* Mobile: Munch Chipotle */}
+        <div className="flex justify-center px-2 mt-3 lg:hidden">
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%]">
+            <div className="relative h-40 w-full">
+              <Image src="/images/smoky-mayo.jpg" alt="Munch Chipotle" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="text-sm font-bold text-white mb-1">Munch Chipotle</h3>
+              <p className="text-pink-300 text-sm font-bold">1,50 €</p>
             </div>
           </div>
         </div>
@@ -1029,6 +994,53 @@ export default function Home() {
                   >
                     Objednať cez Bistro
                   </a>
+                </div>
+              </div>
+
+              {/* Dovoz - oblasti a podmienka */}
+              <div className="w-full max-w-5xl bg-gradient-to-r from-amber-500/15 via-rose-500/15 to-fuchsia-600/15 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-amber-300/30 shadow-2xl">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
+                  <h3 className="text-2xl md:text-3xl font-black text-white">Kde rozvážame?</h3>
+                  <span className="inline-block px-4 py-2 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 font-bold text-sm md:text-base">
+                    Objednávka nad 45 €
+                  </span>
+                </div>
+                <p className="text-pink-100 text-base md:text-lg mb-4">
+                  Dovoz zabezpečujeme do viacerých lokalít. Vzdialenejšie lokality sú len pri objednávke nad 45 €.
+                </p>
+                <div className="flex flex-wrap gap-2 md:gap-3 mb-4">
+                  {[
+                    'Senec',
+                    'Okres Senec',
+                    'Logistické centrum',
+                  ].map((area) => (
+                    <span
+                      key={area}
+                      className="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-pink-100 text-sm md:text-base"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+                <div className="rounded-xl border border-amber-300/35 bg-amber-400/10 p-3 md:p-4">
+                  <p className="text-amber-200 text-sm md:text-base font-semibold mb-2">
+                    Iba pri objednávke nad 45 €:
+                  </p>
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    {[
+                      'Nová Dedinka',
+                      'Ivanka pri Dunaji',
+                      'Bernolákovo',
+                      'Hrubá Borša',
+                    ].map((area) => (
+                      <span
+                        key={area}
+                        className="px-3 py-1.5 rounded-full bg-amber-200/10 border border-amber-200/30 text-amber-100 text-sm md:text-base"
+                      >
+                        {area}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
