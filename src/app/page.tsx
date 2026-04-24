@@ -40,9 +40,6 @@ export default function Home() {
               <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">
                     MUNCH BROS
                   </h1>
-              <p className="text-2xl md:text-3xl text-pink-300 font-semibold mb-8">
-                Bratia v burgri - Senec
-              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-between sm:justify-center max-w-5xl mx-auto">
                 <a 
                   href="#menu"
@@ -52,7 +49,7 @@ export default function Home() {
                   }}
                   className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer sm:order-1"
                 >
-                  Pozri Menu
+                  Pozrieť menu
                 </a>
                 <a 
                   href="#lokalita"
@@ -62,7 +59,7 @@ export default function Home() {
                   }}
                   className="px-8 py-4 bg-white/10 backdrop-blur-lg text-white text-lg font-bold rounded-full hover:bg-white/20 transition-all duration-300 border-2 border-white/30 cursor-pointer sm:order-2"
                 >
-                  Otváracie hodiny a Lokalita
+                  Kde sme a kedy sme otvorení
                 </a>
                 <a
                   href="#objednavky"
@@ -72,7 +69,7 @@ export default function Home() {
                   }}
                   className="px-8 py-4 bg-gradient-to-r from-amber-400 via-rose-500 to-fuchsia-600 text-white text-lg font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-2xl cursor-pointer sm:order-3"
                 >
-                  Objednávky
+                  Objednať teraz
                 </a>
               </div>
             </div>

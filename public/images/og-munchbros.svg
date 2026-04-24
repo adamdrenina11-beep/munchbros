@@ -1,0 +1,58 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E1065"/>
+      <stop offset="0.5" stop-color="#DB2777"/>
+      <stop offset="1" stop-color="#581C87"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="0" x2="980" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="0.5" stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="52"/>
+    </filter>
+    <filter id="shadow" x="180" y="108" width="840" height="414" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="220" cy="130" r="132" fill="#EC4899" fill-opacity="0.26" filter="url(#blur)"/>
+  <circle cx="1010" cy="520" r="170" fill="#8B5CF6" fill-opacity="0.22" filter="url(#blur)"/>
+  <circle cx="1030" cy="130" r="88" fill="#F59E0B" fill-opacity="0.20" filter="url(#blur)"/>
+
+  <rect x="84" y="68" width="1032" height="494" rx="44" fill="#12061E" fill-opacity="0.32" stroke="url(#accent)" stroke-opacity="0.55" stroke-width="2" filter="url(#shadow)"/>
+
+  <g opacity="0.95">
+    <rect x="132" y="128" width="168" height="168" rx="38" fill="#FFFFFF" fill-opacity="0.10" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <circle cx="216" cy="212" r="58" fill="#FFF7ED" fill-opacity="0.92"/>
+    <path d="M166 207C166 180.491 187.491 159 214 159H218C244.509 159 266 180.491 266 207V218H166V207Z" fill="#FDE68A"/>
+    <path d="M172 212H260C261.657 212 263 213.343 263 215V227C263 228.657 261.657 230 260 230H172C170.343 230 169 228.657 169 227V215C169 213.343 170.343 212 172 212Z" fill="#22C55E"/>
+    <path d="M166 226H266V239C266 251.703 255.703 262 243 262H189C176.297 262 166 251.703 166 239V226Z" fill="#C2410C"/>
+    <circle cx="196" cy="212" r="5" fill="#EF4444"/>
+    <circle cx="214" cy="212" r="5" fill="#EF4444"/>
+    <circle cx="232" cy="212" r="5" fill="#EF4444"/>
+  </g>
+
+  <text x="336" y="214" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800" letter-spacing="2">MUNCH BROS</text>
+  <text x="336" y="276" fill="#FBCFE8" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Burgre, loaded fries a rozvoz v Senci</text>
+  <text x="336" y="328" fill="#F9A8D4" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500">Pozri menu, objednaj online a pošli link ďalej.</text>
+
+  <g>
+    <rect x="336" y="372" width="176" height="52" rx="26" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="364" y="406" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Menu + ceny</text>
+
+    <rect x="526" y="372" width="182" height="52" rx="26" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="554" y="406" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Rozvoz v Senci</text>
+
+    <rect x="722" y="372" width="188" height="52" rx="26" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="750" y="406" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Objednaj teraz</text>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="336" y="458" width="526" height="70" rx="22" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <text x="362" y="502" fill="#FEF3C7" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Šťavnaté burgre • domáce omáčky • naložené hranolky</text>
+  </g>
+</svg>

@@ -24,10 +24,10 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://munchbros.com'),
   title: {
-    default: "MunchBros Senec — Burgre & Rozvoz | Objednaj online",
+    default: "MunchBros Senec — burgre, loaded fries a rozvoz | Objednaj online",
     template: "%s | MunchBros Senec"
   },
-  description: "MunchBros v Senci — šťavnaté burgre, čerstvé suroviny a rýchly rozvoz. Pozri menu, akcie a objednaj online ešte dnes.",
+  description: "MunchBros v Senci — šťavnaté burgre, loaded fries, domáce omáčky a rýchly rozvoz. Pozri menu a objednaj online ešte dnes.",
   keywords: [
     "burger senec", 
     "burgre senec", 
@@ -42,7 +42,9 @@ export const metadata: Metadata = {
     "veggie burger senec",
     "halloumi burger",
     "domáce hranolky", 
-    "vyprážané oreo", 
+    "loaded fries senec",
+    "naložené hranolky",
+    "rozvoz burgrov senec",
     "burger bar senec",
     "online objednávka jedlo senec",
     "rýchle jedlo senec",
@@ -82,26 +84,26 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.webmanifest',
   openGraph: {
-    title: "MunchBros Senec — Burgre & Rozvoz | Objednaj online",
-    description: "MunchBros v Senci — šťavnaté burgre, čerstvé suroviny a rýchly rozvoz. Pozri menu a objednaj ešte dnes.",
+    title: "MunchBros Senec — burgre, loaded fries a rozvoz",
+    description: "MunchBros v Senci — šťavnaté burgre, loaded fries a rýchly rozvoz. Pozri menu a objednaj ešte dnes.",
     type: "website",
     locale: "sk_SK",
     url: "https://munchbros.com",
     siteName: "MunchBros",
     images: [
       {
-        url: 'https://munchbros.com/images/Munch bro´s.png',
+        url: '/images/og-munchbros.svg',
         width: 1200,
         height: 630,
-        alt: 'MunchBros Senec - Čersté Burgre a Street Food',
+        alt: 'MunchBros Senec - burgre, loaded fries a rozvoz',
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MunchBros Senec — Burgre & Rozvoz",
+    title: "MunchBros Senec — burgre, loaded fries a rozvoz",
     description: "Šťavnaté burgre s rýchlym rozvozom v Senci. Pozri menu a objednaj online.",
-    images: ['https://munchbros.com/images/logo.png'],
+    images: ['/images/og-munchbros.svg'],
     creator: "@munchbros",
     site: "@munchbros",
   },
@@ -124,7 +126,7 @@ export default function RootLayout({
     "name": "MunchBros Senec",
     "alternateName": "Munch Bros",
     "image": "https://munchbros.com/images/logo.png",
-    "description": "MunchBros v Senci ponúka čerstvé burgre z bio mäsa, domáce hranolky, vyprážané dezerty a rýchly rozvoz. Street food na najvyššej úrovni.",
+    "description": "MunchBros v Senci ponúka čerstvé burgre, loaded fries, domáce omáčky a rýchly rozvoz. Street food na najvyššej úrovni.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Lichnerova 41A",
@@ -167,13 +169,6 @@ export default function RootLayout({
         "closes": "20:30"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "100",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "sameAs": [
       "https://www.facebook.com/munchbros",
       "https://www.instagram.com/munchbros"
