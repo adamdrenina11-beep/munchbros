@@ -998,13 +998,7 @@ export default function Home() {
               <div className="w-full max-w-5xl bg-gradient-to-r from-amber-500/15 via-rose-500/15 to-fuchsia-600/15 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-amber-300/30 shadow-2xl">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
                   <h3 className="text-2xl md:text-3xl font-black text-white">Kde rozvážame?</h3>
-                  <span className="inline-block px-4 py-2 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 font-bold text-sm md:text-base">
-                    Objednávka nad 45 €
-                  </span>
                 </div>
-                <p className="text-pink-100 text-base md:text-lg mb-4">
-                  Dovoz zabezpečujeme do viacerých lokalít. Vzdialenejšie lokality sú len pri objednávke nad 45 €.
-                </p>
                 <div className="flex flex-wrap gap-2 md:gap-3 mb-4">
                   {[
                     'Senec',
