@@ -3,6 +3,8 @@ import SentryInit from '../components/SentryInit';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const FAVICON_VERSION = "20260425";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -72,15 +74,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-64.png', sizes: '64x64', type: 'image/png' },
-      { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/favicon-512.png', sizes: '512x512', type: 'image/png' },
+      { url: `/favicon-32.png?v=${FAVICON_VERSION}`, sizes: '32x32', type: 'image/png' },
+      { url: `/favicon-192.png?v=${FAVICON_VERSION}`, sizes: '192x192', type: 'image/png' },
+      { url: `/favicon-512.png?v=${FAVICON_VERSION}`, sizes: '512x512', type: 'image/png' },
+      { url: `/favicon.ico?v=${FAVICON_VERSION}`, sizes: 'any' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    shortcut: `/favicon.ico?v=${FAVICON_VERSION}`,
+    apple: `/apple-touch-icon.png?v=${FAVICON_VERSION}`,
   },
   manifest: '/manifest.webmanifest',
   openGraph: {
@@ -227,9 +227,10 @@ export default function RootLayout({
         <link rel="preload" as="image" href="/images/logo.png" fetchPriority="high" />
         {/* Explicit links to help crawlers and older devices */}
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href={`/apple-touch-icon.png?v=${FAVICON_VERSION}`} />
+        <link rel="icon" type="image/png" sizes="32x32" href={`/favicon-32.png?v=${FAVICON_VERSION}`} />
+        <link rel="icon" type="image/png" sizes="192x192" href={`/favicon-192.png?v=${FAVICON_VERSION}`} />
+        <link rel="icon" href={`/favicon.ico?v=${FAVICON_VERSION}`} sizes="any" />
         {/* Restaurant Schema */}
         <script
           type="application/ld+json"
