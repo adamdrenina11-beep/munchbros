@@ -12,9 +12,6 @@ module.exports = {
         allow: '/',
       },
     ],
-    additionalSitemaps: [
-      'https://munchbros.com/sitemap.xml',
-    ],
   },
   transform: async (config, path) => {
     // Custom priority for different paths

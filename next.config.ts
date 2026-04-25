@@ -14,17 +14,6 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['react-icons', 'next/image'],
   },
-  
-  /* Redirects to prevent 404s */
-  async redirects() {
-    return [
-      {
-        source: '/favicon.ico',
-        destination: '/images/logo.png',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;

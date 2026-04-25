@@ -72,14 +72,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/images/logo.png', sizes: 'any', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-64.png', sizes: '64x64', type: 'image/png' },
       { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
       { url: '/favicon-512.png', sizes: '512x512', type: 'image/png' },
     ],
-    shortcut: '/images/logo.png',
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   manifest: '/manifest.webmanifest',
@@ -228,7 +228,8 @@ export default function RootLayout({
         {/* Explicit links to help crawlers and older devices */}
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         {/* Restaurant Schema */}
         <script
           type="application/ld+json"

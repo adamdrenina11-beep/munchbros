@@ -1,11 +1,18 @@
 from PIL import Image
 from pathlib import Path
 
-src = Path(__file__).resolve().parents[1] / 'public' / 'images' / 'logo.png'
+root = Path(__file__).resolve().parents[1]
+source_candidates = [
+    root / 'public' / 'neon.jpg',
+    root / 'public' / 'images' / 'logo.png',
+]
+src = next((path for path in source_candidates if path.exists()), None)
 out = Path(__file__).resolve().parents[1] / 'public'
 
-if not src.exists():
-    print(f"Source logo not found: {src}")
+if src is None:
+    print('Source logo not found. Expected one of:')
+    for candidate in source_candidates:
+        print(' -', candidate)
     raise SystemExit(1)
 
 print(f"Using source: {src}")

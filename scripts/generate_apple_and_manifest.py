@@ -2,11 +2,17 @@ from PIL import Image
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-src = root / 'public' / 'images' / 'logo.png'
+source_candidates = [
+    root / 'public' / 'neon.jpg',
+    root / 'public' / 'images' / 'logo.png',
+]
+src = next((path for path in source_candidates if path.exists()), None)
 out = root / 'public'
 
-if not src.exists():
-    print('Source logo not found:', src)
+if src is None:
+    print('Source logo not found. Expected one of:')
+    for candidate in source_candidates:
+        print(' -', candidate)
     raise SystemExit(1)
 
 img = Image.open(src).convert('RGBA')
