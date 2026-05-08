@@ -19,12 +19,12 @@ export const productData = {
     allergens: "1,3,7,10,11,12"
   },
   "Munch Bros": {
-    price: "10,90 €",
+    price: "10,50 €",
     ingredients: "brioška 120g, bio hovädzie mäso 150g, americká horčica, čedar, slanina, cibuľové krúžky",
     allergens: "1,3,7,10,11,12"
   },
   "Munch of Fire": {
-    price: "10,20 €",
+    price: "9,90 €",
     ingredients: "brioška 120g, bio hovädzie mäso 150g, čedar, jalapenos, sriracha omáčka, kimchi šalát",
     allergens: "1,3,6,7,10,11,12"
   },
@@ -49,7 +49,7 @@ export const productData = {
     allergens: "1,3,7,10"
   },
   "Munch Swiss": {
-    price: "10,20 €",
+    price: "9,90 €",
     ingredients: "brioška 120g, 2x bio hovädzie placka 2x75g, BBQ majonéza, karamelizovaná cibuľka, emmental, slanina",
     allergens: "1,3,7,10"
   },

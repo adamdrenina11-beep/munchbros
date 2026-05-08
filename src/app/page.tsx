@@ -199,7 +199,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Cheeseburger"].ingredients}
                     allergens={productData["Munch Cheeseburger"].allergens}
@@ -220,7 +220,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch of Fire</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch of Fire"].ingredients}
                     allergens={productData["Munch of Fire"].allergens}
@@ -307,7 +307,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Swiss</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Swiss"].ingredients}
                     allergens={productData["Munch Swiss"].allergens}
@@ -354,7 +354,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,50 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Bros"].ingredients}
                     allergens={productData["Munch Bros"].allergens}
@@ -375,7 +375,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch of Fire</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch of Fire"].ingredients}
                     allergens={productData["Munch of Fire"].allergens}
@@ -459,7 +459,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Swiss</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
+                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Swiss"].ingredients}
                     allergens={productData["Munch Swiss"].allergens}
