@@ -74,6 +74,16 @@ export const productData = {
     ingredients: "Maslový rožok 120g, Gurmán párok 75g, mozzarella, pikantná saláma, kukurica, talianska omáčka s oreganovým pestom",
     allergens: "1,3,7,9,11,12"
   },
+  "Chopped cheese": {
+    price: "8,90 €",
+    ingredients: "Maslový rožok plnený 150 g šťavnatého mletého hovädzieho mäsa pripraveného s bielou cibuľkou, roztopeným čedarom, ľadovým šalátom, paradajkou, našou omáčkou Munch Bros, americkou horčicou a chrumkavou smaženou cibuľkou.",
+    allergens: "1,3,7,10"
+  },
+  "Nashville chicken": {
+    price: "8,90 €",
+    ingredients: "Šťavnaté marinované kuracie mäso obalené v chrumkavých cornflakesoch. Domáci coleslaw šalát, kyslá uhorka, Nashville omáčka a americká horčica v mäkkom maslovom rohlíku.",
+    allergens: "1,3,7,10"
+  },
   "Munch Classic Hot-dog": {
     price: "5,50 €",
     ingredients: "Brioškový rožok 120g, bravčovo-hovädzí párok 70g, kečup alebo americká horčica",

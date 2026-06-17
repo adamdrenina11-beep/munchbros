@@ -126,6 +126,163 @@ export default function Home() {
         </div>
       </section>
 
+  {/* Specials Section - CHOPPED CHEESE */}
+  <section className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
+            
+            <div className="max-w-7xl mx-auto relative z-10">
+              <div className="text-center mb-12">
+                <div className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-fuchsia-600 rounded-full mb-4 animate-bounce-slow">
+                  <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Špeciál Mesiaca 🔥</span>
+                </div>
+                <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 mb-4 drop-shadow-2xl">
+                  CHOPPED CHEESE
+                </h3>
+                <p className="text-lg md:text-xl text-pink-200 font-bold max-w-3xl mx-auto">
+                  Maslový rožok plnený šťavnatým hovädzím mäsom, čedarom a omáčkou Munch Bros!
+                </p>
+                <p className="text-pink-300/70 text-sm mt-2">⭐ Limitovaná ponuka</p>
+              </div>
+
+              <div className="flex justify-center">
+                <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(236,72,153,0.3)] hover:shadow-[0_0_80px_rgba(236,72,153,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                    <div className="relative h-80 md:h-[28rem] w-full overflow-hidden bg-black/20">
+                      <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-3xl pointer-events-none z-10" />
+                      <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-fuchsia-500 rounded-tr-3xl pointer-events-none z-10" />
+                      <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-fuchsia-500 rounded-bl-3xl pointer-events-none z-10" />
+                      <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-fuchsia-500 rounded-br-3xl pointer-events-none z-10" />
+                      
+                    <Image
+                      src="/images/WhatsApp Image 2026-06-17 at 22.20.20.jpeg"
+                      alt="CHOPPED CHEESE - Špeciál Mesiaca"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                      priority
+                    />
+                  </div>
+                  <div className="p-6 md:p-10">
+                    <div className="text-center mb-6">
+                      <h4 className="text-3xl md:text-4xl font-black text-pink-300 mb-3 drop-shadow-lg">CHOPPED CHEESE 🔥</h4>
+                      <div className="inline-block">
+                        <div className="text-pink-300 text-3xl md:text-4xl font-black mb-2">
+                          8,90 €
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="max-w-2xl mx-auto mb-6">
+                      <div className="bg-pink-950/40 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/30">
+                        <h5 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
+                          🔥 Zloženie
+                        </h5>
+                        <p className="text-pink-100 text-sm md:text-base leading-relaxed mb-4">
+                          {productData["Chopped cheese"].ingredients}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="text-center mt-8">
+                      <a
+                        href={ORDER_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-10 py-4 bg-gradient-to-r from-pink-500 via-fuchsia-600 to-purple-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
+                      >
+                        🔥 Objednaj TERAZ! 🔥
+                      </a>
+                      <p className="text-pink-300/60 text-xs mt-3">Limitovaná edícia!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  {/* Specials Section - NASHVILLE CHICKEN */}
+  <section className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
+            
+            <div className="max-w-7xl mx-auto relative z-10">
+              <div className="text-center mb-12">
+                <div className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-fuchsia-600 rounded-full mb-4 animate-bounce-slow">
+                  <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Špeciál Mesiaca 🔥</span>
+                </div>
+                <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 mb-4 drop-shadow-2xl">
+                  NASHVILLE CHICKEN
+                </h3>
+                <p className="text-lg md:text-xl text-pink-200 font-bold max-w-3xl mx-auto">
+                  Chrumkavé marinované kuracie mäso, coleslaw a Nashville omáčka!
+                </p>
+                <p className="text-pink-300/70 text-sm mt-2">⭐ Limitovaná ponuka</p>
+              </div>
+
+              <div className="flex justify-center">
+                <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(236,72,153,0.3)] hover:shadow-[0_0_80px_rgba(236,72,153,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
+                    <div className="relative h-80 md:h-[28rem] w-full overflow-hidden bg-black/20">
+                      <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-3xl pointer-events-none z-10" />
+                      <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-fuchsia-500 rounded-tr-3xl pointer-events-none z-10" />
+                      <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-fuchsia-500 rounded-bl-3xl pointer-events-none z-10" />
+                      <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-fuchsia-500 rounded-br-3xl pointer-events-none z-10" />
+                      
+                    <Image
+                      src="/images/WhatsApp Image 2026-06-17 at 22.22.20.jpeg"
+                      alt="NASHVILLE CHICKEN - Špeciál Mesiaca"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                      priority
+                    />
+                  </div>
+                  <div className="p-6 md:p-10">
+                    <div className="text-center mb-6">
+                      <h4 className="text-3xl md:text-4xl font-black text-pink-300 mb-3 drop-shadow-lg">NASHVILLE CHICKEN 🔥</h4>
+                      <div className="inline-block">
+                        <div className="text-pink-300 text-3xl md:text-4xl font-black mb-2">
+                          8,90 €
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="max-w-2xl mx-auto mb-6">
+                      <div className="bg-pink-950/40 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/30">
+                        <h5 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
+                          🔥 Zloženie
+                        </h5>
+                        <p className="text-pink-100 text-sm md:text-base leading-relaxed mb-4">
+                          {productData["Nashville chicken"].ingredients}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="text-center mt-8">
+                      <a
+                        href={ORDER_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-10 py-4 bg-gradient-to-r from-pink-500 via-fuchsia-600 to-purple-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
+                      >
+                        🔥 Objednaj TERAZ! 🔥
+                      </a>
+                      <p className="text-pink-300/60 text-xs mt-3">Limitovaná edícia!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
   {/* Menu Section */}
   <section id="menu" className="py-20 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
@@ -490,34 +647,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 4. NALOŽENÉ HRANOLKY */}
-          <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">Naložené hranolky</h3>
-            <div className="flex justify-center px-2 md:px-20">
-              {/* Munch Chorizo fries */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/nalozene.1.jpg" 
-                    alt="Munch Chorizo fries"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chorizo fries</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,90 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Munch Chorizo fries"].ingredients}
-                    allergens={productData["Munch Chorizo fries"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 5. HOT-DOGY */}
+          {/* 4. HOT-DOGY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">HOT-DOGY</h3>
             <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
@@ -562,10 +692,11 @@ export default function Home() {
                   />
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* 6. PRE DETI */}
+          {/* 5. PRE DETI */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRE DETI</h3>
             
@@ -618,55 +749,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 7. ŠALÁTY */}
-          <div className="mb-20">
-            <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">ŠALÁTY</h3>
-            <div className="flex flex-wrap items-start justify-center gap-3 md:gap-10 px-2 md:px-20">
-              {/* Kuraci Salat */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/Kuraci salat.png" 
-                    alt="Kuraci Salat"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Kuraci Salat</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Kuraci Salat"].ingredients}
-                    allergens={productData["Kuraci Salat"].allergens}
-                  />
-                </div>
-              </div>
-
-              {/* Halloumi */}
-              <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
-                <div className="relative h-40 md:h-96 w-full">
-                  <Image 
-                    src="/images/Halloumi.png" 
-                    alt="Halloumi"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Halloumi</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,50 €</p>
-                  <ProductInfo 
-                    ingredients={productData["Halloumi"].ingredients}
-                    allergens={productData["Halloumi"].allergens}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 8. PRÍLOHY */}
+          {/* 6. PRÍLOHY */}
           <div className="mb-20">
             <h3 className="text-4xl font-black text-pink-400 mb-8 text-center">PRÍLOHY</h3>
             
