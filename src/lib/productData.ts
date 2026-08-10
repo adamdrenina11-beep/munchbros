@@ -28,6 +28,11 @@ export const productData = {
     ingredients: "brioška 120g, bio hovädzie mäso 150g, čedar, jalapenos, sriracha omáčka, kimchi šalát",
     allergens: "1,3,6,7,10,11,12"
   },
+  "Munch Melt": {
+    price: "10,90 €",
+    ingredients: "2x 75 g smash hovädzie, údená majonézová omáčka, chrumkavá slanina, biela cibuľa, cheddarová omáčka, mladá smažená cibuľka, jemne údená mletá paprika",
+    allergens: "1,3,7,10,11,12"
+  },
   "Smash Bros": {
     price: "9,90 €",
     ingredients: "brioška 120g, 2x bio hovädzia placka 2x75g, čedar, biela cibuľa, slanina, kyslá uhorka, zaúdená omáčka",
