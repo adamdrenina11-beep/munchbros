@@ -216,9 +216,9 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 2. KOMBÁ */}
+          {/* 2. KOMBO */}
           <div className="mb-20">
-            <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">KOMBÁ</h3>
+            <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">KOMBO</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
               {/* Burger Dynasty Munch */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
