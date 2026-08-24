@@ -234,7 +234,7 @@ export default function Home() {
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">14,50 €</p>
                 </div>
               </div>
 
@@ -259,7 +259,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,50 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Cheeseburger"].ingredients}
                     allergens={productData["Munch Cheeseburger"].allergens}
@@ -280,7 +280,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch of Fire</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch of Fire"].ingredients}
                     allergens={productData["Munch of Fire"].allergens}
@@ -301,7 +301,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Smash Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Smash Bros"].ingredients}
                     allergens={productData["Smash Bros"].allergens}
@@ -325,7 +325,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">OG Munch</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["OG Munch"].ingredients}
                     allergens={productData["OG Munch"].allergens}
@@ -346,7 +346,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Chicken</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Chicken"].ingredients}
                     allergens={productData["Munch Chicken"].allergens}
@@ -367,7 +367,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Munch Swiss</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Swiss"].ingredients}
                     allergens={productData["Munch Swiss"].allergens}
@@ -388,7 +388,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Tasty Munch</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["TASTY MUNCH"].ingredients}
                     allergens={productData["TASTY MUNCH"].allergens}
@@ -414,7 +414,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm font-bold">10,50 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Bros"].ingredients}
                     allergens={productData["Munch Bros"].allergens}
@@ -435,7 +435,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch of Fire</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch of Fire"].ingredients}
                     allergens={productData["Munch of Fire"].allergens}
@@ -456,7 +456,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Smash Bro&apos;s</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Smash Bros"].ingredients}
                     allergens={productData["Smash Bros"].allergens}
@@ -477,7 +477,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">OG Munch</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["OG Munch"].ingredients}
                     allergens={productData["OG Munch"].allergens}
@@ -498,7 +498,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Chicken</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Chicken"].ingredients}
                     allergens={productData["Munch Chicken"].allergens}
@@ -519,7 +519,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Munch Swiss</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["Munch Swiss"].ingredients}
                     allergens={productData["Munch Swiss"].allergens}
@@ -540,7 +540,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Tasty Munch</h3>
-                  <p className="text-pink-300 text-sm font-bold">9,90 €</p>
+                  <p className="text-pink-300 text-sm font-bold">10,20 €</p>
                   <ProductInfo 
                     ingredients={productData["TASTY MUNCH"].ingredients}
                     allergens={productData["TASTY MUNCH"].allergens}
@@ -1076,27 +1076,27 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Utorok:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>15:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Streda:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>15:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Štvrtok:</span>
-                    <span>12:00 - 20:00</span>
+                    <span>15:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Piatok:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>15:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-pink-500/20 pb-3">
                     <span className="font-semibold text-white">Sobota:</span>
-                    <span>12:00 - 21:00</span>
+                    <span>15:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Nedeľa:</span>
-                    <span className="text-yellow-400">Dočasne zatvorené</span>
+                    <span>Zatvorené</span>
                   </div>
                 </div>
               </div>

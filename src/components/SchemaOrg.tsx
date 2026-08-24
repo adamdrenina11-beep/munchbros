@@ -33,32 +33,32 @@ export default function SchemaOrg() {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Tuesday",
-        "opens": "12:00",
+        "opens": "15:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Wednesday",
-        "opens": "12:00",
+        "opens": "15:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Thursday", "Friday"],
-        "opens": "12:00",
+        "opens": "15:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
-        "opens": "12:00",
-        "closes": "22:00"
+        "opens": "15:00",
+        "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "15:00",
-        "closes": "20:30"
+        "opens": "Closed",
+        "closes": "Closed"
       }
     ],
     "menu": "https://munchbros-senec.com/#menu",

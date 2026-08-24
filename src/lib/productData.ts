@@ -14,47 +14,47 @@ export const productData = {
   },
   // BURGRE
   "TASTY MUNCH": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "150 g hovädzia placka v maslovej brioške, domáca Tasty omáčka, ľadový šalát, čerstvá paradajka, chrumkavá slanina, biely cheddar a jemne krájaná biela cibuľa. Original poznáš, my sme ho spravili po svojom.",
     allergens: "1,3,7,10,11,12"
   },
   "Munch Bros": {
-    price: "10,50 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, bio hovädzie mäso 150g, americká horčica, čedar, slanina, cibuľové krúžky",
     allergens: "1,3,7,10,11,12"
   },
   "Munch of Fire": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, bio hovädzie mäso 150g, čedar, jalapenos, sriracha omáčka, kimchi šalát",
     allergens: "1,3,6,7,10,11,12"
   },
   "Munch Melt": {
-    price: "10,90 €",
+    price: "10,20 €",
     ingredients: "2x 75 g smash hovädzie, údená majonézová omáčka, chrumkavá slanina, biela cibuľa, cheddarová omáčka, mladá smažená cibuľka, jemne údená mletá paprika",
     allergens: "1,3,7,10,11,12"
   },
   "Smash Bros": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, 2x bio hovädzia placka 2x75g, čedar, biela cibuľa, slanina, kyslá uhorka, zaúdená omáčka",
     allergens: "1,3,7,10,11,12"
   },
   "OG Munch": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, bio hovädzia placka 150g, čedar, paradajka, ľadový šalát, červená cibuľa, kyslá uhorka, omáčka Munch Bros",
     allergens: "1,3,7,9,10,11,12"
   },
   "Munch Chicken": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, kuracie nuggetky 150g, čedar, majonéza, ľadový šalát",
     allergens: "1,3,7,10,11,12"
   },
   "Munch Cheeseburger": {
-    price: "8,50 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, bio hovädzia placka 100g, čedar, cibuľa, americká horčica, kečup",
     allergens: "1,3,7,10"
   },
   "Munch Swiss": {
-    price: "9,90 €",
+    price: "10,20 €",
     ingredients: "brioška 120g, 2x bio hovädzie placka 2x75g, BBQ majonéza, karamelizovaná cibuľka, emmental, slanina",
     allergens: "1,3,7,10"
   },
@@ -64,7 +64,7 @@ export const productData = {
     allergens: ""
   },
   "Smash Junior": {
-    price: "6,90 €",
+    price: "10,20 €",
     ingredients: "Dokonalý burger pre tých, čo hľadajú kvalitu bez kompromisov, ale v menšom formáte. Maslová brioška (100g), šťavnatá hovädzia placka (100g), roztopený čedar, kyslá uhorka, červená cibuľa, kečup a americká horčica.",
     allergens: ""
   },

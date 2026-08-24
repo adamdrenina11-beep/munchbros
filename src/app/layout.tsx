@@ -159,14 +159,14 @@ export default function RootLayout({
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "12:00",
+        "opens": "15:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "15:00",
-        "closes": "20:30"
+        "opens": "00:00",
+        "closes": "00:00"
       }
     ],
     "sameAs": [
@@ -200,7 +200,7 @@ export default function RootLayout({
         "name": "Aké sú otváracie hodiny MunchBros?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Otvorené máme Utorok-Sobota 12:00-21:00, Nedeľa 15:00-20:30. Pondelok máme zatvorené."
+          "text": "Otvorené máme Utorok-Sobota 15:00-21:00. Pondelok a Nedeľa máme zatvorené."
         }
       },
       {
