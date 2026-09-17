@@ -126,84 +126,6 @@ export default function Home() {
         </div>
       </section>
 
-  {/* Specials Section - MUNCH MELT */}
-  <section className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="py-12 px-4 bg-gradient-to-br from-purple-950 via-fuchsia-900 to-pink-950 relative overflow-hidden rounded-3xl">
-            <div className="absolute inset-0 bg-gradient-radial from-pink-500/10 via-transparent to-transparent animate-pulse"></div>
-            
-            <div className="max-w-7xl mx-auto relative z-10">
-              <div className="text-center mb-12">
-                <div className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-fuchsia-600 rounded-full mb-4 animate-bounce-slow">
-                  <span className="text-white font-black text-sm md:text-base uppercase tracking-wider">🔥 Špeciál Mesiaca 🔥</span>
-                </div>
-                <h3 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 mb-4 drop-shadow-2xl">
-                  MUNCH MELT
-                </h3>
-                <p className="text-lg md:text-xl text-pink-200 font-bold max-w-3xl mx-auto">
-                  2x 75 g smash hovädzie, údená majonézová omáčka, chrumkavá slanina a biela cibuľa, servírované v cheddarovej omáčke.
-                </p>
-                <p className="text-pink-300/70 text-sm mt-2">⭐ Limitovaná ponuka</p>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="w-full max-w-3xl bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(236,72,153,0.3)] hover:shadow-[0_0_80px_rgba(236,72,153,0.5)] transition-all duration-500 hover:scale-[1.02] relative">
-                    <div className="relative h-80 md:h-[28rem] w-full overflow-hidden bg-black/20">
-                      <div className="absolute top-0 left-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-3xl pointer-events-none z-10" />
-                      <div className="absolute top-0 right-0 w-16 md:w-24 h-16 md:h-24 border-t-4 border-r-4 border-fuchsia-500 rounded-tr-3xl pointer-events-none z-10" />
-                      <div className="absolute bottom-0 left-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-l-4 border-fuchsia-500 rounded-bl-3xl pointer-events-none z-10" />
-                      <div className="absolute bottom-0 right-0 w-16 md:w-24 h-16 md:h-24 border-b-4 border-r-4 border-fuchsia-500 rounded-br-3xl pointer-events-none z-10" />
-                      
-                    <Image
-                      src="/images/Namoceny.jpg"
-                      alt="MUNCH MELT - Špeciál Mesiaca"
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                      priority
-                    />
-                  </div>
-                  <div className="p-6 md:p-10">
-                    <div className="text-center mb-6">
-                      <h4 className="text-3xl md:text-4xl font-black text-pink-300 mb-3 drop-shadow-lg">MUNCH MELT 🔥</h4>
-                      <div className="inline-block">
-                        <div className="text-pink-300 text-3xl md:text-4xl font-black mb-2">
-                          10,90 €
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="max-w-2xl mx-auto mb-6">
-                      <div className="bg-pink-950/40 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/30">
-                        <h5 className="text-pink-300 text-lg font-bold mb-3 flex items-center gap-2">
-                          🔥 Zloženie
-                        </h5>
-                        <p className="text-pink-100 text-sm md:text-base leading-relaxed mb-4">
-                          {productData["Munch Melt"].ingredients}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="text-center mt-8">
-                      <a
-                        href={ORDER_LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-10 py-4 bg-gradient-to-r from-pink-500 via-fuchsia-600 to-purple-600 text-white text-xl font-black rounded-full hover:scale-110 transition-transform duration-300 shadow-2xl uppercase tracking-wide"
-                      >
-                        🔥 Objednaj TERAZ! 🔥
-                      </a>
-                      <p className="text-pink-300/60 text-xs mt-3">Limitovaná edícia!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
   {/* Menu Section */}
   <section id="menu" className="py-20 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
@@ -618,7 +540,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 md:p-4 text-center">
                   <h3 className="text-sm md:text-xl font-bold text-white mb-1">Happy Bro&apos;s Meal pre deti</h3>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,50 €</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">7,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Happy Bros Meal pre deti"].ingredients}
                     allergens={productData["Happy Bros Meal pre deti"].allergens}
@@ -642,7 +564,7 @@ export default function Home() {
                 </div>
                 <div className="p-2 text-center">
                   <h3 className="text-sm font-bold text-white mb-1">Happy Bro&apos;s Meal</h3>
-                  <p className="text-pink-300 text-sm font-bold">7,50 €</p>
+                  <p className="text-pink-300 text-sm font-bold">7,90 €</p>
                   <ProductInfo 
                     ingredients={productData["Happy Bros Meal pre deti"].ingredients}
                     allergens={productData["Happy Bros Meal pre deti"].allergens}

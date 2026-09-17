@@ -96,7 +96,7 @@ export const productData = {
   },
   // PRE DETI
   "Happy Bros Meal pre deti": {
-    price: "7,50 €",
+    price: "7,90 €",
     ingredients: "Kuracie nuggetky 150g, hranolky, kečup",
     allergens: "1,7,10"
   },
