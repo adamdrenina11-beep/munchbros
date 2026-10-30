@@ -184,21 +184,21 @@ export default function Home() {
           <div className="mb-20">
             <h3 className="text-3xl md:text-4xl font-black text-pink-400 mb-8 text-center">KOMBA</h3>
             <div className="flex flex-wrap justify-center gap-3 md:gap-10 px-2 md:px-20">
-              {/* Burger Dynasty Munch */}
+              {/* Burger Kombo */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
                 <div className="relative h-40 md:h-96 w-full">
                   <Image 
                     src="/images/kombo real.jpg" 
-                    alt="Burger Dynasty Munch"
+                    alt="Burger Kombo"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Dynasty Munch</h3>
-                  <p className="text-pink-200 text-xs md:text-base mb-2">burger, hranolky, omáčka</p>
-                  <p className="text-pink-300 text-sm md:text-lg font-bold">14,50 €</p>
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Kombo</h3>
+                  <p className="text-pink-200 text-xs md:text-base mb-2">burger + hranolky + omáčka (500g)</p>
+                  <p className="text-pink-300 text-sm md:text-lg font-bold">13,90 €</p>
                 </div>
               </div>
 

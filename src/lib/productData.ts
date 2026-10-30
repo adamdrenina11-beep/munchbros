@@ -1,7 +1,7 @@
 export const productData = {
   // BURGER KOMBA
-  "Burger Dynasty": {
-    ingredients: "Pre zvolenie burgru s 120g BIO plackou zadajte Burger Kombo Klasik. Celý burger dopĺňa čedar, kyslá uhorka, americká horčica, kečup, maslová brioška, hranolky. Pre možnosť iného burgru napíšte do poznámky názov burgru ale s cenou 13,90 EUR.",
+  "Burger Kombo": {
+    ingredients: "burger + hranolky + omáčka (500g)",
     allergens: "1,3,7,10,11,12"
   },
   "Burger Dynasty Munch": {
