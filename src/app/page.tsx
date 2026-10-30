@@ -202,19 +202,19 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Burger Kombo */}
+              {/* Bro's munch */}
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-lg border border-pink-500/20 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 shadow-2xl w-[48%] sm:w-80 md:w-96">
                 <div className="relative h-40 md:h-96 w-full">
                   <Image
                     src="/images/WhatsApp Image 2026-10-29 at 21.52.02.jpeg"
-                    alt="Burger Kombo"
+                    alt="Bro's munch"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-2 md:p-4 text-center">
-                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Burger Kombo</h3>
+                  <h3 className="text-sm md:text-xl font-bold text-white mb-1">Bro&apos;s munch</h3>
                   <p className="text-pink-200 text-xs md:text-base mb-2">burger + hranolky + omáčka (500g)</p>
                   <p className="text-pink-300 text-sm md:text-lg font-bold">14,90 €</p>
                 </div>
